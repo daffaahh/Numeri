@@ -1,0 +1,78 @@
+{
+	"name": "ES_RoadMap",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 329868449484580
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 418001608636696,
+					"parameters": [
+						"\"Lay_MainMenu\""
+					]
+				}
+			],
+			"sid": 307012041410267
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Mouse",
+					"sid": 716134704194712,
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "CameraFocus",
+					"sid": 454170418128965,
+					"parameters": {
+						"y": "Self.Y + 100"
+					}
+				}
+			],
+			"sid": 384422128151923
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Mouse",
+					"sid": 387733562647556,
+					"parameters": {
+						"direction": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "CameraFocus",
+					"sid": 280273117278743,
+					"parameters": {
+						"y": "Self.Y - 100"
+					}
+				}
+			],
+			"sid": 789727407422893
+		}
+	],
+	"sid": 241361781550435
+}

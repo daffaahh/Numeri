@@ -1,0 +1,58 @@
+{
+	"name": "StartButton",
+	"plugin-id": "Sprite",
+	"sid": 848691924396166,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 880836943334177
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 885,
+						"height": 343,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4327170,
+						"collisionPoly": {
+							"points": [
+								0.17062146892655367,
+								0.22448979591836735,
+								0.8282485875706215,
+								0.26239067055393583,
+								0.8067796610169492,
+								0.7755102040816326,
+								0.14463276836158193,
+								0.7084548104956269
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 499480538441490,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,163 @@
+{
+	"name": "ES_Global",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "NextLayoutName",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 521535997641993
+		},
+		{
+			"functionName": "GoToLayoutFunction",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "TargetName",
+					"type": "string",
+					"initialValue": "",
+					"comment": "Layout name to go to",
+					"sid": 311578227760118
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 161898123306004,
+					"parameters": {
+						"variable": "NextLayoutName",
+						"value": "TargetName"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CloudWipe1",
+					"sid": 615834890635234,
+					"parameters": {
+						"x": "2941",
+						"y": "624"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CloudWipe2",
+					"sid": 744049617192047,
+					"parameters": {
+						"x": "-1759",
+						"y": "113"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "CloudWipe1",
+					"sid": 821110453659217,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "Self.X - 2000",
+						"y": "Self.Y",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "CloudWipe2",
+					"sid": 100773671760224,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "Self.X + 2000",
+						"y": "Self.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 328514800205560
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-arrived",
+					"objectClass": "CloudWipe1",
+					"sid": 710163734998708,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 377624321615501,
+					"parameters": {
+						"layout": "NextLayoutName"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "CloudWipe1",
+					"sid": 536547125486388,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "Self.X + 2000",
+						"y": "Self.Y",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "CloudWipe2",
+					"sid": 210859198501385,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "Self.X - 2000",
+						"y": "Self.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 578345874989934
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-arrived",
+					"objectClass": "CloudWipe2",
+					"sid": 597598951828819,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "CloudWipe1",
+					"sid": 705891253235092,
+					"parameters": {
+						"x": "2941",
+						"y": "624"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "CloudWipe2",
+					"sid": 790249112086212,
+					"parameters": {
+						"x": "-1759",
+						"y": "113"
+					}
+				}
+			],
+			"sid": 972085535791453
+		}
+	],
+	"sid": 648758802609752
+}

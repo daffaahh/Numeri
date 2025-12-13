@@ -1,0 +1,72 @@
+{
+	"name": "CloudWipe1",
+	"plugin-id": "Sprite",
+	"sid": 285813211793067,
+	"isGlobal": true,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 351434557477108
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 836,
+						"height": 338,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4540313,
+						"collisionPoly": {
+							"points": [
+								0.1423444976076555,
+								0,
+								0.8301435406698564,
+								0.4260355029585799,
+								0.9784688995215312,
+								0.6301775147928994,
+								0.9784688995215312,
+								0.9585798816568047,
+								0.8851674641148325,
+								0.9970414201183432,
+								0.7858851674641149,
+								0.9733727810650887,
+								0.07416267942583732,
+								0.606508875739645,
+								0.025119617224880382,
+								0.5207100591715976,
+								0,
+								0.39349112426035504,
+								0,
+								0.34615384615384615,
+								0.04665071770334928,
+								0.09171597633136094
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 377194405023726,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

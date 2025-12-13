@@ -1,0 +1,11 @@
+# Construct 3 User Specific Files
+*.uistate.json
+.c3proj.user
+
+# Backups & Autosaves
+*.backup
+*.autosave
+
+# OS Junk
+Thumbs.db
+.DS_Store

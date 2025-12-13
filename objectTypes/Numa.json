@@ -1,0 +1,70 @@
+{
+	"name": "Numa",
+	"plugin-id": "Sprite",
+	"sid": 128887541652428,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 736856941155849
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 265,
+						"height": 406,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2727896,
+						"collisionPoly": {
+							"points": [
+								0.4075471698113208,
+								0.05665024630541872,
+								0.660377358490566,
+								0.09359605911330049,
+								0.9622641509433962,
+								0.5344827586206896,
+								0.9622641509433962,
+								0.6083743842364532,
+								0.6867924528301886,
+								0.9064039408866995,
+								0.6377358490566037,
+								0.9285714285714286,
+								0.19622641509433963,
+								0.916256157635468,
+								0.05660377358490566,
+								0.6674876847290641,
+								0.06792452830188679,
+								0.3817733990147783,
+								0.1509433962264151,
+								0.10344827586206896
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 576781704042404,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
