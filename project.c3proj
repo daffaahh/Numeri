@@ -228,6 +228,62 @@
 					}
 				],
 				"name": "Level_2_T3"
+			},
+			{
+				"items": [
+					"bg_level_2_t2"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"jikaBenar_level_2_t2",
+							"jikaWaktuHabis_level_2_t2",
+							"jikaSalahpilih_level_2_t2",
+							"finish_level_2_t2",
+							"motivasi_level_2_t2"
+						],
+						"subfolders": [],
+						"name": "Notifications"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"bener_level_2_t2",
+									"salah2_level_2_t2",
+									"salah3_level_2_t2"
+								],
+								"subfolders": [],
+								"name": "Persegi"
+							}
+						],
+						"name": "Pilihan"
+					},
+					{
+						"items": [
+							"soal_persegi_level_2_t2"
+						],
+						"subfolders": [],
+						"name": "Soal"
+					},
+					{
+						"items": [
+							"dialog_level_2_t2_2",
+							"dialog_level_2_t2_1"
+						],
+						"subfolders": [],
+						"name": "Dialog"
+					},
+					{
+						"items": [
+							"PETUNJUKPERSEGI_level_2_t2"
+						],
+						"subfolders": [],
+						"name": "Petunjuk"
+					}
+				],
+				"name": "Level_2_T2"
 			}
 		]
 	},
@@ -243,6 +299,7 @@
 			"Lay_MainMenu",
 			"Lay_RoadMap",
 			"Lay_Level2_T1",
+			"Lay_Level2_T2",
 			"Lay_Level2_T3"
 		],
 		"subfolders": []
@@ -253,7 +310,8 @@
 			"ES_RoadMap",
 			"ES_Global",
 			"ES_Level2_T1",
-			"ES_Level2_T3"
+			"ES_Level2_T3",
+			"ES_Level2_T2"
 		],
 		"subfolders": []
 	},
