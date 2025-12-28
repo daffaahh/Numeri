@@ -4,7 +4,15 @@
 	"sid": 423334588125608,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "bentukYangDiterima",
+			"type": "string",
+			"desc": "Bentuk yang diterima kotak ini",
+			"show": false,
+			"sid": 100000000000026
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

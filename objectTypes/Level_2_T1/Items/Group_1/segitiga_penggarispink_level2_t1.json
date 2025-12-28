@@ -4,8 +4,27 @@
 	"sid": 136405520369687,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "bentuk",
+			"type": "string",
+			"desc": "Tipe bentuk geometri item ini",
+			"show": false,
+			"sid": 100000000000022
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 100000000000023
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 100000000000024
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

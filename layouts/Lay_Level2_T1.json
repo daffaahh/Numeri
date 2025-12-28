@@ -310,8 +310,22 @@
 					"uid": 13,
 					"sid": 813724548546544,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "persegi"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 813724548546544,
 						"expanded": true
@@ -347,8 +361,22 @@
 					"uid": 18,
 					"sid": 385648537430021,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "segitiga"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 385648537430021,
 						"expanded": true
@@ -384,8 +412,22 @@
 					"uid": 19,
 					"sid": 858902286838114,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "segitiga"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 858902286838114,
 						"expanded": true
@@ -421,8 +463,22 @@
 					"uid": 20,
 					"sid": 870178638936926,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "lingkaran"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 870178638936926,
 						"expanded": true
@@ -458,8 +514,22 @@
 					"uid": 21,
 					"sid": 521460456849545,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "persegi"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 521460456849545,
 						"expanded": true
@@ -495,8 +565,22 @@
 					"uid": 22,
 					"sid": 814246188183495,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "persegi"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 814246188183495,
 						"expanded": true
@@ -532,8 +616,22 @@
 					"uid": 23,
 					"sid": 182402985581263,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "segitiga"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 182402985581263,
 						"expanded": true
@@ -569,8 +667,22 @@
 					"uid": 24,
 					"sid": 623770417886646,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "lingkaran"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 623770417886646,
 						"expanded": true
@@ -606,8 +718,22 @@
 					"uid": 25,
 					"sid": 891617505902526,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"bentuk": "lingkaran"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 891617505902526,
 						"expanded": true
@@ -678,7 +804,9 @@
 					"uid": 15,
 					"sid": 861418670746584,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"bentukYangDiterima": "segitiga"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 861418670746584,
@@ -715,7 +843,9 @@
 					"uid": 16,
 					"sid": 433709697157607,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"bentukYangDiterima": "persegi"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 433709697157607,
@@ -752,7 +882,9 @@
 					"uid": 17,
 					"sid": 984658330618159,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"bentukYangDiterima": "lingkaran"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 984658330618159,
@@ -1094,7 +1226,7 @@
 					"world": {
 						"x": 1915,
 						"y": 1080,
-						"width": 227,
+						"width": 227.00000000000003,
 						"height": 197,
 						"originX": 0.5,
 						"originY": 0.5,
