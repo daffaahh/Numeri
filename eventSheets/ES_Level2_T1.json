@@ -355,7 +355,119 @@
 					}
 				}
 			],
-			"sid": 234567890123473
+			"sid": 234567890123473,
+			"subEvents": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 234567890123494,
+							"parameters": {
+								"variable": "timer",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 234567890123495,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "info_level2_t1",
+							"sid": 234567890123496,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123497,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123498,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 234567890123499,
+							"parameters": {
+								"layout": "\"Lay_RoadMap\""
+							}
+						}
+					],
+					"sid": 234567890123500
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 234567890123501,
+					"parameters": {
+						"variable": "score",
+						"comparison": 0,
+						"value": "totalItems"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 234567890123502,
+					"parameters": {
+						"variable": "gameActive",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "berhasil_level2_t1",
+					"sid": 234567890123503,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 234567890123504,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 234567890123505,
+					"parameters": {
+						"layout": "\"Lay_RoadMap\""
+					}
+				}
+			],
+			"sid": 234567890123506
 		},
 		{
 			"eventType": "group",
@@ -520,6 +632,30 @@
 					],
 					"actions": [
 						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123600,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123601,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123602,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "persegi_jendela_level2_t1",
 							"sid": 702405562563571,
@@ -552,6 +688,30 @@
 					],
 					"actions": [
 						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123603,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123604,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123605,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "persegi_buku_level2_t1",
 							"sid": 702405562563572,
@@ -583,6 +743,30 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123606,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123607,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123608,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
 						{
 							"id": "set-position",
 							"objectClass": "persegi_whiteboard_level2_t1",
@@ -761,6 +945,30 @@
 					],
 					"actions": [
 						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123609,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123610,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123611,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "segitiga_level2_t1",
 							"sid": 702405562563574,
@@ -793,6 +1001,30 @@
 					],
 					"actions": [
 						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123612,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123613,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123614,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
 							"sid": 702405562563575,
@@ -824,6 +1056,30 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123615,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123616,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123617,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
 						{
 							"id": "set-position",
 							"objectClass": "segitiga_penggarispink_level2_t1",
@@ -1002,6 +1258,30 @@
 					],
 					"actions": [
 						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123618,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123619,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123620,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "ling_bola_level2_t1",
 							"sid": 702405562563577,
@@ -1034,6 +1314,30 @@
 					],
 					"actions": [
 						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123621,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123622,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123623,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "ling_cermin_level2_t1",
 							"sid": 702405562563578,
@@ -1065,6 +1369,30 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123624,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 234567890123625,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 234567890123626,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
 						{
 							"id": "set-position",
 							"objectClass": "ling_jam_level2_t1",
