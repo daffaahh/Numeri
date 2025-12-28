@@ -402,7 +402,8 @@
 							"objectClass": "System",
 							"sid": 234567890123498,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "2",
+								"use-timescale": true
 							}
 						},
 						{
@@ -455,7 +456,8 @@
 					"objectClass": "System",
 					"sid": 234567890123504,
 					"parameters": {
-						"seconds": "3"
+						"seconds": "3",
+						"use-timescale": true
 					}
 				},
 				{
@@ -644,7 +646,8 @@
 							"objectClass": "System",
 							"sid": 234567890123601,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -700,7 +703,8 @@
 							"objectClass": "System",
 							"sid": 234567890123604,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -756,7 +760,8 @@
 							"objectClass": "System",
 							"sid": 234567890123607,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -957,7 +962,8 @@
 							"objectClass": "System",
 							"sid": 234567890123610,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -1013,7 +1019,8 @@
 							"objectClass": "System",
 							"sid": 234567890123613,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -1069,7 +1076,8 @@
 							"objectClass": "System",
 							"sid": 234567890123616,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -1270,7 +1278,8 @@
 							"objectClass": "System",
 							"sid": 234567890123619,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -1326,7 +1335,8 @@
 							"objectClass": "System",
 							"sid": 234567890123622,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
@@ -1382,7 +1392,8 @@
 							"objectClass": "System",
 							"sid": 234567890123625,
 							"parameters": {
-								"seconds": "0.5"
+								"seconds": "0.5",
+								"use-timescale": true
 							}
 						},
 						{
