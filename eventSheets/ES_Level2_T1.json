@@ -194,6 +194,315 @@
 				}
 			],
 			"sid": 234567890123473
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Drag & Drop - Persegi",
+			"description": "Event drag drop untuk 3 items persegi",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "persegi_jendela_level2_t1",
+							"sid": 185154121734300,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "persegi_jendela_level2_t1",
+							"sid": 557698110452610,
+							"parameters": {
+								"object": "kotak_persegi_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "persegi_jendela_level2_t1",
+							"sid": 702405562563544,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673581
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "persegi_buku_level2_t1",
+							"sid": 185154121734301,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "persegi_buku_level2_t1",
+							"sid": 557698110452611,
+							"parameters": {
+								"object": "kotak_persegi_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "persegi_buku_level2_t1",
+							"sid": 702405562563545,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673582
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "persegi_whiteboard_level2_t1",
+							"sid": 185154121734302,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "persegi_whiteboard_level2_t1",
+							"sid": 557698110452612,
+							"parameters": {
+								"object": "kotak_persegi_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "persegi_whiteboard_level2_t1",
+							"sid": 702405562563546,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673583
+				}
+			],
+			"sid": 409712131882954
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Drag & Drop - Segitiga",
+			"description": "Event drag drop untuk 3 items segitiga",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "segitiga_level2_t1",
+							"sid": 185154121734303,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "segitiga_level2_t1",
+							"sid": 557698110452613,
+							"parameters": {
+								"object": "kotak_segitiga_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "segitiga_level2_t1",
+							"sid": 702405562563547,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673584
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "segitiga_penggariskuning_level2_t1",
+							"sid": 185154121734304,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "segitiga_penggariskuning_level2_t1",
+							"sid": 557698110452614,
+							"parameters": {
+								"object": "kotak_segitiga_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "segitiga_penggariskuning_level2_t1",
+							"sid": 702405562563548,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "segitiga_penggarispink_level2_t1",
+							"sid": 185154121734305,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "segitiga_penggarispink_level2_t1",
+							"sid": 557698110452615,
+							"parameters": {
+								"object": "kotak_segitiga_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "segitiga_penggarispink_level2_t1",
+							"sid": 702405562563549,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673586
+				}
+			],
+			"sid": 409712131882955
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Drag & Drop - Lingkaran",
+			"description": "Event drag drop untuk 3 items lingkaran",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "ling_bola_level2_t1",
+							"sid": 185154121734306,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "ling_bola_level2_t1",
+							"sid": 557698110452616,
+							"parameters": {
+								"object": "kotak_lingkaran_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "ling_bola_level2_t1",
+							"sid": 702405562563550,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673587
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "ling_cermin_level2_t1",
+							"sid": 185154121734307,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "ling_cermin_level2_t1",
+							"sid": 557698110452617,
+							"parameters": {
+								"object": "kotak_lingkaran_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "ling_cermin_level2_t1",
+							"sid": 702405562563551,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673588
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "ling_jam_level2_t1",
+							"sid": 185154121734308,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "ling_jam_level2_t1",
+							"sid": 557698110452618,
+							"parameters": {
+								"object": "kotak_lingkaran_t1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "ling_jam_level2_t1",
+							"sid": 702405562563552,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 814850357673589
+				}
+			],
+			"sid": 409712131882956
 		}
 	],
 	"sid": 106789448648930
