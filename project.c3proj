@@ -176,6 +176,58 @@
 					}
 				],
 				"name": "Level_2_T1"
+			},
+			{
+				"items": [
+					"dialog_level_2_t3",
+					"rumahselesaidisusun_level_2_t3",
+					"bghitam_level_2_t3",
+					"bg_level_2_t3",
+					"judul_level_2_t3"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"layang_level_2_t3",
+							"jendela_level_2_t3",
+							"pintu_level_2_t3",
+							"atas_stiga_level_2_t3",
+							"polygon_level_2_t3",
+							"atap_pg_level_2_t3",
+							"tangga_level_2_t3",
+							"kunci_level_2_t3",
+							"dinding_level_2_t3"
+						],
+						"subfolders": [],
+						"name": "Items"
+					},
+					{
+						"items": [
+							"tap2_sering_level_2_t3",
+							"berhasil_level_2_t3",
+							"benar_level_2_t3",
+							"cobalagi_level_2_t3"
+						],
+						"subfolders": [],
+						"name": "Notifications"
+					},
+					{
+						"items": [
+							"numa_level_2_t3",
+							"numi_level_2_t3"
+						],
+						"subfolders": [],
+						"name": "Maskot"
+					},
+					{
+						"items": [
+							"target_level_2_t3"
+						],
+						"subfolders": [],
+						"name": "Target"
+					}
+				],
+				"name": "Level_2_T3"
 			}
 		]
 	},
@@ -190,7 +242,8 @@
 		"items": [
 			"Lay_MainMenu",
 			"Lay_RoadMap",
-			"Lay_Level2_T1"
+			"Lay_Level2_T1",
+			"Lay_Level2_T3"
 		],
 		"subfolders": []
 	},
@@ -199,7 +252,8 @@
 			"ES_MainMenu",
 			"ES_RoadMap",
 			"ES_Global",
-			"ES_Level2_T1"
+			"ES_Level2_T1",
+			"ES_Level2_T3"
 		],
 		"subfolders": []
 	},
