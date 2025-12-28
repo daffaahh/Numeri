@@ -1,5 +1,200 @@
 {
 	"name": "ES_Level2_T1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
+			"eventType": "variable",
+			"name": "timer",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "Timer countdown dalam detik (2 menit)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 234567890123456
+		},
+		{
+			"eventType": "variable",
+			"name": "score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Jumlah item yang berhasil dikelompokkan",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 234567890123457
+		},
+		{
+			"eventType": "variable",
+			"name": "totalItems",
+			"type": "number",
+			"initialValue": "9",
+			"comment": "Total item yang harus dikelompokkan (Group 1)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 234567890123458
+		},
+		{
+			"eventType": "variable",
+			"name": "gameActive",
+			"type": "boolean",
+			"initialValue": "0",
+			"comment": "Status apakah game sedang berjalan",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 234567890123459
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 234567890123460
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "info_level2_t1",
+					"sid": 234567890123461,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "berhasil_level2_t1",
+					"sid": 234567890123462,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "gagal_level2_t1",
+					"sid": 234567890123463,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 234567890123464,
+					"parameters": {
+						"variable": "timer",
+						"value": "120"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 234567890123465,
+					"parameters": {
+						"variable": "score",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 234567890123466,
+					"parameters": {
+						"variable": "gameActive",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "waktu_text_level2",
+					"sid": 234567890123486,
+					"parameters": {
+						"text": "\"02:00\""
+					}
+				}
+			],
+			"sid": 234567890123468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 234567890123469
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "info_level2_t1",
+					"sid": 234567890123481
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "info_level2_t1",
+					"sid": 234567890123482,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 234567890123483,
+					"parameters": {
+						"variable": "gameActive",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 234567890123484
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 234567890123470,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 234567890123471,
+					"parameters": {
+						"variable": "gameActive",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 234567890123472,
+					"parameters": {
+						"variable": "timer",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "waktu_text_level2",
+					"sid": 234567890123487,
+					"parameters": {
+						"text": "zeropad(floor(timer / 60), 2) & \":\" & zeropad(timer % 60, 2)"
+					}
+				}
+			],
+			"sid": 234567890123473
+		}
+	],
 	"sid": 106789448648930
 }
