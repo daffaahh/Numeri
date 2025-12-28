@@ -11,6 +11,20 @@
 			"desc": "Tipe bentuk geometri item ini",
 			"show": true,
 			"sid": 913941221601314
+		},
+		{
+			"name": "X_origin",
+			"type": "number",
+			"desc": "Save X position saat game start",
+			"show": true,
+			"sid": 857169012079279
+		},
+		{
+			"name": "Y_origin",
+			"type": "number",
+			"desc": "Save Y position saat game start",
+			"show": true,
+			"sid": 215108997308546
 		}
 	],
 	"behaviorTypes": [

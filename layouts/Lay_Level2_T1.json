@@ -311,7 +311,9 @@
 					"sid": 813724548546544,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "persegi"
+						"bentuk": "persegi",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -362,7 +364,9 @@
 					"sid": 385648537430021,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "segitiga"
+						"bentuk": "segitiga",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -413,7 +417,9 @@
 					"sid": 858902286838114,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "segitiga"
+						"bentuk": "segitiga",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -464,7 +470,9 @@
 					"sid": 870178638936926,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "lingkaran"
+						"bentuk": "lingkaran",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -515,7 +523,9 @@
 					"sid": 521460456849545,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "persegi"
+						"bentuk": "persegi",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -566,7 +576,9 @@
 					"sid": 814246188183495,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "persegi"
+						"bentuk": "persegi",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -617,7 +629,9 @@
 					"sid": 182402985581263,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "segitiga"
+						"bentuk": "segitiga",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -668,7 +682,9 @@
 					"sid": 623770417886646,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "lingkaran"
+						"bentuk": "lingkaran",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -719,7 +735,9 @@
 					"sid": 891617505902526,
 					"tags": "",
 					"instanceVariables": {
-						"bentuk": "lingkaran"
+						"bentuk": "lingkaran",
+						"X_origin": 0,
+						"Y_origin": 0
 					},
 					"behaviors": {
 						"DragDrop": {

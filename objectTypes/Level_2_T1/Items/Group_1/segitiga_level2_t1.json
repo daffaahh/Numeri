@@ -9,8 +9,22 @@
 			"name": "bentuk",
 			"type": "string",
 			"desc": "Tipe bentuk geometri item ini",
-			"show": false,
+			"show": true,
 			"sid": 100000000000016
+		},
+		{
+			"name": "X_origin",
+			"type": "number",
+			"desc": "Posisi X awal item untuk return saat drop salah",
+			"show": true,
+			"sid": 939703366450008
+		},
+		{
+			"name": "Y_origin",
+			"type": "number",
+			"desc": "Posisi Y awal item untuk return saat drop salah",
+			"show": true,
+			"sid": 600094754032696
 		}
 	],
 	"behaviorTypes": [
