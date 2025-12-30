@@ -8,7 +8,427 @@
 			"description": "Setup awal layout, hide notifications, save posisi origin & target untuk semua komponen",
 			"isActiveOnStart": true,
 			"sid": 570385299440260,
-			"children": []
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "componentsPlaced",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "Jumlah komponen yang sudah terpasang dengan benar",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 570385299440268
+				},
+				{
+					"eventType": "variable",
+					"name": "totalComponents",
+					"type": "number",
+					"initialValue": "9",
+					"comment": "Total komponen rumah yang harus dipasang",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 570385299440269
+				},
+				{
+					"eventType": "variable",
+					"name": "gameActive",
+					"type": "boolean",
+					"initialValue": "0",
+					"comment": "Status apakah game sedang berjalan",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 570385299440270
+				},
+				{
+					"eventType": "variable",
+					"name": "showReference",
+					"type": "boolean",
+					"initialValue": "1",
+					"comment": "Toggle tampilan referensi rumah",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 570385299440271
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 570385299440272
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "bg_level_2_t3",
+							"sid": 570385299440273,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bghitam_level_2_t3",
+							"sid": 570385299440274,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "judul_level_2_t3",
+							"sid": 570385299440275,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "dialog_level_2_t3",
+							"sid": 570385299440276,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "rumahselesaidisusun_level_2_t3",
+							"sid": 570385299440277,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "benar_level_2_t3",
+							"sid": 570385299440278,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "berhasil_level_2_t3",
+							"sid": 570385299440279,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "cobalagi_level_2_t3",
+							"sid": 570385299440280,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "tap2_sering_level_2_t3",
+							"sid": 570385299440281,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "numa_level_2_t3",
+							"sid": 570385299440282,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "numi_level_2_t3",
+							"sid": 570385299440283,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 570385299440284,
+							"parameters": {
+								"variable": "componentsPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 570385299440285,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 570385299440286
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 570385299440287
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "dinding_level_2_t3",
+							"sid": 570385299440288,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "dinding_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "dinding_level_2_t3",
+							"sid": 570385299440289,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "dinding_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "dinding_level_2_t3",
+							"sid": 570385299440290,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "pintu_level_2_t3",
+							"sid": 570385299440291,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "pintu_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "pintu_level_2_t3",
+							"sid": 570385299440292,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "pintu_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "pintu_level_2_t3",
+							"sid": 570385299440293,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "jendela_level_2_t3",
+							"sid": 570385299440294,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "jendela_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "jendela_level_2_t3",
+							"sid": 570385299440295,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "jendela_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "jendela_level_2_t3",
+							"sid": 570385299440296,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "tangga_level_2_t3",
+							"sid": 570385299440297,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "tangga_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "tangga_level_2_t3",
+							"sid": 570385299440298,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "tangga_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "tangga_level_2_t3",
+							"sid": 570385299440299,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "atap_pg_level_2_t3",
+							"sid": 570385299440300,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "atap_pg_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "atap_pg_level_2_t3",
+							"sid": 570385299440301,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "atap_pg_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "atap_pg_level_2_t3",
+							"sid": 570385299440302,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "atas_stiga_level_2_t3",
+							"sid": 570385299440303,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "atas_stiga_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "atas_stiga_level_2_t3",
+							"sid": 570385299440304,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "atas_stiga_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "atas_stiga_level_2_t3",
+							"sid": 570385299440305,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "kunci_level_2_t3",
+							"sid": 570385299440306,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "kunci_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "kunci_level_2_t3",
+							"sid": 570385299440307,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "kunci_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "kunci_level_2_t3",
+							"sid": 570385299440308,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "layang_level_2_t3",
+							"sid": 570385299440309,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "layang_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "layang_level_2_t3",
+							"sid": 570385299440310,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "layang_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "layang_level_2_t3",
+							"sid": 570385299440311,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "polygon_level_2_t3",
+							"sid": 570385299440312,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "polygon_level_2_t3.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "polygon_level_2_t3",
+							"sid": 570385299440313,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "polygon_level_2_t3.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "polygon_level_2_t3",
+							"sid": 570385299440314,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 570385299440315
+				},
+				{
+					"eventType": "comment",
+					"text": "Catatan: X_target & Y_target untuk setiap komponen sudah di-set manual di layout.\nPosisi awal komponen (X_origin, Y_origin) disimpan saat start untuk reset jika salah drop."
+				}
+			]
 		},
 		{
 			"eventType": "group",
@@ -17,7 +437,68 @@
 			"description": "Mulai game setelah player klik dialog intro, show referensi rumah",
 			"isActiveOnStart": true,
 			"sid": 570385299440261,
-			"children": []
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 570385299440316,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "dialog_level_2_t3"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "dialog_level_2_t3",
+							"sid": 570385299440317
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "dialog_level_2_t3",
+							"sid": 570385299440318,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "rumahselesaidisusun_level_2_t3",
+							"sid": 570385299440319,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "rumahselesaidisusun_level_2_t3",
+							"sid": 570385299440320,
+							"parameters": {
+								"opacity": "50"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 570385299440321,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 570385299440322
+				},
+				{
+					"eventType": "comment",
+					"text": "Player klik dialog untuk mulai game. Referensi rumah ditampilkan semi-transparan sebagai panduan."
+				}
+			]
 		},
 		{
 			"eventType": "group",
@@ -76,3 +557,4 @@
 	],
 	"sid": 570385299440259
 }
+
