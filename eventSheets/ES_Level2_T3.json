@@ -1,5 +1,78 @@
 {
 	"name": "ES_Level2_T3",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 1 - System Initialization",
+			"description": "Setup awal layout, hide notifications, save posisi origin & target untuk semua komponen",
+			"isActiveOnStart": true,
+			"sid": 570385299440260,
+			"children": []
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 2 - Game Start",
+			"description": "Mulai game setelah player klik dialog intro, show referensi rumah",
+			"isActiveOnStart": true,
+			"sid": 570385299440261,
+			"children": []
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 3 - Drag & Drop Mechanics",
+			"description": "Handle drag & drop untuk 9 komponen: dinding, pintu, jendela, tangga, atap_pg, atas_stiga, kunci, layang, polygon",
+			"isActiveOnStart": true,
+			"sid": 570385299440262,
+			"children": []
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 4 - Win Condition",
+			"description": "Detect kemenangan (9 komponen terpasang) dan navigasi ke RoadMap",
+			"isActiveOnStart": true,
+			"sid": 570385299440263,
+			"children": []
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 5 - Maskot Dialog System",
+			"description": "Memberikan hints & feedback lewat maskot (Numa & Numi) pada berbagai progress points",
+			"isActiveOnStart": true,
+			"sid": 570385299440264,
+			"children": []
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 6 - UI Controls",
+			"description": "Handle toggle reference rumah dan controls lainnya",
+			"isActiveOnStart": true,
+			"sid": 570385299440265,
+			"children": []
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 7 - Notifications Management",
+			"description": "Auto-hide notifications (benar, cobalagi, tap2_sering) setelah beberapa detik",
+			"isActiveOnStart": true,
+			"sid": 570385299440266,
+			"children": []
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 8 - Animations & Effects",
+			"description": "Particle effects, sound effects, hover animations (optional polish phase)",
+			"isActiveOnStart": true,
+			"sid": 570385299440267,
+			"children": []
+		}
+	],
 	"sid": 570385299440259
 }
