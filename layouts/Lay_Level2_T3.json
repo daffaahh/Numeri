@@ -419,8 +419,27 @@
 					"uid": 39,
 					"sid": 468058084457357,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "pintu",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 600,
+						"Y_target": 450,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 468058084457357,
 						"expanded": true
@@ -456,8 +475,27 @@
 					"uid": 40,
 					"sid": 183219189442121,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "atap_segitiga",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 600,
+						"Y_target": 220,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 183219189442121,
 						"expanded": true
@@ -493,8 +531,27 @@
 					"uid": 41,
 					"sid": 804270565112108,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "tangga",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 600,
+						"Y_target": 500,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 804270565112108,
 						"expanded": true
@@ -530,8 +587,27 @@
 					"uid": 42,
 					"sid": 376447749380114,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "atap_persegi",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 600,
+						"Y_target": 300,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 376447749380114,
 						"expanded": true
@@ -567,8 +643,27 @@
 					"uid": 43,
 					"sid": 966705168987038,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "polygon",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 700,
+						"Y_target": 250,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 966705168987038,
 						"expanded": true
@@ -604,8 +699,27 @@
 					"uid": 44,
 					"sid": 394404737628199,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "kunci",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 620,
+						"Y_target": 450,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 394404737628199,
 						"expanded": true
@@ -641,8 +755,27 @@
 					"uid": 47,
 					"sid": 401237152355327,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "dinding",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 600,
+						"Y_target": 400,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 401237152355327,
 						"expanded": true
@@ -678,8 +811,27 @@
 					"uid": 48,
 					"sid": 249832602633968,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "layang",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 500,
+						"Y_target": 250,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 249832602633968,
 						"expanded": true
@@ -715,8 +867,27 @@
 					"uid": 49,
 					"sid": 558329247796737,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"componentType": "pintu",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 550,
+						"Y_target": 350,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 558329247796737,
 						"expanded": true

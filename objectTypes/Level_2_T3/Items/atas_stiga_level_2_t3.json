@@ -4,8 +4,62 @@
 	"sid": 392940357457563,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "componentType",
+			"type": "string",
+			"desc": "Tipe komponen (atap_segitiga)",
+			"show": true,
+			"sid": 845483457467104
+		},
+		{
+			"name": "X_origin",
+			"type": "number",
+			"desc": "Posisi awal X (untuk reset saat salah drop)",
+			"show": true,
+			"sid": 249645840537089
+		},
+		{
+			"name": "Y_origin",
+			"type": "number",
+			"desc": "Posisi awal Y (untuk reset saat salah drop)",
+			"show": true,
+			"sid": 167860471143502
+		},
+		{
+			"name": "X_target",
+			"type": "number",
+			"desc": "Posisi target X yang benar (snap position)",
+			"show": true,
+			"sid": 748095827038656
+		},
+		{
+			"name": "Y_target",
+			"type": "number",
+			"desc": "Posisi target Y yang benar (snap position)",
+			"show": true,
+			"sid": 165864742918671
+		},
+		{
+			"name": "isPlaced",
+			"type": "boolean",
+			"desc": "Status sudah terpasang dengan benar atau belum",
+			"show": true,
+			"sid": 262395955712409
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 784916477055305
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 702921933256233
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
