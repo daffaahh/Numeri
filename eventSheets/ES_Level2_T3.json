@@ -2,6 +2,46 @@
 	"name": "ES_Level2_T3",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "componentsPlaced",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Jumlah komponen yang sudah terpasang dengan benar",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570385299440268
+		},
+		{
+			"eventType": "variable",
+			"name": "totalComponents",
+			"type": "number",
+			"initialValue": "9",
+			"comment": "Total komponen rumah yang harus dipasang",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570385299440269
+		},
+		{
+			"eventType": "variable",
+			"name": "gameActive",
+			"type": "boolean",
+			"initialValue": "0",
+			"comment": "Status apakah game sedang berjalan",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570385299440270
+		},
+		{
+			"eventType": "variable",
+			"name": "showReference",
+			"type": "boolean",
+			"initialValue": "1",
+			"comment": "Toggle tampilan referensi rumah",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570385299440271
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Group 1 - System Initialization",
@@ -9,46 +49,6 @@
 			"isActiveOnStart": true,
 			"sid": 570385299440260,
 			"children": [
-				{
-					"eventType": "variable",
-					"name": "componentsPlaced",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "Jumlah komponen yang sudah terpasang dengan benar",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 570385299440268
-				},
-				{
-					"eventType": "variable",
-					"name": "totalComponents",
-					"type": "number",
-					"initialValue": "9",
-					"comment": "Total komponen rumah yang harus dipasang",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 570385299440269
-				},
-				{
-					"eventType": "variable",
-					"name": "gameActive",
-					"type": "boolean",
-					"initialValue": "0",
-					"comment": "Status apakah game sedang berjalan",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 570385299440270
-				},
-				{
-					"eventType": "variable",
-					"name": "showReference",
-					"type": "boolean",
-					"initialValue": "1",
-					"comment": "Toggle tampilan referensi rumah",
-					"isStatic": false,
-					"isConstant": false,
-					"sid": 570385299440271
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -507,7 +507,167 @@
 			"description": "Handle drag & drop untuk 9 komponen: dinding, pintu, jendela, tangga, atap_pg, atas_stiga, kunci, layang, polygon",
 			"isActiveOnStart": true,
 			"sid": 570385299440262,
-			"children": []
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 1: DINDING (Template untuk duplikasi 8 komponen lainnya) ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "dinding_level_2_t3",
+							"sid": 570385299440323,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "dinding_level_2_t3",
+							"sid": 570385299440325,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 570385299440333,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 570385299440324,
+									"parameters": {
+										"first-value": "distance(dinding_level_2_t3.X, dinding_level_2_t3.Y, dinding_level_2_t3.X_target, dinding_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "50"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "dinding_level_2_t3",
+									"sid": 570385299440326,
+									"parameters": {
+										"x": "dinding_level_2_t3.X_target",
+										"y": "dinding_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "dinding_level_2_t3",
+									"sid": 570385299440327,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "dinding_level_2_t3",
+									"sid": 570385299440328,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 570385299440329,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 570385299440330,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 570385299440331,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 570385299440332,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 570385299440341
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 570385299440335
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "dinding_level_2_t3",
+									"sid": 570385299440336,
+									"parameters": {
+										"x": "dinding_level_2_t3.X_origin",
+										"y": "dinding_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 570385299440337,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 570385299440338,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 570385299440339,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 570385299440340
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Cara duplikasi via UI Construct 3:\n1. Klik kanan pada Event 'On drop + isPlaced=0' → Duplicate\n2. Ganti semua 'dinding_level_2_t3' dengan nama komponen berikutnya (misal 'pintu_level_2_t3')\n3. Sub-event distance < 50 → BENAR (snap ke target)\n4. Sub-event Else → SALAH (kembali ke origin)\n5. Lakukan untuk 8 komponen lainnya: pintu, jendela, tangga, atap_pg, atas_stiga, kunci, layang, polygon"
+				}
+			]
 		},
 		{
 			"eventType": "group",
@@ -557,4 +717,5 @@
 	],
 	"sid": 570385299440259
 }
+
 
