@@ -4,7 +4,15 @@
 	"sid": 554114455666745,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "isCorrect",
+			"type": "boolean",
+			"desc": "Apakah ini jawaban yang benar",
+			"show": true,
+			"sid": 822362702481090
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

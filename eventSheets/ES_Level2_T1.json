@@ -465,7 +465,7 @@
 					"objectClass": "System",
 					"sid": 234567890123505,
 					"parameters": {
-						"layout": "\"Lay_RoadMap\""
+						"layout": "\"Lay_Level2_T2\""
 					}
 				}
 			],
