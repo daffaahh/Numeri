@@ -5,7 +5,18 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 246891943453661
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 572628109750521
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

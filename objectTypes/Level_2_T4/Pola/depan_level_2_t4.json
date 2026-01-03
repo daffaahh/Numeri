@@ -4,7 +4,15 @@
 	"sid": 168307086080381,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "direction",
+			"type": "string",
+			"desc": "Biru ↑",
+			"show": true,
+			"sid": 732645295344502
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

@@ -56,7 +56,23 @@
 					"sid": 158733398372970,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 158733398372970,
 						"expanded": true
@@ -76,7 +92,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 6.264983703416556,
 						"zElevation": 0
 					}
 				},
@@ -93,7 +109,23 @@
 					"sid": 951998088702348,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 951998088702348,
 						"expanded": true
@@ -130,7 +162,23 @@
 					"sid": 594840452396631,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 594840452396631,
 						"expanded": true
@@ -167,7 +215,23 @@
 					"sid": 389348069535809,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 389348069535809,
 						"expanded": true
@@ -203,7 +267,9 @@
 					"uid": 78,
 					"sid": 287756422409719,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"direction": "kanan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 287756422409719,
@@ -240,7 +306,9 @@
 					"uid": 79,
 					"sid": 858531858233109,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"direction": "kiri"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 858531858233109,
@@ -277,8 +345,26 @@
 					"uid": 80,
 					"sid": 564088998071411,
 					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"direction": "belakang"
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 564088998071411,
 						"expanded": true
@@ -314,7 +400,9 @@
 					"uid": 81,
 					"sid": 322632067130677,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"direction": "depan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 322632067130677,
@@ -351,7 +439,9 @@
 					"uid": 82,
 					"sid": 838387036092744,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": ""
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 838387036092744,
@@ -388,7 +478,9 @@
 					"uid": 83,
 					"sid": 136631312768288,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": "depan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 136631312768288,
@@ -425,7 +517,9 @@
 					"uid": 84,
 					"sid": 177062943420458,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": "kanan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 177062943420458,
@@ -462,7 +556,9 @@
 					"uid": 85,
 					"sid": 391915392478471,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": "depan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 391915392478471,
@@ -499,7 +595,9 @@
 					"uid": 86,
 					"sid": 914226924619341,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": "kanan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 914226924619341,
@@ -536,7 +634,9 @@
 					"uid": 87,
 					"sid": 183182063179264,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": "depan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 183182063179264,
@@ -573,7 +673,9 @@
 					"uid": 88,
 					"sid": 991560371364285,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": "kanan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 991560371364285,
@@ -610,7 +712,9 @@
 					"uid": 89,
 					"sid": 750411052009841,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"correctAnswer": "depan"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 750411052009841,

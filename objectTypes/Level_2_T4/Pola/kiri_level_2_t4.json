@@ -4,7 +4,15 @@
 	"sid": 525429757131419,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "direction",
+			"type": "string",
+			"desc": "Kuning ←",
+			"show": true,
+			"sid": 941553543391255
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {

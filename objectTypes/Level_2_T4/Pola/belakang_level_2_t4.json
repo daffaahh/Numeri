@@ -4,8 +4,27 @@
 	"sid": 218695666206878,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "direction",
+			"type": "string",
+			"desc": "Merah ↓",
+			"show": true,
+			"sid": 936486166088866
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 600660090681446
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 191597746411780
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

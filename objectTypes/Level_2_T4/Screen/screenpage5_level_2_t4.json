@@ -4,7 +4,15 @@
 	"sid": 570655778903536,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "correctAnswer",
+			"type": "string",
+			"desc": "Numi menghadap kanan",
+			"show": true,
+			"sid": 651178332080417
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
