@@ -1,5 +1,103 @@
 {
 	"name": "ES_Level2_T4",
-	"events": [],
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "===== LEVEL 2 T4 - SCROLL CAMERA TEST ====="
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 141708704191732
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 141708704191733,
+					"parameters": {
+						"x": "640",
+						"y": "360"
+					}
+				}
+			],
+			"sid": 141708704191734
+		},
+		{
+			"eventType": "comment",
+			"text": "Klik dialog → scroll ke screenpage1"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 458729346785563,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "dialog_level_2_t4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "dialog_level_2_t4",
+					"sid": 141708704191735,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 141708704191736,
+					"parameters": {
+						"x": "screenpage1_level_2_t4.X",
+						"y": "screenpage1_level_2_t4.Y"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "kanan_level_2_t4",
+					"sid": 141708704191738,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "kiri_level_2_t4",
+					"sid": 141708704191739,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "depan_level_2_t4",
+					"sid": 141708704191740,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "belakang_level_2_t4",
+					"sid": 141708704191741,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 141708704191737
+		}
+	],
 	"sid": 141708704191731
 }
