@@ -221,7 +221,8 @@
 					},
 					{
 						"items": [
-							"target_level_2_t3"
+							"target_level_2_t3",
+							"target_level_2_t3_selesai"
 						],
 						"subfolders": [],
 						"name": "Target"
