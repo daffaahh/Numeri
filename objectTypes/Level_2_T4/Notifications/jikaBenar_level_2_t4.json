@@ -1,20 +1,20 @@
 {
 	"name": "jikaBenar_level_2_t4",
 	"plugin-id": "Sprite",
-	"sid": 519482351257222,
+	"sid": 250069041894308,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Tween",
-			"name": "Tween",
-			"sid": 246891943453661
-		},
-		{
 			"behaviorId": "Fade",
 			"name": "Fade",
-			"sid": 572628109750521
+			"sid": 315718290367586
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 637604150763749
 		}
 	],
 	"effectTypes": [],
@@ -23,21 +23,21 @@
 			{
 				"frames": [
 					{
-						"width": 1131,
-						"height": 578,
+						"width": 1023,
+						"height": 629,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7223502,
+						"imageSpriteId": 342346,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 883902379956951,
+				"sid": 279556638390406,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

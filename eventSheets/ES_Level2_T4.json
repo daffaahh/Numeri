@@ -2,101 +2,1379 @@
 	"name": "ES_Level2_T4",
 	"events": [
 		{
-			"eventType": "comment",
-			"text": "===== LEVEL 2 T4 - SCROLL CAMERA TEST ====="
+			"eventType": "include",
+			"includeSheet": "ES_Global"
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 141708704191732
-				}
-			],
-			"actions": [
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 141708704191733,
-					"parameters": {
-						"x": "640",
-						"y": "360"
-					}
-				}
-			],
-			"sid": 141708704191734
+			"eventType": "variable",
+			"name": "currentScreen",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "Screen/soal saat ini (1-8)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 141708704191750
 		},
 		{
-			"eventType": "comment",
-			"text": "Klik dialog → scroll ke screenpage1"
+			"eventType": "variable",
+			"name": "totalScreens",
+			"type": "number",
+			"initialValue": "8",
+			"comment": "Total jumlah screen/soal",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 141708704191751
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "variable",
+			"name": "correctAnswers",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Jumlah jawaban benar",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 141708704191752
+		},
+		{
+			"eventType": "variable",
+			"name": "gameActive",
+			"type": "boolean",
+			"initialValue": "0",
+			"comment": "Status apakah game sedang berjalan",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 141708704191753
+		},
+		{
+			"eventType": "variable",
+			"name": "timer",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "Timer countdown dalam detik (2 menit)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 141708704191754
+		},
+		{
+			"eventType": "variable",
+			"name": "notifShowing",
+			"type": "boolean",
+			"initialValue": "0",
+			"comment": "Flag untuk mencegah notifikasi menumpuk (0=tidak ada, 1=sedang tampil)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 141708704191755
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 1 - System Initialization",
+			"description": "Setup awal layout: hide semua objects, set initial state, show dialog intro",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 458729346785563,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "dialog_level_2_t4"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 141708704191800
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704191801,
+							"parameters": {
+								"variable": "currentScreen",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704191802,
+							"parameters": {
+								"variable": "correctAnswers",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704191803,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704191804,
+							"parameters": {
+								"variable": "timer",
+								"value": "120"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "dialog_level_2_t4",
+							"sid": 141708704191805,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage1_level_2_t4",
+							"sid": 141708704191806,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage2_level_2_t4",
+							"sid": 141708704191807,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage3_level_2_t4",
+							"sid": 141708704191808,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage4_level_2_t4",
+							"sid": 141708704191809,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage5_level_2_t4",
+							"sid": 141708704191810,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage6_level_2_t4",
+							"sid": 141708704191811,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage7_level_2_t4",
+							"sid": 141708704191812,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage8_level_2_t4",
+							"sid": 141708704191813,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "kanan_level_2_t4",
+							"sid": 141708704191814,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "kiri_level_2_t4",
+							"sid": 141708704191815,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "depan_level_2_t4",
+							"sid": 141708704191816,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "belakang_level_2_t4",
+							"sid": 141708704191817,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "motivasi_level_2_t4",
+							"sid": 141708704191818,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaBenar_level_2_t4",
+							"sid": 141708704191819,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 815992938043552,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "finish_level_2_t4",
+							"sid": 141708704191820,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 141708704191822,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191823
 				}
 			],
-			"actions": [
+			"sid": 141708704191760
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 2 - Dialog Flow",
+			"description": "Handle klik dialog untuk memulai game",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "set-visible",
-					"objectClass": "dialog_level_2_t4",
-					"sid": 141708704191735,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 141708704191736,
-					"parameters": {
-						"x": "screenpage1_level_2_t4.X",
-						"y": "screenpage1_level_2_t4.Y"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "kanan_level_2_t4",
-					"sid": 141708704191738,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "kiri_level_2_t4",
-					"sid": 141708704191739,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "depan_level_2_t4",
-					"sid": 141708704191740,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "belakang_level_2_t4",
-					"sid": 141708704191741,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 141708704191830,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "dialog_level_2_t4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "dialog_level_2_t4",
+							"sid": 141708704191831,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704191832,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage1_level_2_t4",
+							"sid": 141708704191833,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "kanan_level_2_t4",
+							"sid": 141708704191834,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "kiri_level_2_t4",
+							"sid": 141708704191835,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "depan_level_2_t4",
+							"sid": 141708704191836,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "belakang_level_2_t4",
+							"sid": 141708704191837,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage1_level_2_t4",
+							"sid": 141708704191838,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191839
 				}
 			],
-			"sid": 141708704191737
+			"sid": 141708704191761
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 3 - Screen Navigation",
+			"description": "Handle perpindahan antar screen pages berdasarkan currentScreen. Dipanggil saat currentScreen berubah.",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "=== NAVIGASI SCREEN: Cek currentScreen dan tampilkan screen yang sesuai ==="
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 1"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191850,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191851,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage1_level_2_t4",
+							"sid": 141708704191852,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage2_level_2_t4",
+							"sid": 141708704191853,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage1_level_2_t4",
+							"sid": 141708704191854,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191855
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 2"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191856,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191857,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage1_level_2_t4",
+							"sid": 141708704191858,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage2_level_2_t4",
+							"sid": 141708704191859,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage3_level_2_t4",
+							"sid": 141708704191860,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage2_level_2_t4",
+							"sid": 141708704191861,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191862
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 3"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191863,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191864,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage2_level_2_t4",
+							"sid": 141708704191865,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage3_level_2_t4",
+							"sid": 141708704191866,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage4_level_2_t4",
+							"sid": 141708704191867,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage3_level_2_t4",
+							"sid": 141708704191868,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191869
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 4"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191870,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191871,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage3_level_2_t4",
+							"sid": 141708704191872,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage4_level_2_t4",
+							"sid": 141708704191873,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage5_level_2_t4",
+							"sid": 141708704191874,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage4_level_2_t4",
+							"sid": 141708704191875,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191876
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 5"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191877,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191878,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage4_level_2_t4",
+							"sid": 141708704191879,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage5_level_2_t4",
+							"sid": 141708704191880,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage6_level_2_t4",
+							"sid": 141708704191881,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage5_level_2_t4",
+							"sid": 141708704191882,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191883
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 6"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191884,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "6"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191885,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage5_level_2_t4",
+							"sid": 141708704191886,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage6_level_2_t4",
+							"sid": 141708704191887,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage7_level_2_t4",
+							"sid": 141708704191888,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage6_level_2_t4",
+							"sid": 141708704191889,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191890
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 7"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191891,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "7"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191892,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage6_level_2_t4",
+							"sid": 141708704191893,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage7_level_2_t4",
+							"sid": 141708704191894,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage8_level_2_t4",
+							"sid": 141708704191895,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage7_level_2_t4",
+							"sid": 141708704191896,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191897
+				},
+				{
+					"eventType": "comment",
+					"text": "Screen 8"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191898,
+							"parameters": {
+								"variable": "currentScreen",
+								"comparison": 0,
+								"value": "8"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704191899,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage7_level_2_t4",
+							"sid": 141708704191900,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage8_level_2_t4",
+							"sid": 141708704191901,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage8_level_2_t4",
+							"sid": 141708704191902,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704191903
+				}
+			],
+			"sid": 141708704191762
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 4 - Answer Validation",
+			"description": "Handle klik tombol arah dan validasi jawaban benar/salah",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "EVENT A: Klik Screenpage1 (Intro) → Langsung ke Screen 2"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 141708704192001,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "screenpage1_level_2_t4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704192002,
+							"parameters": {
+								"variable": "currentScreen",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage1_level_2_t4",
+							"sid": 141708704192003,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "screenpage2_level_2_t4",
+							"sid": 141708704192004,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "screenpage2_level_2_t4",
+							"sid": 141708704192005,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						}
+					],
+					"sid": 141708704192000
+				},
+				{
+					"eventType": "comment",
+					"text": "EVENT B: Klik Tombol DEPAN (gameActive harus = 1)"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 141708704192011,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "depan_level_2_t4"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704192012,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 141708704192010,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "SUB-EVENT: Jawaban BENAR (screen 2,4,6,8 = depan) - KOSONG DULU"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 477906533587069,
+									"parameters": {
+										"first-value": "currentScreen",
+										"comparison": 0,
+										"second-value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 836062121922150,
+									"parameters": {
+										"variable": "notifShowing",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikaBenar_level_2_t4",
+									"sid": 836062121922132,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 295761016333326,
+									"parameters": {
+										"variable": "correctAnswers",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 689039726469919,
+									"parameters": {
+										"variable": "currentScreen",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 804947191407238
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 477906533587070,
+									"parameters": {
+										"first-value": "currentScreen",
+										"comparison": 0,
+										"second-value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 836062121922151,
+									"parameters": {
+										"variable": "notifShowing",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikaBenar_level_2_t4",
+									"sid": 836062121922133,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 295761016333327,
+									"parameters": {
+										"variable": "correctAnswers",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 689039726469920,
+									"parameters": {
+										"variable": "currentScreen",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 804947191407239
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 477906533587071,
+									"parameters": {
+										"first-value": "currentScreen",
+										"comparison": 0,
+										"second-value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 836062121922152,
+									"parameters": {
+										"variable": "notifShowing",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikaBenar_level_2_t4",
+									"sid": 836062121922134,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 295761016333328,
+									"parameters": {
+										"variable": "correctAnswers",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 689039726469921,
+									"parameters": {
+										"variable": "currentScreen",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 804947191407240
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 477906533587072,
+									"parameters": {
+										"first-value": "currentScreen",
+										"comparison": 0,
+										"second-value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 836062121922153,
+									"parameters": {
+										"variable": "notifShowing",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikaBenar_level_2_t4",
+									"sid": 836062121922135,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 295761016333329,
+									"parameters": {
+										"variable": "correctAnswers",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 689039726469922,
+									"parameters": {
+										"variable": "currentScreen",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 804947191407241
+						},
+						{
+							"eventType": "comment",
+							"text": "SUB-EVENT: Jawaban SALAH (screen 3,5,7 bukan depan)"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 477906533587073
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 836062121922154,
+									"parameters": {
+										"variable": "notifShowing",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikaSalah_level_2_t4",
+									"sid": 836062121922136,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 804947191407242
+						}
+					]
+				}
+			],
+			"sid": 141708704191763
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 5 - Timer System",
+			"description": "Countdown timer 2 menit dan handle waktu habis",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 141708704191764
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 6 - Win Condition",
+			"description": "Handle kondisi menang (8 soal terjawab benar)",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 141708704191765
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 7 - Notifications Management",
+			"description": "Auto-hide notifications setelah beberapa detik menggunakan flag",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Cek flag notifShowing=1 dan is-visible, tunggu lalu hide dan reset flag"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704193001,
+							"parameters": {
+								"variable": "notifShowing",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "jikaBenar_level_2_t4",
+							"sid": 141708704193002
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704193003,
+							"parameters": {
+								"variable": "notifShowing",
+								"value": "2"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 141708704193004,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaBenar_level_2_t4",
+							"sid": 141708704193005,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704193006,
+							"parameters": {
+								"variable": "notifShowing",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 141708704193000
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704193011,
+							"parameters": {
+								"variable": "notifShowing",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704193012
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704193013,
+							"parameters": {
+								"variable": "notifShowing",
+								"value": "2"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 141708704193014,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704193015,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704193016,
+							"parameters": {
+								"variable": "notifShowing",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 141708704193010
+				}
+			],
+			"sid": 141708704191766
 		}
 	],
 	"sid": 141708704191731

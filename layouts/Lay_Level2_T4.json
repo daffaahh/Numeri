@@ -391,7 +391,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "jikaBenar_level_2_t4",
+					"type": "motivasi_level_2_t4",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Default",
@@ -444,7 +444,7 @@
 					}
 				},
 				{
-					"type": "jikaSalah_level_2_t4",
+					"type": "jikaBenar_level_2_t4",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Default",
@@ -460,10 +460,10 @@
 						"Fade": {
 							"properties": {
 								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
+								"wait-time": 1,
+								"fade-out-time": 0.5,
+								"destroy": false,
+								"enabled": false,
 								"live-preview": false
 							}
 						},
@@ -550,7 +550,7 @@
 					}
 				},
 				{
-					"type": "motivasi_level_2_t4",
+					"type": "jikaSalah_level_2_t4",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Default",
@@ -566,10 +566,10 @@
 						"Fade": {
 							"properties": {
 								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
+								"wait-time": 1,
+								"fade-out-time": 0.5,
+								"destroy": false,
+								"enabled": false,
 								"live-preview": false
 							}
 						},

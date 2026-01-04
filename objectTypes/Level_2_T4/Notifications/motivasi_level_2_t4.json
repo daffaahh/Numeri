@@ -1,20 +1,20 @@
 {
 	"name": "motivasi_level_2_t4",
 	"plugin-id": "Sprite",
-	"sid": 301882461003051,
+	"sid": 519482351257222,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Fade",
-			"name": "Fade",
-			"sid": 675398037880320
-		},
-		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 564086020057106
+			"sid": 246891943453661
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 572628109750521
 		}
 	],
 	"effectTypes": [],
@@ -23,21 +23,21 @@
 			{
 				"frames": [
 					{
-						"width": 1449,
-						"height": 600,
+						"width": 1131,
+						"height": 578,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9004165,
+						"imageSpriteId": 7223502,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 697763778046761,
+				"sid": 883902379956951,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

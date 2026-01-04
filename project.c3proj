@@ -313,9 +313,9 @@
 					{
 						"items": [
 							"finish_level_2_t4",
+							"motivasi_level_2_t4",
 							"jikaBenar_level_2_t4",
-							"jikaSalah_level_2_t4",
-							"motivasi_level_2_t4"
+							"jikaSalah_level_2_t4"
 						],
 						"subfolders": [],
 						"name": "Notifications"
