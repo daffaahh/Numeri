@@ -11,6 +11,13 @@
 			"desc": "Numi menghadap kanan",
 			"show": true,
 			"sid": 651178332080417
+		},
+		{
+			"name": "screen",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 437725585522965
 		}
 	],
 	"behaviorTypes": [],

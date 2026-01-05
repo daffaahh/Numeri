@@ -1,0 +1,10 @@
+{
+	"name": "timetxt",
+	"plugin-id": "Text",
+	"sid": 598826839887055,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

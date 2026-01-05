@@ -11,6 +11,13 @@
 			"desc": "Intro/instruksi (tidak perlu jawaban)",
 			"show": true,
 			"sid": 774676820924133
+		},
+		{
+			"name": "screen",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 821319747787810
 		}
 	],
 	"behaviorTypes": [],
