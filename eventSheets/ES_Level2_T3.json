@@ -42,6 +42,16 @@
 			"sid": 570385299440271
 		},
 		{
+			"eventType": "variable",
+			"name": "timeRemaining",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "Waktu tersisa dalam detik (120 detik = 2 menit)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570385299440530
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Group 1 - System Initialization",
@@ -2001,38 +2011,174 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 5 - Maskot Dialog System",
-			"description": "Memberikan hints & feedback lewat maskot (Numa & Numi) pada berbagai progress points",
+			"title": "Group 5 - Timer System",
+			"description": "Sistem timer untuk menghitung waktu penyelesaian game (120 detik)",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set timer awal 120 detik saat layout dimulai"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 570385299440531
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 570385299440532,
+							"parameters": {
+								"variable": "timeRemaining",
+								"value": "120"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_t3",
+							"sid": 570385299440533,
+							"parameters": {
+								"text": "\"2:00\""
+							}
+						}
+					],
+					"sid": 570385299440534
+				},
+				{
+					"eventType": "comment",
+					"text": "Countdown setiap 1 detik selama game aktif"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 570385299440535,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 570385299440536,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 570385299440537,
+							"parameters": {
+								"variable": "timeRemaining",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 570385299440538,
+							"parameters": {
+								"variable": "timeRemaining",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_t3",
+							"sid": 570385299440539,
+							"parameters": {
+								"text": "zeropad(floor(timeRemaining/60),2) & \":\" & zeropad(timeRemaining%60,2)"
+							}
+						}
+					],
+					"sid": 570385299440540
+				},
+				{
+					"eventType": "comment",
+					"text": "Waktu habis - game over"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 570385299440541,
+							"parameters": {
+								"variable": "timeRemaining",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 570385299440542,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 570385299440543,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_t3",
+							"sid": 570385299440544,
+							"parameters": {
+								"text": "\"0:00\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "cobalagi_level_2_t3",
+							"sid": 570385299440545,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 570385299440546,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 570385299440547
+						}
+					],
+					"sid": 570385299440548
+				}
+			],
 			"sid": 570385299440264
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 6 - UI Controls",
-			"description": "Handle toggle reference rumah dan controls lainnya",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440265
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 7 - Notifications Management",
-			"description": "Auto-hide notifications (benar, cobalagi, tap2_sering) setelah beberapa detik",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440266
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 8 - Animations & Effects",
-			"description": "Particle effects, sound effects, hover animations (optional polish phase)",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440267
 		}
 	],
 	"sid": 570385299440259
