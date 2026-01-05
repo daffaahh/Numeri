@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -331,6 +338,91 @@
 					}
 				],
 				"name": "Level_2_T4"
+			},
+			{
+				"items": [
+					"Audio"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"BG_T1",
+							"Tingkat1_Intro",
+							"waktu"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Example_Number",
+									"PuzzlePiece1",
+									"Instruction",
+									"Puzzle_Box1"
+								],
+								"subfolders": [],
+								"name": "angka1"
+							},
+							{
+								"items": [
+									"PuzzlePiece2",
+									"Instruction2",
+									"Puzzle_Box2",
+									"Example_Number2"
+								],
+								"subfolders": [],
+								"name": "angka2"
+							},
+							{
+								"items": [
+									"Example_Number3",
+									"Instruction3",
+									"Puzzle_Box3",
+									"PuzzlePiece3"
+								],
+								"subfolders": [],
+								"name": "angka3"
+							},
+							{
+								"items": [
+									"Example_Number4",
+									"Instruction4",
+									"Puzzle_Box4",
+									"PuzzlePiece4"
+								],
+								"subfolders": [],
+								"name": "angka4"
+							},
+							{
+								"items": [
+									"Example_Number5",
+									"Instruction5",
+									"Puzzle_Box5",
+									"PuzzlePiece5"
+								],
+								"subfolders": [],
+								"name": "angka5"
+							},
+							{
+								"items": [
+									"Home_Button",
+									"Next_Button",
+									"Star",
+									"Success_Text"
+								],
+								"subfolders": [],
+								"name": "success"
+							}
+						],
+						"name": "T1"
+					},
+					{
+						"items": [
+							"Tingkat2_Intro"
+						],
+						"subfolders": [],
+						"name": "T2"
+					}
+				],
+				"name": "Level_1"
 			}
 		]
 	},
@@ -350,7 +442,34 @@
 			"Lay_Level2_T3",
 			"Lay_Level2_T4"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Intro_L1_T1",
+							"Level1_T1_1",
+							"Level1_T1_2",
+							"Level1_T1_3",
+							"Level1_T1_4",
+							"Level1_T1_5",
+							"Level1_T1_Success"
+						],
+						"subfolders": [],
+						"name": "T1"
+					},
+					{
+						"items": [
+							"Intro_L1_T2"
+						],
+						"subfolders": [],
+						"name": "T2"
+					}
+				],
+				"name": "Lay_Level1"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
@@ -362,7 +481,30 @@
 			"ES_Level2_T2",
 			"ES_Level2_T4"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"ES_Level1_T1",
+							"ES_L1_T1_Intro1",
+							"ES_L1_T1_Success"
+						],
+						"subfolders": [],
+						"name": "T1"
+					},
+					{
+						"items": [
+							"ES_Level1_Intro2"
+						],
+						"subfolders": [],
+						"name": "T2"
+					}
+				],
+				"name": "ES_Level1"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {
@@ -371,7 +513,30 @@
 		},
 		"sound": {
 			"items": [],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "PuzzlePiece.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 237815224604934,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "Success.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 450938272312010,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Level1"
+				}
+			]
 		},
 		"music": {
 			"items": [],
