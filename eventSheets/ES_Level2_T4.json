@@ -384,7 +384,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 4 - Answer Validation",
+			"title": "Group 3 - Answer Validation",
 			"description": "Handle klik tombol arah dan validasi jawaban benar/salah",
 			"isActiveOnStart": true,
 			"children": [
@@ -1013,6 +1013,15 @@
 									"sid": 689039726469961,
 									"parameters": {
 										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "finish_level_2_t4",
+									"sid": 689039726469967,
+									"parameters": {
+										"x": "640",
+										"y": "360"
 									}
 								},
 								{
@@ -1785,6 +1794,154 @@
 							"sid": 904947191407253
 						}
 					]
+				},
+				{
+					"eventType": "comment",
+					"text": "EVENT D: Klik Tombol BELAKANG (gameActive harus = 1) - Semua jawaban SALAH"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 141708704192031,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "belakang_level_2_t4"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704192032,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "jikaBenar_level_2_t4",
+							"sid": 141708704192300,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704192301,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704192302,
+							"parameters": {
+								"variable": "notifShowing",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704192303,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704192304,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 141708704192030
+				},
+				{
+					"eventType": "comment",
+					"text": "EVENT E: Klik Tombol KIRI (gameActive harus = 1) - Semua jawaban SALAH"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 141708704192041,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "kiri_level_2_t4"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 141708704192042,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "jikaBenar_level_2_t4",
+							"sid": 141708704192400,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704192401,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 141708704192402,
+							"parameters": {
+								"variable": "notifShowing",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704192403,
+							"parameters": {
+								"x": "640",
+								"y": "360"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaSalah_level_2_t4",
+							"sid": 141708704192404,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 141708704192040
 				}
 			],
 			"sid": 141708704191763
@@ -1792,7 +1949,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 5 - Timer System",
+			"title": "Group 4 - Timer System",
 			"description": "Countdown timer 2 menit dan handle waktu habis",
 			"isActiveOnStart": true,
 			"children": [
@@ -1884,16 +2041,52 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 6 - Win Condition",
-			"description": "Handle kondisi menang (8 soal terjawab benar)",
+			"title": "Group 5 - Win Condition",
+			"description": "Handle kondisi menang dan klik finish untuk kembali ke roadmap",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Klik finish_level_2_t4 untuk kembali ke RoadMap"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 141708704195001,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "finish_level_2_t4"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "finish_level_2_t4",
+							"sid": 141708704195003
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 141708704195002,
+							"parameters": {
+								"layout": "Lay_RoadMap"
+							}
+						}
+					],
+					"sid": 141708704195000
+				}
+			],
 			"sid": 141708704191765
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 7 - Notifications Management",
+			"title": "Group 6 - Notifications Management",
 			"description": "Auto-hide notifications setelah beberapa detik menggunakan flag",
 			"isActiveOnStart": true,
 			"children": [
