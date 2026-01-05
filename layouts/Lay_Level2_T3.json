@@ -393,8 +393,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 956,
-						"y": 433,
+						"x": 1051,
+						"y": 439,
 						"width": 176,
 						"height": 241,
 						"originX": 0.5,
@@ -445,6 +445,62 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "dinding_level_2_t3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 47,
+					"sid": 401237152355327,
+					"tags": "",
+					"instanceVariables": {
+						"componentType": "dinding",
+						"X_origin": 0,
+						"Y_origin": 0,
+						"X_target": 573,
+						"Y_target": 429,
+						"isPlaced": false
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 401237152355327,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 815,
+						"y": 433,
+						"width": 228.01146182073367,
+						"height": 202.99431002691523,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.277462553032592,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "pintu_level_2_t3",
 					"properties": {
 						"initially-visible": true,
@@ -460,8 +516,8 @@
 						"componentType": "pintu",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 590,
-						"Y_target": 440,
+						"X_target": 588,
+						"Y_target": 433,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -484,10 +540,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1198,
-						"y": 535,
-						"width": 50,
-						"height": 80,
+						"x": 1103,
+						"y": 637,
+						"width": 69,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -516,8 +572,8 @@
 						"componentType": "atap_segitiga",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 576,
-						"Y_target": 280,
+						"X_target": 573,
+						"Y_target": 264.5,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -540,10 +596,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 990,
-						"y": 619,
-						"width": 220,
-						"height": 109.99999999999999,
+						"x": 851,
+						"y": 633,
+						"width": 289.71830258191596,
+						"height": 135.77514859504026,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -572,8 +628,8 @@
 						"componentType": "tangga",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 590,
-						"Y_target": 510,
+						"X_target": 588,
+						"Y_target": 506.307028,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -596,10 +652,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 591,
-						"y": 625,
-						"width": 100,
-						"height": 40,
+						"x": 587,
+						"y": 618,
+						"width": 115,
+						"height": 45,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -628,8 +684,8 @@
 						"componentType": "atap_persegi",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 576,
-						"Y_target": 310,
+						"X_target": 532,
+						"Y_target": 278,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -652,10 +708,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 361,
-						"y": 627,
-						"width": 80,
-						"height": 40,
+						"x": 446,
+						"y": 621,
+						"width": 84,
+						"height": 47.00000000000001,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -684,8 +740,8 @@
 						"componentType": "polygon",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 480,
-						"Y_target": 300,
+						"X_target": 603,
+						"Y_target": 274,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -708,8 +764,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 190,
-						"y": 628,
+						"x": 329,
+						"y": 626,
 						"width": 45,
 						"height": 45,
 						"originX": 0.5,
@@ -740,8 +796,8 @@
 						"componentType": "kunci",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 600,
-						"Y_target": 450,
+						"X_target": 613,
+						"Y_target": 442,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -764,66 +820,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 372.5,
-						"y": 477,
+						"x": 392.8197071802764,
+						"y": 470.0229443597231,
 						"width": 25.000000000000004,
 						"height": 25.000000000000004,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "dinding_level_2_t3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 47,
-					"sid": 401237152355327,
-					"tags": "",
-					"instanceVariables": {
-						"componentType": "dinding",
-						"X_origin": 0,
-						"Y_origin": 0,
-						"X_target": 576,
-						"Y_target": 430,
-						"isPlaced": false
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 401237152355327,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 796,
-						"y": 382,
-						"width": 180,
-						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -852,8 +852,8 @@
 						"componentType": "layang",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 670,
-						"Y_target": 400,
+						"X_target": 657.038737,
+						"Y_target": 369.291166,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -876,10 +876,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 854,
-						"y": 258,
-						"width": 50,
-						"height": 50,
+						"x": 757.1205908934157,
+						"y": 253.99679291858686,
+						"width": 85.22870611093708,
+						"height": 80.42503903617944,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -908,8 +908,8 @@
 						"componentType": "jendela",
 						"X_origin": 0,
 						"Y_origin": 0,
-						"X_target": 500,
-						"Y_target": 430,
+						"X_target": 503,
+						"Y_target": 413,
 						"isPlaced": false
 					},
 					"behaviors": {
@@ -932,10 +932,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 331,
-						"y": 306,
-						"width": 60,
-						"height": 60,
+						"x": 392,
+						"y": 398,
+						"width": 86,
+						"height": 89,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
