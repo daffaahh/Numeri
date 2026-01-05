@@ -355,69 +355,7 @@
 					}
 				}
 			],
-			"sid": 234567890123473,
-			"subEvents": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 234567890123494,
-							"parameters": {
-								"variable": "timer",
-								"comparison": 3,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 234567890123495,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "info_level2_t1",
-							"sid": 234567890123496,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123497,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 234567890123498,
-							"parameters": {
-								"seconds": "2",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "go-to-layout-by-name",
-							"objectClass": "System",
-							"sid": 234567890123499,
-							"parameters": {
-								"layout": "\"Lay_RoadMap\""
-							}
-						}
-					],
-					"sid": 234567890123500
-				}
-			]
+			"sid": 234567890123473
 		},
 		{
 			"eventType": "block",
