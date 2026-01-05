@@ -363,7 +363,8 @@
 							"objectClass": "System",
 							"sid": 141708704191861,
 							"parameters": {
-								"seconds": "0.1"
+								"seconds": "0.1",
+								"use-timescale": true
 							}
 						},
 						{
