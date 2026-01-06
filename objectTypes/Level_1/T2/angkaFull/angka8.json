@@ -1,7 +1,7 @@
 {
-	"name": "Home_Button",
+	"name": "angka8",
 	"plugin-id": "Sprite",
-	"sid": 946218852360563,
+	"sid": 498984072369946,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 341,
-						"height": 360,
+						"width": 159,
+						"height": 172,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7894761,
+						"imageSpriteId": 3454044,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 174444620278069,
+				"sid": 515866604468292,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

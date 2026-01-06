@@ -1,0 +1,163 @@
+{
+	"name": "ES_Level1_T2",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "T1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 314479804723733
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "NumberBlock1",
+							"sid": 730111114570684,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "NumberBlock1",
+							"sid": 780461548087983,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 794140548951217
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "NumberBlock1",
+							"sid": 126073961727976,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "NumberBlock1",
+							"sid": 838680865625637,
+							"parameters": {
+								"object": "Number_Box1"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "NumberBlock1",
+							"sid": 166568538099784,
+							"parameters": {
+								"instance-variable": "isPlaced"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NumberBlock1",
+							"sid": 790997925364250,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "NumberBlock1",
+							"sid": 933039680841125,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 896192266742135,
+							"parameters": {
+								"variable": "L1_TotalPlaced",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 712721337527162,
+							"parameters": {
+								"audio-file": {
+									"path": "Level1/PuzzlePiece"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 783420820916713,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "NumberBlock1",
+									"sid": 279449842436359,
+									"parameters": {
+										"object": "Number_Box1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 771112583040624
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 745330752189804,
+							"parameters": {
+								"variable": "L1_TotalPlaced",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 724026982448451,
+							"parameters": {
+								"layout": "Level1_T2_FullNumber"
+							}
+						}
+					],
+					"sid": 208726239449236
+				}
+			],
+			"sid": 110366899314846
+		}
+	],
+	"sid": 978969998470156
+}

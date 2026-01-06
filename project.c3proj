@@ -89,7 +89,8 @@
 			"CloudWipe1",
 			"CloudWipe2",
 			"CameraFocus",
-			"BG_RoadMap"
+			"BG_RoadMap",
+			"BG_T2_"
 		],
 		"subfolders": [
 			{
@@ -341,7 +342,8 @@
 			},
 			{
 				"items": [
-					"Audio"
+					"Audio",
+					"Txt_L1_Timer"
 				],
 				"subfolders": [
 					{
@@ -403,8 +405,8 @@
 							},
 							{
 								"items": [
-									"Home_Button",
-									"Next_Button",
+									"Home_Button_T1",
+									"Next_Button_T1",
 									"Star",
 									"Success_Text"
 								],
@@ -416,9 +418,44 @@
 					},
 					{
 						"items": [
-							"Tingkat2_Intro"
+							"Tingkat2_Intro",
+							"BG_T2_1",
+							"Next_Button_Success"
 						],
-						"subfolders": [],
+						"subfolders": [
+							{
+								"items": [
+									"Number_Box1",
+									"NumberBlock1"
+								],
+								"subfolders": [],
+								"name": "1"
+							},
+							{
+								"items": [
+									"angka1",
+									"angka2",
+									"angka3",
+									"angka4",
+									"angka5",
+									"angka6",
+									"angka7",
+									"angka8",
+									"angka9",
+									"angka10"
+								],
+								"subfolders": [],
+								"name": "angkaFull"
+							},
+							{
+								"items": [
+									"Home_Button_T2",
+									"Next_Button_T2"
+								],
+								"subfolders": [],
+								"name": "success"
+							}
+						],
 						"name": "T2"
 					}
 				],
@@ -461,10 +498,20 @@
 					},
 					{
 						"items": [
-							"Intro_L1_T2"
+							"Intro_L1_T2",
+							"Level1_T2_1",
+							"Level1_T2_FullNumber",
+							"Level1_T2_Success"
 						],
 						"subfolders": [],
 						"name": "T2"
+					},
+					{
+						"items": [
+							"Intro_L1_T3"
+						],
+						"subfolders": [],
+						"name": "T3"
 					}
 				],
 				"name": "Lay_Level1"
@@ -475,20 +522,22 @@
 		"items": [
 			"ES_MainMenu",
 			"ES_RoadMap",
-			"ES_Global",
 			"ES_Level2_T1",
 			"ES_Level2_T3",
 			"ES_Level2_T2",
-			"ES_Level2_T4"
+			"ES_Level2_T4",
+			"ES_Global"
 		],
 		"subfolders": [
 			{
-				"items": [],
+				"items": [
+					"ES_Level1_Global"
+				],
 				"subfolders": [
 					{
 						"items": [
 							"ES_Level1_T1",
-							"ES_L1_T1_Intro1",
+							"ES_L1_T1_Intro",
 							"ES_L1_T1_Success"
 						],
 						"subfolders": [],
@@ -496,10 +545,20 @@
 					},
 					{
 						"items": [
-							"ES_Level1_Intro2"
+							"ES_L1_T2_Intro",
+							"ES_Level1_T2",
+							"ES_Level1_T2_FullNumber",
+							"ES_L1_T2_Success"
 						],
 						"subfolders": [],
 						"name": "T2"
+					},
+					{
+						"items": [
+							"ES_L1_T3_Intro"
+						],
+						"subfolders": [],
+						"name": "T3"
 					}
 				],
 				"name": "ES_Level1"
@@ -533,7 +592,102 @@
 							}
 						}
 					],
-					"subfolders": [],
+					"subfolders": [
+						{
+							"items": [
+								{
+									"name": "satu.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 249529056373822,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "dua.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 398860411789958,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "tiga.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 366605348886493,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "empat.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 414305589430755,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "lima.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 580673219924395,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "enam.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 522891722073435,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "tujuh.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 261657281610113,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "delapan.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 436985755600590,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "sembilan.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 930403620815054,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "sepuluh.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 164725704907322,
+									"file-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "Success_T2.webm",
+									"type": "audio/webm; codecs=opus",
+									"sid": 479092961650571,
+									"file-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "Tahap2"
+						}
+					],
 					"name": "Level1"
 				}
 			]

@@ -1,7 +1,7 @@
 {
-	"name": "Next_Button",
+	"name": "Next_Button_T2",
 	"plugin-id": "Sprite",
-	"sid": 841407982144842,
+	"sid": 539155959666476,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2326931,
+						"imageSpriteId": 8122292,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 466352061967394,
+				"sid": 590020465712817,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

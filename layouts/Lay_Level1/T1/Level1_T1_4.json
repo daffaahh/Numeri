@@ -104,7 +104,7 @@
 						"x": 1127.3928375851397,
 						"y": 102.03309861755358,
 						"width": 170.4804136215402,
-						"height": 174.21356136507757,
+						"height": 174.21356136507754,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -324,7 +324,7 @@
 						"x": 1074,
 						"y": 312,
 						"width": 318.4045914730469,
-						"height": 231.20898780109943,
+						"height": 231.2089878010994,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -375,6 +375,59 @@
 						"height": 291.303125536623,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Txt_L1_Timer",
+					"properties": {
+						"text": "02:00",
+						"enable-bbcode": true,
+						"font": "Fugaz One",
+						"size": 25,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 104,
+					"sid": 860940006209379,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 860940006209379,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 168.1226307671471,
+						"y": 79.96023765625769,
+						"width": 103,
+						"height": 42,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

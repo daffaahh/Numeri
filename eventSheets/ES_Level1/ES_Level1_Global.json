@@ -1,0 +1,230 @@
+{
+	"name": "ES_Level1_Global",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "L1_Timer",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "untuk timer disetiap tingkat level 1",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 940807241387608
+		},
+		{
+			"eventType": "variable",
+			"name": "L1_TimerRunning",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 328816348492993
+		},
+		{
+			"eventType": "variable",
+			"name": "L1_TotalPlaced",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 587892221600273
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Timer T1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 733195763297663
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Txt_L1_Timer",
+							"sid": 896186395103284,
+							"parameters": {
+								"text": "int(L1_Timer / 60) & \":\" & right(\"0\" & int(L1_Timer % 60), 2)"
+							}
+						}
+					],
+					"sid": 300701560564888
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 486025600000381
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 870189839991062,
+							"parameters": {
+								"variable": "L1_TimerRunning"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 789684856840203,
+							"parameters": {
+								"variable": "L1_Timer",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 632112976761235
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 378883784574541
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 162959575795960,
+							"parameters": {
+								"variable": "L1_Timer",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 261598784329645,
+							"parameters": {
+								"variable": "L1_Timer",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 366873051960233,
+							"parameters": {
+								"variable": "L1_TimerRunning",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 931241777411585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 713183384879795
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 797449156112759,
+							"parameters": {
+								"first-value": "layoutname",
+								"comparison": 0,
+								"second-value": "\"Level1_T1_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 130735484968165,
+							"parameters": {
+								"variable": "L1_Timer",
+								"value": "120"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 666242000744233,
+							"parameters": {
+								"variable": "L1_TimerRunning",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 304897693898279
+				}
+			],
+			"sid": 386498936146280
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Timer T2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 315916507825978
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Tahap1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 188059680698126
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 802300268298623,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"Level1_T1_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 425219960423187,
+							"parameters": {
+								"variable": "L1_TotalPlaced",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 851144771760066
+				}
+			],
+			"sid": 271382789538876
+		}
+	],
+	"sid": 661941221881617
+}

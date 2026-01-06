@@ -2,6 +2,10 @@
 	"name": "ES_Level1_T1",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Level1_Global"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Angka1",
@@ -769,13 +773,32 @@
 								"comparison": 0,
 								"value": "4"
 							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 778317148762543,
+							"parameters": {
+								"first-value": "layoutname",
+								"comparison": 0,
+								"second-value": "\"Level1_T1_5\""
+							}
 						}
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 639524666241891,
+							"parameters": {
+								"variable": "L1_TimerRunning",
+								"value": "false"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 698888658084966,
+							"sid": 296220590251620,
 							"parameters": {
 								"layout": "Level1_T1_Success"
 							}
@@ -785,6 +808,38 @@
 				}
 			],
 			"sid": 209593607854437
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "PuzzlePiece1",
+					"sid": 182194157838615,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 573496963599538,
+					"parameters": {
+						"variable": "L1_TimerRunning"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 714259671475038,
+					"parameters": {
+						"variable": "L1_TimerRunning",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 153198086739359
 		}
 	],
 	"sid": 135080431379560
