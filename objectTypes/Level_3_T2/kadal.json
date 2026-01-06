@@ -1,0 +1,54 @@
+{
+	"name": "kadal",
+	"plugin-id": "Sprite",
+	"sid": 321688047087044,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 349,
+						"height": 265,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8879437,
+						"collisionPoly": {
+							"points": [
+								0.09169054441260745,
+								0.03773584905660377,
+								1,
+								0.18867924528301888,
+								1,
+								0.8188679245283019,
+								0.8997134670487106,
+								0.969811320754717,
+								0,
+								0.8452830188679246
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 896976607656291,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

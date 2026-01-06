@@ -1,0 +1,60 @@
+{
+	"name": "Frame_Gajah",
+	"plugin-id": "Sprite",
+	"sid": 167271191632771,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 897,
+						"height": 897,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9409003,
+						"collisionPoly": {
+							"points": [
+								0.30657748049052397,
+								0.12151616499442586,
+								0.5596432552954292,
+								0.1716833890746934,
+								0.992196209587514,
+								0.6978818283166109,
+								0.9085841694537347,
+								0.8494983277591973,
+								0.5172798216276477,
+								0.8773690078037905,
+								0.004459308807134894,
+								0.6421404682274248,
+								0.026755852842809364,
+								0.2697881828316611,
+								0.13154960981047936,
+								0.1426978818283166
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 546308937699379,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

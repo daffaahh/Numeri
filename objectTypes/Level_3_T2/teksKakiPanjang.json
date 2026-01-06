@@ -1,0 +1,68 @@
+{
+	"name": "teksKakiPanjang",
+	"plugin-id": "Sprite",
+	"sid": 251043595002128,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 420,
+						"height": 167,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3710368,
+						"collisionPoly": {
+							"points": [
+								0.12380952380952381,
+								0,
+								0.9238095238095239,
+								0.05389221556886228,
+								0.95,
+								0.12574850299401197,
+								0.9904761904761905,
+								0.4311377245508982,
+								0.9904761904761905,
+								0.49101796407185627,
+								0.9428571428571428,
+								0.8263473053892215,
+								0.8785714285714286,
+								0.9281437125748503,
+								0.07857142857142857,
+								0.874251497005988,
+								0.05238095238095238,
+								0.8023952095808383,
+								0.009523809523809525,
+								0.49101796407185627,
+								0.009523809523809525,
+								0.4311377245508982,
+								0.05952380952380952,
+								0.10179640718562874
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 589180727208704,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

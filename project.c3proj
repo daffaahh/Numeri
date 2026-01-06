@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "SVGPicture",
+			"name": "SVG Picture",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -82,7 +89,8 @@
 		"items": [
 			"Mouse",
 			"Wipe1",
-			"Wipe2"
+			"Wipe2",
+			"Level_3_T"
 		],
 		"subfolders": [
 			{
@@ -462,6 +470,63 @@
 				],
 				"subfolders": [],
 				"name": "MainMenu"
+			},
+			{
+				"items": [
+					"bg_level3_t1",
+					"Frame_Gajah",
+					"Frame_capybara",
+					"Frame_rabbit",
+					"Plate",
+					"Rabbit",
+					"Sprite"
+				],
+				"subfolders": [],
+				"name": "Level_3_T1"
+			},
+			{
+				"items": [
+					"backgroundT3",
+					"referensitT31",
+					"JerapahBesar",
+					"JerapahKecil",
+					"instruksiT31"
+				],
+				"subfolders": [],
+				"name": "Level_3_T3"
+			},
+			{
+				"items": [
+					"background",
+					"babi",
+					"instruksi",
+					"kadal",
+					"kelinci",
+					"kucing",
+					"kurakura",
+					"monyet",
+					"numaT2",
+					"numiT2",
+					"pause",
+					"referensi2",
+					"BabiB2",
+					"anjingLaut",
+					"flaminggo",
+					"Kurakurab2",
+					"jerapah",
+					"unta",
+					"teksKakiPanjang",
+					"TeksKakiPendek",
+					"Instruksi2",
+					"referensi3",
+					"singa",
+					"SosisKecil",
+					"SosisSedang",
+					"SosisBesar",
+					"Instruksi3"
+				],
+				"subfolders": [],
+				"name": "Level_3_T2"
 			}
 		]
 	},
@@ -475,11 +540,7 @@
 	"layouts": {
 		"items": [
 			"Lay_MainMenu",
-			"Lay_RoadMap",
-			"Lay_Level2_T1",
-			"Lay_Level2_T2",
-			"Lay_Level2_T3",
-			"Lay_Level2_T4"
+			"Lay_RoadMap"
 		],
 		"subfolders": [
 			{
@@ -507,6 +568,25 @@
 					}
 				],
 				"name": "Lay_Level1"
+			},
+			{
+				"items": [
+					"Lay_Level2_T1",
+					"Lay_Level2_T2",
+					"Lay_Level2_T3",
+					"Lay_Level2_T4"
+				],
+				"subfolders": [],
+				"name": "Lay_Level2"
+			},
+			{
+				"items": [
+					"Lay_Level3_T1",
+					"Lay_Level3_T2",
+					"Lay_Level3_T3"
+				],
+				"subfolders": [],
+				"name": "Lay_Level3"
 			}
 		]
 	},
@@ -514,10 +594,6 @@
 		"items": [
 			"ES_RoadMap",
 			"ES_Global",
-			"ES_Level2_T1",
-			"ES_Level2_T3",
-			"ES_Level2_T2",
-			"ES_Level2_T4",
 			"ES_MainMenu"
 		],
 		"subfolders": [
@@ -542,6 +618,25 @@
 					}
 				],
 				"name": "ES_Level1"
+			},
+			{
+				"items": [
+					"ES_Level2_T1",
+					"ES_Level2_T2",
+					"ES_Level2_T3",
+					"ES_Level2_T4"
+				],
+				"subfolders": [],
+				"name": "ES_Level2"
+			},
+			{
+				"items": [
+					"ES_Level3_T1",
+					"ES_Level3_T3",
+					"ES_Level3_T2"
+				],
+				"subfolders": [],
+				"name": "ES_Level3"
 			}
 		]
 	},

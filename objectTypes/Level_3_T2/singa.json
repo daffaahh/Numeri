@@ -1,0 +1,64 @@
+{
+	"name": "singa",
+	"plugin-id": "Sprite",
+	"sid": 479846320857412,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 589,
+						"height": 589,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3784818,
+						"collisionPoly": {
+							"points": [
+								0.5076400679117148,
+								0.06112054329371817,
+								0.597623089983022,
+								0.07130730050933787,
+								0.765704584040747,
+								0.15959252971137522,
+								0.8149405772495756,
+								0.3157894736842105,
+								0.7724957555178268,
+								0.9303904923599321,
+								0.4363327674023769,
+								0.9524617996604414,
+								0.18845500848896435,
+								0.9235993208828522,
+								0.20543293718166383,
+								0.3684210526315789,
+								0.27164685908319186,
+								0.17487266553480477,
+								0.31918505942275044,
+								0.12393887945670629
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 686889406745152,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

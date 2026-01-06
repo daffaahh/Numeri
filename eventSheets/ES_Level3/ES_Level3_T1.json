@@ -1,0 +1,51 @@
+{
+	"name": "ES_Level3_T1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Rabbit",
+					"sid": 210240238059608,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Rabbit",
+					"sid": 674099359331563,
+					"parameters": {
+						"object": "Frame_rabbit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Frame_rabbit",
+					"sid": 217205085604046
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Rabbit",
+					"sid": 963669578051822,
+					"parameters": {
+						"x": "590",
+						"y": "393"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Rabbit",
+					"sid": 931909645265768,
+					"parameters": {
+						"width": "211.990566",
+						"height": "211.990566"
+					}
+				}
+			],
+			"sid": 361219541923433
+		}
+	],
+	"sid": 216634530871288
+}

@@ -1,0 +1,54 @@
+{
+	"name": "kucing",
+	"plugin-id": "Sprite",
+	"sid": 600133045692219,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 349,
+						"height": 258,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3184982,
+						"collisionPoly": {
+							"points": [
+								0.09169054441260745,
+								0.007751937984496124,
+								1,
+								0.16279069767441862,
+								1,
+								0.810077519379845,
+								0.8997134670487106,
+								0.9651162790697675,
+								0,
+								0.8372093023255814
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 382256807153790,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

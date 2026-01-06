@@ -1,0 +1,60 @@
+{
+	"name": "Frame_rabbit",
+	"plugin-id": "Sprite",
+	"sid": 688857501400366,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 267,
+						"height": 267,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3655124,
+						"collisionPoly": {
+							"points": [
+								0.45692883895131087,
+								0.10112359550561797,
+								0.8389513108614233,
+								0.19850187265917604,
+								0.8876404494382022,
+								0.7940074906367042,
+								0.850187265917603,
+								0.8352059925093633,
+								0.7453183520599251,
+								0.8876404494382022,
+								0.4794007490636704,
+								0.9101123595505618,
+								0.250936329588015,
+								0.846441947565543,
+								0.10112359550561797,
+								0.6704119850187266
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 125947861138982,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

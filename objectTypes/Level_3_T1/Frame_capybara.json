@@ -1,0 +1,60 @@
+{
+	"name": "Frame_capybara",
+	"plugin-id": "Sprite",
+	"sid": 112975137358914,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 502,
+						"height": 451,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9767755,
+						"collisionPoly": {
+							"points": [
+								0.28087649402390436,
+								0.188470066518847,
+								0.549800796812749,
+								0.22394678492239467,
+								0.8306772908366534,
+								0.5077605321507761,
+								0.898406374501992,
+								0.7028824833702882,
+								0.8705179282868526,
+								0.8713968957871396,
+								0.4163346613545817,
+								0.9068736141906873,
+								0.10956175298804781,
+								0.623059866962306,
+								0.10358565737051793,
+								0.5609756097560976
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 774792266592717,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

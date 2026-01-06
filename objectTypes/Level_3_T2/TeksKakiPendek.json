@@ -1,0 +1,60 @@
+{
+	"name": "TeksKakiPendek",
+	"plugin-id": "Sprite",
+	"sid": 310447903785787,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 420,
+						"height": 154,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8379766,
+						"collisionPoly": {
+							"points": [
+								0.12380952380952381,
+								0,
+								0.9238095238095239,
+								0.05844155844155844,
+								0.9904761904761905,
+								0.42207792207792205,
+								0.9904761904761905,
+								0.487012987012987,
+								0.8785714285714286,
+								0.922077922077922,
+								0.07857142857142857,
+								0.8636363636363636,
+								0.009523809523809525,
+								0.487012987012987,
+								0.009523809523809525,
+								0.42207792207792205
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 254515356908947,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

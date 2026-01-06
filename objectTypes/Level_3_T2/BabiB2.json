@@ -1,0 +1,56 @@
+{
+	"name": "BabiB2",
+	"plugin-id": "Sprite",
+	"sid": 270959217165914,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 391,
+						"height": 247,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1588307,
+						"collisionPoly": {
+							"points": [
+								0.08184143222506395,
+								0,
+								0.8823529411764706,
+								0.0931174089068826,
+								0.9872122762148338,
+								0.4777327935222672,
+								0.9872122762148338,
+								0.5182186234817814,
+								0.80306905370844,
+								1,
+								0,
+								0.8663967611336032
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 736848944796765,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"name": "instruksi",
+	"plugin-id": "Sprite",
+	"sid": 807967156574936,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 784,
+						"height": 265,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3702104,
+						"collisionPoly": {
+							"points": [
+								0.2193877551020408,
+								0,
+								0.3903061224489796,
+								0,
+								0.8711734693877551,
+								0.14339622641509434,
+								0.9948979591836735,
+								0.2528301886792453,
+								0.8188775510204082,
+								0.8754716981132076,
+								0.6607142857142857,
+								0.8754716981132076,
+								0.07653061224489796,
+								0.8075471698113208,
+								0.08545918367346939,
+								0.0037735849056603774
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 441254504389184,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

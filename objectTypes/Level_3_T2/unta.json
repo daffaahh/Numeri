@@ -1,0 +1,56 @@
+{
+	"name": "unta",
+	"plugin-id": "Sprite",
+	"sid": 697531250711813,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 395,
+						"height": 252,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6698935,
+						"collisionPoly": {
+							"points": [
+								0.2,
+								0.01984126984126984,
+								1,
+								0.15476190476190477,
+								0.9822784810126582,
+								0.9325396825396826,
+								0.9139240506329114,
+								1,
+								0.12658227848101267,
+								0.9087301587301587,
+								0.012658227848101266,
+								0.4365079365079365
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 193471283434560,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

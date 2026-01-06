@@ -1,0 +1,60 @@
+{
+	"name": "Kurakurab2",
+	"plugin-id": "Sprite",
+	"sid": 430856411589854,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 395,
+						"height": 249,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7607833,
+						"collisionPoly": {
+							"points": [
+								0.2,
+								0,
+								0.9924050632911392,
+								0.0963855421686747,
+								1,
+								0.14457831325301204,
+								1,
+								0.8473895582329317,
+								0.9822784810126582,
+								0.9236947791164659,
+								0.9113924050632911,
+								0.9919678714859438,
+								0.13164556962025317,
+								0.9156626506024096,
+								0.012658227848101266,
+								0.4738955823293173
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 126786445509323,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

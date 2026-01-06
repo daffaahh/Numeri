@@ -1,0 +1,52 @@
+{
+	"name": "JerapahKecil",
+	"plugin-id": "Sprite",
+	"sid": 169721540064333,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 590,
+						"height": 740,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3645499,
+						"collisionPoly": {
+							"points": [
+								0.06271186440677966,
+								0,
+								0.9050847457627119,
+								0.03783783783783784,
+								0.8610169491525423,
+								0.9864864864864865,
+								0.015254237288135594,
+								0.9432432432432433
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 703439805765924,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

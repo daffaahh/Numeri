@@ -1,0 +1,54 @@
+{
+	"name": "anjingLaut",
+	"plugin-id": "Sprite",
+	"sid": 145060281514173,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 399,
+						"height": 252,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9591682,
+						"collisionPoly": {
+							"points": [
+								0.08020050125313283,
+								0,
+								0.849624060150376,
+								0.05555555555555555,
+								0.9849624060150376,
+								0.5674603174603174,
+								0.7869674185463659,
+								0.9801587301587301,
+								0,
+								0.8492063492063492
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 556253629080601,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

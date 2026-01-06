@@ -1,0 +1,56 @@
+{
+	"name": "flaminggo",
+	"plugin-id": "Sprite",
+	"sid": 124580953349050,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 395,
+						"height": 247,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8565270,
+						"collisionPoly": {
+							"points": [
+								0.0810126582278481,
+								0,
+								0.8582278481012658,
+								0.05668016194331984,
+								0.9873417721518988,
+								0.5020242914979757,
+								0.9848101265822785,
+								0.5748987854251012,
+								0.7949367088607595,
+								1,
+								0,
+								0.8663967611336032
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 695810684439849,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

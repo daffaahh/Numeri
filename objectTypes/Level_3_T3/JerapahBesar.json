@@ -1,0 +1,52 @@
+{
+	"name": "JerapahBesar",
+	"plugin-id": "Sprite",
+	"sid": 706780357544626,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 729,
+						"height": 740,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4097740,
+						"collisionPoly": {
+							"points": [
+								0.17969821673525377,
+								0,
+								0.8614540466392319,
+								0.043243243243243246,
+								0.8257887517146777,
+								0.9864864864864865,
+								0.13991769547325103,
+								0.9391891891891891
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 574403603300867,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
