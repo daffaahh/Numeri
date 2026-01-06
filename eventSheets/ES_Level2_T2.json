@@ -2,6 +2,10 @@
 	"name": "ES_Level2_T2",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Step 1 - System Initialization",
@@ -290,6 +294,20 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 904234567890399,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/Success"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-visible",
 							"objectClass": "bener_level_2_t2",

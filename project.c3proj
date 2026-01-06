@@ -566,6 +566,20 @@
 					],
 					"subfolders": [],
 					"name": "Level1"
+				},
+				{
+					"items": [
+						{
+							"name": "Success.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 467965372200601,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Level2"
 				}
 			]
 		},

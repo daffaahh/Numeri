@@ -2,6 +2,10 @@
 	"name": "ES_Level2_T3",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
 			"eventType": "variable",
 			"name": "componentsPlaced",
 			"type": "number",
@@ -1951,6 +1955,20 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 570385299440599,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/Success"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",

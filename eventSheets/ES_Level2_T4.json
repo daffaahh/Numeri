@@ -1026,6 +1026,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726469999,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/Success"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "finish_level_2_t4",
 									"sid": 689039726469962,
