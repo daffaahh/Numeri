@@ -1,0 +1,791 @@
+{
+	"name": "ES_Level1_T1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Angka1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 341429438330551
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece1",
+							"sid": 972846963737031,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece1",
+							"sid": 391358752632012,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 768517235534531
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "PuzzlePiece1",
+							"sid": 928855703417761,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "PuzzlePiece1",
+							"sid": 625218988058717,
+							"parameters": {
+								"object": "Puzzle_Box1"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "PuzzlePiece1",
+							"sid": 223083025758349,
+							"parameters": {
+								"instance-variable": "isPlaced"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PuzzlePiece1",
+							"sid": 423830218805864,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PuzzlePiece1",
+							"sid": 696198631236318,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Puzzle_Box1",
+							"sid": 732621329981564,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 620043755230056,
+							"parameters": {
+								"audio-file": {
+									"path": "Level1/PuzzlePiece"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 679535808576054,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PuzzlePiece1",
+									"sid": 145423684966987,
+									"parameters": {
+										"object": "Puzzle_Box1"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 219798404122485
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Puzzle_Box1",
+							"sid": 274341458799967,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 418617587067050,
+							"parameters": {
+								"layout": "Level1_T1_2"
+							}
+						}
+					],
+					"sid": 521184701800936
+				}
+			],
+			"sid": 936254174856740
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Angka2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 146855528542559
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece2",
+							"sid": 445561471014094,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece2",
+							"sid": 837249756021685,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 616462744253140
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "PuzzlePiece2",
+							"sid": 815535674969717,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "PuzzlePiece2",
+							"sid": 924331020368101,
+							"parameters": {
+								"object": "Puzzle_Box2"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "PuzzlePiece2",
+							"sid": 480981351172358,
+							"parameters": {
+								"instance-variable": "isPlaced"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PuzzlePiece2",
+							"sid": 479842182529793,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PuzzlePiece2",
+							"sid": 281659574364286,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Puzzle_Box2",
+							"sid": 297851141030185,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 228057753485171,
+							"parameters": {
+								"audio-file": {
+									"path": "Level1/PuzzlePiece"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 713313759210038,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PuzzlePiece2",
+									"sid": 520430982208648,
+									"parameters": {
+										"object": "Puzzle_Box2"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 895229833736995
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Puzzle_Box2",
+							"sid": 530145813311543,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 364757728112211,
+							"parameters": {
+								"layout": "Level1_T1_3"
+							}
+						}
+					],
+					"sid": 298281201708409
+				}
+			],
+			"sid": 256239977270787
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "angka3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 133773210898419
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece3",
+							"sid": 927481076161609,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece3",
+							"sid": 725061137320964,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 272762383039278
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "PuzzlePiece3",
+							"sid": 155763810969650,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "PuzzlePiece3",
+							"sid": 303093185511835,
+							"parameters": {
+								"object": "Puzzle_Box3"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "PuzzlePiece3",
+							"sid": 771901879141036,
+							"parameters": {
+								"instance-variable": "isPlaced"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PuzzlePiece3",
+							"sid": 886844954489424,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PuzzlePiece3",
+							"sid": 733760512312701,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Puzzle_Box3",
+							"sid": 190884203985190,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 743039201648897,
+							"parameters": {
+								"audio-file": {
+									"path": "Level1/PuzzlePiece"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 257862497030952,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PuzzlePiece3",
+									"sid": 232775074741723,
+									"parameters": {
+										"object": "Puzzle_Box3"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 604710046201203
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Puzzle_Box3",
+							"sid": 243819865141275,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 912017913609432,
+							"parameters": {
+								"layout": "Level1_T1_4"
+							}
+						}
+					],
+					"sid": 705625810216088
+				}
+			],
+			"sid": 254573829238932
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "angka4",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 307053900265608
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece4",
+							"sid": 639059536970567,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece4",
+							"sid": 195505347751402,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 908606845801287
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "PuzzlePiece4",
+							"sid": 174321884400212,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "PuzzlePiece4",
+							"sid": 585920498693598,
+							"parameters": {
+								"object": "Puzzle_Box4"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "PuzzlePiece4",
+							"sid": 496080555723570,
+							"parameters": {
+								"instance-variable": "isPlaced"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PuzzlePiece4",
+							"sid": 804232185648202,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PuzzlePiece4",
+							"sid": 888378307823695,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Puzzle_Box4",
+							"sid": 259137087541497,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 772380498599988,
+							"parameters": {
+								"audio-file": {
+									"path": "Level1/PuzzlePiece"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 775276639154913,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PuzzlePiece4",
+									"sid": 679713443320098,
+									"parameters": {
+										"object": "Puzzle_Box4"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 385625931941302
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Puzzle_Box4",
+							"sid": 966144189108783,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 765486307032101,
+							"parameters": {
+								"layout": "Level1_T1_5"
+							}
+						}
+					],
+					"sid": 714916163370411
+				}
+			],
+			"sid": 456170010521970
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "angka5",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 636360524284591
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece5",
+							"sid": 596006441737462,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "PuzzlePiece5",
+							"sid": 559818025913633,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 304157697215984
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "PuzzlePiece5",
+							"sid": 722982875771762,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "PuzzlePiece5",
+							"sid": 841202852432046,
+							"parameters": {
+								"object": "Puzzle_Box5"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "PuzzlePiece5",
+							"sid": 501117455094492,
+							"parameters": {
+								"instance-variable": "isPlaced"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "PuzzlePiece5",
+							"sid": 748191671734884,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PuzzlePiece5",
+							"sid": 666326302096343,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Puzzle_Box5",
+							"sid": 782154994025394,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 924841062859026,
+							"parameters": {
+								"audio-file": {
+									"path": "Level1/PuzzlePiece"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 749148215447319,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PuzzlePiece5",
+									"sid": 571792554471839,
+									"parameters": {
+										"object": "Puzzle_Box5"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 214651439306542
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Puzzle_Box5",
+							"sid": 184754320743407,
+							"parameters": {
+								"instance-variable": "totalPlaced",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 698888658084966,
+							"parameters": {
+								"layout": "Level1_T1_Success"
+							}
+						}
+					],
+					"sid": 814971031359703
+				}
+			],
+			"sid": 209593607854437
+		}
+	],
+	"sid": 135080431379560
+}
