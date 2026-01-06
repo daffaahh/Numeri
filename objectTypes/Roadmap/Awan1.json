@@ -1,0 +1,62 @@
+{
+	"name": "Awan1",
+	"plugin-id": "Sprite",
+	"sid": 715653022076522,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 763,
+						"height": 405,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6090296,
+						"collisionPoly": {
+							"points": [
+								0.9384010484927916,
+								0.027160493827160494,
+								0.9947575360419397,
+								0.21481481481481482,
+								0.9331585845347313,
+								0.3358024691358025,
+								0.07470511140235911,
+								0.9901234567901235,
+								0.023591087811271297,
+								0.9234567901234568,
+								0,
+								0.7333333333333333,
+								0,
+								0.6790123456790124,
+								0.0655307994757536,
+								0.5234567901234568,
+								0.7404980340760158,
+								0.037037037037037035
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 801631441839801,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,7 +1,7 @@
 {
-	"name": "BG_MainMenu",
+	"name": "BG_RoadMap2",
 	"plugin-id": "Sprite",
-	"sid": 849722954690884,
+	"sid": 360774139675317,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -13,20 +13,20 @@
 				"frames": [
 					{
 						"width": 1280,
-						"height": 720,
+						"height": 2160,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3385144,
+						"imageSpriteId": 3488371,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 895117739204729,
+				"sid": 997783710142319,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

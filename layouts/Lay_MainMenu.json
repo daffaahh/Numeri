@@ -15,13 +15,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3,
-					"sid": 726606135293472,
+					"uid": 101,
+					"sid": 804229955393603,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 726606135293472,
+						"sid": 804229955393603,
 						"expanded": true
 					},
 					"showing": true,
@@ -44,7 +44,7 @@
 					}
 				}
 			],
-			"sid": 212743519505144,
+			"sid": 173105877744391,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -87,8 +87,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
-					"sid": 341387360639133,
+					"uid": 102,
+					"sid": 385632780753766,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -117,7 +117,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 341387360639133,
+						"sid": 385632780753766,
 						"expanded": true
 					},
 					"showing": true,
@@ -148,8 +148,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 7,
-					"sid": 563438716447890,
+					"uid": 103,
+					"sid": 913387213840606,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -164,7 +164,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 563438716447890,
+						"sid": 913387213840606,
 						"expanded": true
 					},
 					"showing": true,
@@ -195,8 +195,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 6,
-					"sid": 383023042772804,
+					"uid": 104,
+					"sid": 743495454152715,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -211,7 +211,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 383023042772804,
+						"sid": 743495454152715,
 						"expanded": true
 					},
 					"showing": true,
@@ -242,8 +242,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 5,
-					"sid": 901674797607684,
+					"uid": 105,
+					"sid": 777299957719096,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -258,7 +258,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 901674797607684,
+						"sid": 777299957719096,
 						"expanded": true
 					},
 					"showing": true,
@@ -281,7 +281,7 @@
 					}
 				}
 			],
-			"sid": 926152299375256,
+			"sid": 120233313256516,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -315,7 +315,7 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 468243384346285,
+			"sid": 907868092286966,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -348,155 +348,8 @@
 			"name": "TransitionLayer",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "CloudWipe1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 9,
-					"sid": 872228551640607,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 2000,
-								"acceleration": 6000,
-								"deceleration": 6000,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 872228551640607,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 2941,
-						"y": 624,
-						"width": 2783.7415630891915,
-						"height": 1036.3711566825557,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.119892270660822,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CloudWipe2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 10,
-					"sid": 765698838039001,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 2000,
-								"acceleration": 6000,
-								"deceleration": 6000,
-								"rotate-speed": 0,
-								"set-angle": false,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 765698838039001,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": -1759,
-						"y": 113,
-						"width": 2955.7151645052695,
-						"height": 1081.1384106900348,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.31295084659446104,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CameraFocus",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"sid": 603822766532932,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 603822766532932,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 657,
-						"y": 357,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 992933581677591,
+			"instances": [],
+			"sid": 491496149742872,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -523,14 +376,14 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": true
+			"global": false
 		}
 	],
 	"scene-graphs-folder-root": {
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 753406801272415,
+	"sid": 883395717346071,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,

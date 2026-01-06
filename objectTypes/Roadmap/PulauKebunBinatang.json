@@ -1,0 +1,66 @@
+{
+	"name": "PulauKebunBinatang",
+	"plugin-id": "Sprite",
+	"sid": 735987109181277,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 644566002939480
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 396,
+						"height": 396,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2560532,
+						"collisionPoly": {
+							"points": [
+								0.43686868686868685,
+								0.10353535353535354,
+								0.8888888888888888,
+								0.20707070707070707,
+								0.9671717171717171,
+								0.3409090909090909,
+								0.9368686868686869,
+								0.6035353535353535,
+								0.3888888888888889,
+								0.8484848484848485,
+								0.06313131313131314,
+								0.45454545454545453,
+								0.08838383838383838,
+								0.2398989898989899,
+								0.20707070707070707,
+								0.12878787878787878
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 226768563437916,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

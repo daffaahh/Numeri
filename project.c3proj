@@ -81,15 +81,8 @@
 	"objectTypes": {
 		"items": [
 			"Mouse",
-			"BG_MainMenu",
-			"MainTitle",
-			"Numi",
-			"Numa",
-			"StartButton",
-			"CloudWipe1",
-			"CloudWipe2",
-			"CameraFocus",
-			"BG_RoadMap"
+			"Wipe1",
+			"Wipe2"
 		],
 		"subfolders": [
 			{
@@ -423,6 +416,52 @@
 					}
 				],
 				"name": "Level_1"
+			},
+			{
+				"items": [
+					"Awan1",
+					"Awan2",
+					"Awan3",
+					"AwanRumah",
+					"BG_RoadMap",
+					"BG_RoadMap2",
+					"BTN_1",
+					"BTN_10",
+					"BTN_11",
+					"BTN_12",
+					"BTN_13",
+					"BTN_14",
+					"BTN_15",
+					"BTN_2",
+					"BTN_3",
+					"BTN_4",
+					"BTN_5",
+					"BTN_6",
+					"BTN_7",
+					"BTN_8",
+					"BTN_9",
+					"BTN_MusicOff",
+					"BTN_MusicOn",
+					"BTN_SoundOff",
+					"BTN_SoundOn",
+					"CameraFocus",
+					"PulauKamarTidur",
+					"PulauKebunBinatang",
+					"PulauKelas"
+				],
+				"subfolders": [],
+				"name": "Roadmap"
+			},
+			{
+				"items": [
+					"MainTitle",
+					"Numa",
+					"Numi",
+					"StartButton",
+					"BG_MainMenu"
+				],
+				"subfolders": [],
+				"name": "MainMenu"
 			}
 		]
 	},
@@ -473,13 +512,13 @@
 	},
 	"eventSheets": {
 		"items": [
-			"ES_MainMenu",
 			"ES_RoadMap",
 			"ES_Global",
 			"ES_Level2_T1",
 			"ES_Level2_T3",
 			"ES_Level2_T2",
-			"ES_Level2_T4"
+			"ES_Level2_T4",
+			"ES_MainMenu"
 		],
 		"subfolders": [
 			{
@@ -689,5 +728,5 @@
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
-	"firstLayout": "Lay_MainMenu"
+	"firstLayout": null
 }

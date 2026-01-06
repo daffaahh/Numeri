@@ -1,0 +1,70 @@
+{
+	"name": "PulauKamarTidur",
+	"plugin-id": "Sprite",
+	"sid": 986291639901365,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 596487137011864
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 328,
+						"height": 353,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5115776,
+						"collisionPoly": {
+							"points": [
+								0.47865853658536583,
+								0,
+								0.7408536585365854,
+								0.0906515580736544,
+								1,
+								0.5269121813031161,
+								0.8201219512195121,
+								0.8215297450424929,
+								0.6676829268292683,
+								0.9348441926345609,
+								0.5426829268292683,
+								0.9971671388101983,
+								0.4024390243902439,
+								0.9546742209631728,
+								0.08231707317073171,
+								0.7535410764872521,
+								0.003048780487804878,
+								0.6062322946175638,
+								0.0975609756097561,
+								0.40509915014164305
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 720769933238445,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

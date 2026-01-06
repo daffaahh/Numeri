@@ -9,7 +9,7 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 521535997641993
+			"sid": 823114908700331
 		},
 		{
 			"functionName": "GoToLayoutFunction",
@@ -24,7 +24,7 @@
 					"type": "string",
 					"initialValue": "",
 					"comment": "Layout name to go to",
-					"sid": 311578227760118
+					"sid": 805276995328831
 				}
 			],
 			"eventType": "function-block",
@@ -33,62 +33,106 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 161898123306004,
+					"sid": 184386852990994,
 					"parameters": {
 						"variable": "NextLayoutName",
 						"value": "TargetName"
 					}
 				},
 				{
-					"id": "set-position",
-					"objectClass": "CloudWipe1",
-					"sid": 615834890635234,
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 212240626345783,
 					"parameters": {
+						"object-to-create": "Wipe1",
+						"layer": "\"TransitionLayer\"",
 						"x": "2941",
-						"y": "624"
+						"y": "504",
+						"create-hierarchy": false,
+						"template-name": "\"\""
 					}
 				},
 				{
-					"id": "set-position",
-					"objectClass": "CloudWipe2",
-					"sid": 744049617192047,
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 366289399798964,
 					"parameters": {
-						"x": "-1759",
-						"y": "113"
+						"object-to-create": "Wipe2",
+						"layer": "\"TransitionLayer\"",
+						"x": "-1749",
+						"y": "213",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Wipe1",
+					"sid": 130404710088666,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"acceleration": "15000"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Wipe1",
+					"sid": 506139689119229,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "15000"
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Wipe2",
+					"sid": 763366631930283,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"acceleration": "15000"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Wipe2",
+					"sid": 796508638508432,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"max-speed": "15000"
 					}
 				},
 				{
 					"id": "move-to-position",
-					"objectClass": "CloudWipe1",
-					"sid": 821110453659217,
+					"objectClass": "Wipe1",
+					"sid": 939318433734716,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"x": "Self.X - 2000",
+						"x": "Self.X - 2300",
 						"y": "Self.Y",
 						"mode": "direct"
 					}
 				},
 				{
 					"id": "move-to-position",
-					"objectClass": "CloudWipe2",
-					"sid": 100773671760224,
+					"objectClass": "Wipe2",
+					"sid": 503731494693862,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"x": "Self.X + 2000",
+						"x": "Self.X + 2300",
 						"y": "Self.Y",
 						"mode": "direct"
 					}
 				}
 			],
-			"sid": 328514800205560
+			"sid": 833487308293903
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "on-arrived",
-					"objectClass": "CloudWipe1",
-					"sid": 710163734998708,
+					"objectClass": "Wipe1",
+					"sid": 257809773995501,
 					"behaviorType": "MoveTo"
 				}
 			],
@@ -96,67 +140,59 @@
 				{
 					"id": "go-to-layout-by-name",
 					"objectClass": "System",
-					"sid": 377624321615501,
+					"sid": 190658024355506,
 					"parameters": {
 						"layout": "NextLayoutName"
 					}
 				},
 				{
 					"id": "move-to-position",
-					"objectClass": "CloudWipe1",
-					"sid": 536547125486388,
+					"objectClass": "Wipe1",
+					"sid": 203987730884463,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"x": "Self.X + 2000",
+						"x": "Self.X - 1700",
 						"y": "Self.Y",
 						"mode": "direct"
 					}
 				},
 				{
 					"id": "move-to-position",
-					"objectClass": "CloudWipe2",
-					"sid": 210859198501385,
+					"objectClass": "Wipe2",
+					"sid": 253963379521445,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"x": "Self.X - 2000",
+						"x": "Self.X + 1700",
 						"y": "Self.Y",
 						"mode": "direct"
 					}
 				}
 			],
-			"sid": 578345874989934
+			"sid": 121542633857514
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "on-arrived",
-					"objectClass": "CloudWipe2",
-					"sid": 597598951828819,
+					"objectClass": "Wipe2",
+					"sid": 206140782659094,
 					"behaviorType": "MoveTo"
 				}
 			],
 			"actions": [
 				{
-					"id": "set-position",
-					"objectClass": "CloudWipe1",
-					"sid": 705891253235092,
-					"parameters": {
-						"x": "2941",
-						"y": "624"
-					}
+					"id": "destroy",
+					"objectClass": "Wipe1",
+					"sid": 958765476821448
 				},
 				{
-					"id": "set-position",
-					"objectClass": "CloudWipe2",
-					"sid": 790249112086212,
-					"parameters": {
-						"x": "-1759",
-						"y": "113"
-					}
+					"id": "destroy",
+					"objectClass": "Wipe2",
+					"sid": 542532883084364
 				}
 			],
-			"sid": 972085535791453
+			"sid": 608661902880229
 		}
 	],
 	"sid": 648758802609752

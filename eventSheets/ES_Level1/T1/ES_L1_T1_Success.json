@@ -42,16 +42,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 774337873810278,
-					"parameters": {
-						"layout": "Lay_RoadMap"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 684485610370583
 		},
 		{

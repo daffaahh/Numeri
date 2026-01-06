@@ -47,7 +47,6 @@
 			"title": "Group 1 - System Initialization",
 			"description": "Setup awal layout, hide notifications, save posisi origin & target untuk semua komponen",
 			"isActiveOnStart": true,
-			"sid": 570385299440260,
 			"children": [
 				{
 					"eventType": "block",
@@ -428,7 +427,8 @@
 					"eventType": "comment",
 					"text": "Catatan: X_target & Y_target untuk setiap komponen sudah di-set manual di layout.\nPosisi awal komponen (X_origin, Y_origin) disimpan saat start untuk reset jika salah drop."
 				}
-			]
+			],
+			"sid": 570385299440260
 		},
 		{
 			"eventType": "group",
@@ -436,7 +436,6 @@
 			"title": "Group 2 - Game Start",
 			"description": "Mulai game setelah player klik dialog intro, show referensi rumah",
 			"isActiveOnStart": true,
-			"sid": 570385299440261,
 			"children": [
 				{
 					"eventType": "block",
@@ -498,7 +497,8 @@
 					"eventType": "comment",
 					"text": "Player klik dialog untuk mulai game. Referensi rumah ditampilkan semi-transparan sebagai panduan."
 				}
-			]
+			],
+			"sid": 570385299440261
 		},
 		{
 			"eventType": "group",
@@ -506,7 +506,6 @@
 			"title": "Group 3 - Drag & Drop Mechanics",
 			"description": "Handle drag & drop untuk 9 komponen: dinding, pintu, jendela, tangga, atap_pg, atas_stiga, kunci, layang, polygon",
 			"isActiveOnStart": true,
-			"sid": 570385299440262,
 			"children": [
 				{
 					"eventType": "comment",
@@ -667,7 +666,8 @@
 					"eventType": "comment",
 					"text": "Cara duplikasi via UI Construct 3:\n1. Klik kanan pada Event 'On drop + isPlaced=0' → Duplicate\n2. Ganti semua 'dinding_level_2_t3' dengan nama komponen berikutnya (misal 'pintu_level_2_t3')\n3. Sub-event distance < 50 → BENAR (snap ke target)\n4. Sub-event Else → SALAH (kembali ke origin)\n5. Lakukan untuk 8 komponen lainnya: pintu, jendela, tangga, atap_pg, atas_stiga, kunci, layang, polygon"
 				}
-			]
+			],
+			"sid": 570385299440262
 		},
 		{
 			"eventType": "group",
@@ -675,8 +675,8 @@
 			"title": "Group 4 - Win Condition",
 			"description": "Detect kemenangan (9 komponen terpasang) dan navigasi ke RoadMap",
 			"isActiveOnStart": true,
-			"sid": 570385299440263,
-			"children": []
+			"children": [],
+			"sid": 570385299440263
 		},
 		{
 			"eventType": "group",
@@ -684,8 +684,8 @@
 			"title": "Group 5 - Maskot Dialog System",
 			"description": "Memberikan hints & feedback lewat maskot (Numa & Numi) pada berbagai progress points",
 			"isActiveOnStart": true,
-			"sid": 570385299440264,
-			"children": []
+			"children": [],
+			"sid": 570385299440264
 		},
 		{
 			"eventType": "group",
@@ -693,8 +693,8 @@
 			"title": "Group 6 - UI Controls",
 			"description": "Handle toggle reference rumah dan controls lainnya",
 			"isActiveOnStart": true,
-			"sid": 570385299440265,
-			"children": []
+			"children": [],
+			"sid": 570385299440265
 		},
 		{
 			"eventType": "group",
@@ -702,8 +702,8 @@
 			"title": "Group 7 - Notifications Management",
 			"description": "Auto-hide notifications (benar, cobalagi, tap2_sering) setelah beberapa detik",
 			"isActiveOnStart": true,
-			"sid": 570385299440266,
-			"children": []
+			"children": [],
+			"sid": 570385299440266
 		},
 		{
 			"eventType": "group",
@@ -711,11 +711,9 @@
 			"title": "Group 8 - Animations & Effects",
 			"description": "Particle effects, sound effects, hover animations (optional polish phase)",
 			"isActiveOnStart": true,
-			"sid": 570385299440267,
-			"children": []
+			"children": [],
+			"sid": 570385299440267
 		}
 	],
 	"sid": 570385299440259
 }
-
-

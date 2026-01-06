@@ -1,0 +1,68 @@
+{
+	"name": "AwanRumah",
+	"plugin-id": "Sprite",
+	"sid": 804602579672057,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 867739596285903
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 396,
+						"height": 301,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8327237,
+						"collisionPoly": {
+							"points": [
+								0.3939393939393939,
+								0.03986710963455149,
+								0.4898989898989899,
+								0.046511627906976744,
+								0.9191919191919192,
+								0.15946843853820597,
+								0.9974747474747475,
+								0.33554817275747506,
+								0.9621212121212122,
+								0.6810631229235881,
+								0.41414141414141414,
+								0.9867109634551495,
+								0.10101010101010101,
+								0.4850498338870432,
+								0.12121212121212122,
+								0.21262458471760798,
+								0.25252525252525254,
+								0.05647840531561462
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 994617168089854,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
