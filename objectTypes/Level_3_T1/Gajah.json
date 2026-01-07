@@ -1,0 +1,85 @@
+{
+	"name": "Gajah",
+	"plugin-id": "Sprite",
+	"sid": 272796838223920,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "IsLocked",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 728185040021099
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 585650222942664
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 939095319871386
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1074,
+						"height": 823,
+						"originX": 0.5009310986964618,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4309559,
+						"collisionPoly": {
+							"points": [
+								0.30446927374301674,
+								0.001215066828675577,
+								0.5614525139664804,
+								0.06804374240583232,
+								0.9934823091247672,
+								0.707168894289186,
+								0.9916201117318436,
+								0.7545565006075334,
+								0.8500931098696461,
+								0.9744835965978129,
+								0.5167597765363129,
+								0.9866342648845686,
+								0.3100558659217877,
+								0.9380315917375456,
+								0.020484171322160148,
+								0.7253948967193196,
+								0.00558659217877095,
+								0.675577156743621,
+								0.023277467411545624,
+								0.20899149453219928,
+								0.13966480446927373,
+								0.027946537059538274
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 449337349017530,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

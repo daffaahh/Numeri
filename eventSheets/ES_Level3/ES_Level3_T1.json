@@ -2,49 +2,1087 @@
 	"name": "ES_Level3_T1",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
+			"eventType": "variable",
+			"name": "IsGameOver",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 233034227726954
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-drop",
-					"objectClass": "Rabbit",
-					"sid": 210240238059608,
-					"behaviorType": "DragDrop"
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 221941067762316
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 213382151921598,
+					"parameters": {
+						"variable": "IsGameOver",
+						"value": "true"
+					}
 				},
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Rabbit",
-					"sid": 674099359331563,
+					"id": "set-visible",
+					"objectClass": "TransparantOverlay",
+					"sid": 465556548491393,
 					"parameters": {
-						"object": "Frame_rabbit"
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Capybara",
+					"sid": 756974735129433,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Rabbit",
+					"sid": 453363955809629,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Gajah",
+					"sid": 501242651032897,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 368347845873932,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Ready",
+					"sid": 306942631091291,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "1280",
+						"end-y": "731",
+						"time": "0.5",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 503434006227028,
+					"parameters": {
+						"seconds": "1.3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Ready",
+					"sid": 162251758236029,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "0.5",
+						"ease": "easeinback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 631200474993117,
+					"parameters": {
+						"seconds": "0.5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Go",
+					"sid": 253947610891350,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "843",
+						"end-y": "733",
+						"time": "0.5",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 358294954465636,
+					"parameters": {
+						"seconds": "1.3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Go",
+					"sid": 716457463556768,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "0",
+						"end-y": "0",
+						"time": "0.5",
+						"ease": "easeinback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 134288467664221,
+					"parameters": {
+						"variable": "IsGameOver",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TransparantOverlay",
+					"sid": 763831171653599,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 984678569890560,
+					"parameters": {
+						"variable": "timer",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Capybara",
+					"sid": 588528610301764,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Rabbit",
+					"sid": 852332999703794,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Gajah",
+					"sid": 568707074026027,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 755353791968239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 595842700012658,
+					"parameters": {
+						"variable": "timer",
+						"comparison": 2,
+						"value": "10"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "destroy",
-					"objectClass": "Frame_rabbit",
-					"sid": 217205085604046
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Rabbit",
-					"sid": 963669578051822,
+					"id": "set-font-color",
+					"objectClass": "TImerL3",
+					"sid": 675955395066638,
 					"parameters": {
-						"x": "590",
-						"y": "393"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "Rabbit",
-					"sid": 931909645265768,
-					"parameters": {
-						"width": "211.990566",
-						"height": "211.990566"
+						"color": "rgb(255, 0, 0)"
 					}
 				}
 			],
-			"sid": 361219541923433
+			"sid": 872242894878924
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 824034374931986
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 579730050899474,
+					"parameters": {
+						"variable": "timer",
+						"comparison": 2,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 502417084856764,
+					"parameters": {
+						"variable": "IsGameOver",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Capybara",
+					"sid": 874936254539705,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Rabbit",
+					"sid": 543679308197896,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Gajah",
+					"sid": 467797396913853,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TransparantOverlay",
+					"sid": 746692292984664,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "LoseNotif",
+					"sid": 276868572281176,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "641.156986",
+						"end-y": "399.514906",
+						"time": "0.8",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "home",
+					"sid": 894566739571980,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "73.038595",
+						"end-y": "79.546985",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Retry",
+					"sid": 371054116182651,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "73.038595",
+						"end-y": "79.546985",
+						"time": "0.1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 748870620450017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 119301524355860
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 444055472085835,
+					"parameters": {
+						"variable": "IsGameOver"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 166249439406173,
+					"parameters": {
+						"variable": "timer",
+						"value": "dt"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TImerL3",
+					"sid": 658991002076877,
+					"parameters": {
+						"text": "zeropad(floor(Timer / 60), 2) & \":\" & zeropad(floor(Timer % 60), 2)"
+					}
+				}
+			],
+			"sid": 553952724184348
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FitTheFrame",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Rabbit",
+							"sid": 494812082877987,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Rabbit",
+							"sid": 792712879245868,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 979689533217383
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Capybara",
+							"sid": 865061779372557,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Capybara",
+							"sid": 335157085015966,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 648094138502348
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Gajah",
+							"sid": 296918501491011,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Gajah",
+							"sid": 496791343110344,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 192456227231257
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Rabbit",
+							"sid": 411867631813867,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Rabbit",
+							"sid": 218399489955285,
+							"parameters": {
+								"object": "Frame_rabbit"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Rabbit",
+							"sid": 956776385795777,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Rabbit",
+							"sid": 315524627792924,
+							"parameters": {
+								"x": "416",
+								"y": "613"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Frame_rabbit",
+							"sid": 932094507953868,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 499018322308289,
+							"parameters": {
+								"seconds": "0.8",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Frame_rabbit",
+							"sid": 448946488683601,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 510924090356853
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Rabbit",
+							"sid": 507312213548341,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Rabbit",
+							"sid": 317107959117715,
+							"parameters": {
+								"object": "Frame_rabbit"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Frame_rabbit",
+							"sid": 590934000439073
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Rabbit",
+							"sid": 254753902756634,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Rabbit",
+							"sid": 728082557846533,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Rabbit",
+							"sid": 696974645136806,
+							"parameters": {
+								"width": "175",
+								"height": "175"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Rabbit",
+							"sid": 209025487942335,
+							"parameters": {
+								"x": "590",
+								"y": "368"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Rabbit",
+							"sid": 264171167812025,
+							"parameters": {
+								"instance-variable": "IsLocked",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 529348603662142
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Capybara",
+							"sid": 824715708782266,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Capybara",
+							"sid": 701873499799423,
+							"parameters": {
+								"object": "Frame_capybara"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Capybara",
+							"sid": 778522972363013,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Capybara",
+							"sid": 803877862966119,
+							"parameters": {
+								"x": "613",
+								"y": "609"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Frame_capybara",
+							"sid": 887414366028630,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 733427826718381,
+							"parameters": {
+								"seconds": "0.8",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Frame_capybara",
+							"sid": 926235724622840,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 838359559571380
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Capybara",
+							"sid": 906602026529229,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Capybara",
+							"sid": 559642108239489,
+							"parameters": {
+								"object": "Frame_capybara"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Frame_capybara",
+							"sid": 295378664506244
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Capybara",
+							"sid": 509021799125598,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Capybara",
+							"sid": 613430837902990,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Capybara",
+							"sid": 609455356357238,
+							"parameters": {
+								"x": "210",
+								"y": "388"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Capybara",
+							"sid": 511963912956522,
+							"parameters": {
+								"width": "211",
+								"height": "175"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Capybara",
+							"sid": 502789732201663,
+							"parameters": {
+								"instance-variable": "IsLocked",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 380876819849348
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Gajah",
+							"sid": 198592797034080,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Gajah",
+							"sid": 884837381893498,
+							"parameters": {
+								"object": "Frame_Gajah"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Gajah",
+							"sid": 662783199061049,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Gajah",
+							"sid": 217493854221054,
+							"parameters": {
+								"x": "801",
+								"y": "593"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Frame_Gajah",
+							"sid": 551869118657089,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 270393674881942,
+							"parameters": {
+								"seconds": "0.8",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Frame_Gajah",
+							"sid": 650250034594511,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 278460910219650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Gajah",
+							"sid": 415478482434575,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Gajah",
+							"sid": 872696177778952,
+							"parameters": {
+								"object": "Frame_Gajah"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Frame_Gajah",
+							"sid": 749976848798981
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Gajah",
+							"sid": 229526255296789,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Frame_Gajah",
+							"sid": 299385672930279,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Gajah",
+							"sid": 718309027585769,
+							"parameters": {
+								"x": "1028",
+								"y": "368"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Gajah",
+							"sid": 226197417697102,
+							"parameters": {
+								"width": "373",
+								"height": "286"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Gajah",
+							"sid": 791186906827264,
+							"parameters": {
+								"instance-variable": "IsLocked",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 890540885448837
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Capybara",
+							"sid": 800361902089712,
+							"parameters": {
+								"instance-variable": "IsLocked"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Gajah",
+							"sid": 568696198545022,
+							"parameters": {
+								"instance-variable": "IsLocked"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Rabbit",
+							"sid": 685266425785697,
+							"parameters": {
+								"instance-variable": "IsLocked"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 686346642450352
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 709988024851762,
+							"parameters": {
+								"seconds": "0.7",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TransparantOverlay",
+							"sid": 530938780152701,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "WinNotif",
+							"sid": 215119670540817,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "710.083581",
+								"end-y": "548.955095",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "home",
+							"sid": 870808291037394,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "73.038595",
+								"end-y": "79.546985",
+								"time": "0.1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Retry",
+							"sid": 570967700402259,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "73.038595",
+								"end-y": "79.546985",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 371929494633903,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 484754863260103
+				}
+			],
+			"sid": 184133744800021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 675018162027333,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "home"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 827746764237121,
+					"parameters": [
+						"\"Lay_RoadMap\""
+					]
+				}
+			],
+			"sid": 755725619894830
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 745124158083925,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Retry"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 175392417540716
+				}
+			],
+			"sid": 179020894964250
 		}
 	],
 	"sid": 216634530871288

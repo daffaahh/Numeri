@@ -921,7 +921,9 @@
 					"uid": 167,
 					"sid": 789893134609113,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"TargetLayout": "Lay_Level3_T1"
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 789893134609113,
@@ -930,12 +932,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 968.1564783592503,
-						"y": 1563.0806780481191,
-						"width": 113,
-						"height": 168,
+						"x": 974,
+						"y": 1554,
+						"width": 115,
+						"height": 120,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.7083333333333334,
 						"color": [
 							1,
 							1,
@@ -1321,8 +1323,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 176,
-					"sid": 106317824417001,
+					"uid": 224,
+					"sid": 838368712808810,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -1338,23 +1340,23 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 106317824417001,
+						"sid": 838368712808810,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 640,
-						"y": 329,
-						"width": 250,
-						"height": 250,
+						"x": 644,
+						"y": 158,
+						"width": 100,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.17700000000000007
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1392,7 +1394,7 @@
 		},
 		{
 			"name": "TransitionLayer",
-			"overriden": 0,
+			"overriden": 1,
 			"subLayers": [],
 			"instances": [],
 			"sid": 616560394649034,
@@ -1413,8 +1415,8 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",

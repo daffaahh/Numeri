@@ -1,0 +1,60 @@
+{
+	"name": "Go",
+	"plugin-id": "Sprite",
+	"sid": 351716969490935,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 459646833773354
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 843,
+						"height": 733,
+						"originX": 0.7603795966785291,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 942766,
+						"collisionPoly": {
+							"points": [
+								0.7978557018836275,
+								0.054071233542114544,
+								1,
+								0.3522817616554749,
+								1,
+								0.833579683773317,
+								0.2707724157732091,
+								0.7878078352721968,
+								0.2852792952074408,
+								0.34118555595823363
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 819146761867991,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

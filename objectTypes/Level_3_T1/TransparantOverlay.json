@@ -1,7 +1,7 @@
 {
-	"name": "Sprite",
+	"name": "TransparantOverlay",
 	"plugin-id": "Sprite",
-	"sid": 996014509884494,
+	"sid": 429842660006271,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5409024,
+						"imageSpriteId": 5796728,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 932493237762870,
+				"sid": 439333435630799,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

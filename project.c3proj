@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -71,6 +78,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
@@ -90,7 +104,8 @@
 			"Mouse",
 			"Wipe1",
 			"Wipe2",
-			"Level_3_T"
+			"Level_3_T",
+			"Keyboard"
 		],
 		"subfolders": [
 			{
@@ -479,7 +494,18 @@
 					"Frame_rabbit",
 					"Plate",
 					"Rabbit",
-					"Sprite"
+					"Capybara",
+					"Gajah",
+					"Notif1",
+					"WinNotif",
+					"TransparantOverlay",
+					"BannerTimer",
+					"TImerL3",
+					"Go",
+					"Ready",
+					"LoseNotif",
+					"Retry",
+					"home"
 				],
 				"subfolders": [],
 				"name": "Level_3_T1"
@@ -823,5 +849,5 @@
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
-	"firstLayout": null
+	"firstLayout": "Lay_MainMenu"
 }

@@ -1,0 +1,77 @@
+{
+	"name": "Capybara",
+	"plugin-id": "Sprite",
+	"sid": 996014509884494,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "IsLocked",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 993377792888156
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 912712264476522
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 423779330754061
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 587,
+						"height": 487,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6252830,
+						"collisionPoly": {
+							"points": [
+								0.23509369676320271,
+								0.004106776180698152,
+								0.5621805792163543,
+								0.0513347022587269,
+								0.9131175468483816,
+								0.43737166324435317,
+								0.989778534923339,
+								0.6919917864476385,
+								0.9471890971039182,
+								0.9137577002053389,
+								0.3986371379897785,
+								0.9589322381930184,
+								0.013628620102214651,
+								0.49691991786447637
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 932493237762870,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

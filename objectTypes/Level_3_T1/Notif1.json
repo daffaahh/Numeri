@@ -1,0 +1,60 @@
+{
+	"name": "Notif1",
+	"plugin-id": "Sprite",
+	"sid": 809974947581086,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 699,
+						"height": 267,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4808714,
+						"collisionPoly": {
+							"points": [
+								0.2474964234620887,
+								0,
+								0.43919885550786836,
+								0,
+								0.9642346208869814,
+								0.1797752808988764,
+								0.9227467811158798,
+								0.8726591760299626,
+								0.7439198855507868,
+								0.8726591760299626,
+								0.0844062947067239,
+								0.8052434456928839,
+								0.06866952789699571,
+								0.7602996254681648,
+								0.09585121602288985,
+								0.003745318352059925
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 123507960471353,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

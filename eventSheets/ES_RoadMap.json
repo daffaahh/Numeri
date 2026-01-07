@@ -9,17 +9,22 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-click",
+					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 329868449484580
+					"sid": 152101442072099,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_11"
+					}
 				}
 			],
 			"actions": [
 				{
 					"callFunction": "GoToLayoutFunction",
-					"sid": 418001608636696,
+					"sid": 385427079209505,
 					"parameters": [
-						"\"\""
+						"BTN_11.TargetLayout"
 					]
 				}
 			],
@@ -41,9 +46,9 @@
 				{
 					"id": "set-y",
 					"objectClass": "CameraFocus",
-					"sid": 454170418128965,
+					"sid": 307540689444975,
 					"parameters": {
-						"y": "Self.Y + 100"
+						"y": "Self.Y + 40"
 					}
 				}
 			],
@@ -65,13 +70,61 @@
 				{
 					"id": "set-y",
 					"objectClass": "CameraFocus",
-					"sid": 280273117278743,
+					"sid": 782219698044042,
 					"parameters": {
-						"y": "Self.Y - 100"
+						"y": "Self.Y - 40"
 					}
 				}
 			],
 			"sid": 789727407422893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 979352167629280,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "CameraFocus",
+					"sid": 677568168503215,
+					"parameters": {
+						"y": "Self.Y + 40"
+					}
+				}
+			],
+			"sid": 892823420763543
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 359188987807188,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "CameraFocus",
+					"sid": 943829135020588,
+					"parameters": {
+						"y": "Self.Y - 40"
+					}
+				}
+			],
+			"sid": 217238684123761
 		}
 	],
 	"sid": 241361781550435

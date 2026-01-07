@@ -42,12 +42,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 212240626345783,
+					"sid": 978216149390745,
 					"parameters": {
 						"object-to-create": "Wipe1",
 						"layer": "\"TransitionLayer\"",
 						"x": "2941",
-						"y": "504",
+						"y": "ViewportBottom(\"TransitionLayer\")-150",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -55,12 +55,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 366289399798964,
+					"sid": 326430435568791,
 					"parameters": {
 						"object-to-create": "Wipe2",
 						"layer": "\"TransitionLayer\"",
 						"x": "-1749",
-						"y": "213",
+						"y": "ViewportTop(\"TransitionLayer\")+150",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -68,37 +68,55 @@
 				{
 					"id": "set-acceleration",
 					"objectClass": "Wipe1",
-					"sid": 130404710088666,
+					"sid": 332577806788963,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"acceleration": "15000"
+						"acceleration": "20000"
 					}
 				},
 				{
 					"id": "set-max-speed",
 					"objectClass": "Wipe1",
-					"sid": 506139689119229,
+					"sid": 115187281175835,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"max-speed": "15000"
+						"max-speed": "20000"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "Wipe1",
+					"sid": 589170864635905,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"deceleration": "1000"
 					}
 				},
 				{
 					"id": "set-acceleration",
 					"objectClass": "Wipe2",
-					"sid": 763366631930283,
+					"sid": 200886393060514,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"acceleration": "15000"
+						"acceleration": "20000"
 					}
 				},
 				{
 					"id": "set-max-speed",
 					"objectClass": "Wipe2",
-					"sid": 796508638508432,
+					"sid": 479814956188370,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"max-speed": "15000"
+						"max-speed": "20000"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "Wipe2",
+					"sid": 545193075110858,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"deceleration": "1000"
 					}
 				},
 				{
@@ -148,10 +166,10 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "Wipe1",
-					"sid": 203987730884463,
+					"sid": 832287446163317,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"x": "Self.X - 1700",
+						"x": "Self.X - 2000",
 						"y": "Self.Y",
 						"mode": "direct"
 					}
@@ -159,10 +177,10 @@
 				{
 					"id": "move-to-position",
 					"objectClass": "Wipe2",
-					"sid": 253963379521445,
+					"sid": 599403851179814,
 					"behaviorType": "MoveTo",
 					"parameters": {
-						"x": "Self.X + 1700",
+						"x": "Self.X + 2000",
 						"y": "Self.Y",
 						"mode": "direct"
 					}
