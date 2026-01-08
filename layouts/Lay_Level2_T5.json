@@ -461,9 +461,7 @@
 								"componentType": "segment1",
 								"X_origin": 933,
 								"Y_origin": 425,
-								"X_target": 0,
-								"Y_target": 0,
-								"isPlaced": false
+								"isPlaced": 0
 							},
 							"behaviors": {
 								"DragDrop": {
@@ -517,9 +515,7 @@
 								"componentType": "segment2",
 								"X_origin": 1034,
 								"Y_origin": 349,
-								"X_target": 0,
-								"Y_target": 0,
-								"isPlaced": false
+								"isPlaced": 0
 							},
 							"behaviors": {
 								"DragDrop": {
@@ -573,9 +569,7 @@
 								"componentType": "segment3",
 								"X_origin": 849,
 								"Y_origin": 340,
-								"X_target": 0,
-								"Y_target": 0,
-								"isPlaced": false
+								"isPlaced": 0
 							},
 							"behaviors": {
 								"DragDrop": {
@@ -760,5 +754,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "ES_Level2_T5"
 }
