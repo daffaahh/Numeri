@@ -104,14 +104,6 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "hasil_akhir_t5",
-							"sid": 193054672196016,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
 							"objectClass": "motivasi",
 							"sid": 193054672196200,
 							"parameters": {
@@ -811,7 +803,7 @@
 							"objectClass": "timetxt_lvl_2_t5",
 							"sid": 193054672196230,
 							"parameters": {
-								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2)"
+								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2) & \" | Items: \" & itemsPlaced"
 							}
 						}
 					],
@@ -912,8 +904,8 @@
 							"sid": 193054672196130,
 							"parameters": {
 								"variable": "itemsPlaced",
-								"comparison": 5,
-								"value": "totalItems"
+								"comparison": 0,
+								"value": "3"
 							}
 						},
 						{
@@ -938,14 +930,6 @@
 							}
 						},
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 193054672196300,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
 							"id": "set-visible",
 							"objectClass": "motivasi",
 							"sid": 193054672196240,
@@ -966,30 +950,6 @@
 							"id": "set-visible",
 							"objectClass": "finish",
 							"sid": 193054672196242,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 193054672196243,
-							"parameters": {
-								"seconds": "1.5"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "finish",
-							"sid": 193054672196244,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "hasil_akhir_t5",
-							"sid": 193054672196133,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1080,7 +1040,7 @@
 			"eventType": "group",
 			"disabled": false,
 			"title": "Group 6 - Navigation",
-			"description": "Navigasi ke RoadMap setelah selesai",
+			"description": "Klik finish untuk ke RoadMap",
 			"isActiveOnStart": true,
 			"children": [
 				{
@@ -1093,8 +1053,13 @@
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "hasil_akhir_t5"
+								"object-clicked": "finish"
 							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "finish",
+							"sid": 193054672196143
 						}
 					],
 					"actions": [
