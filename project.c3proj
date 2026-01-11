@@ -514,10 +514,21 @@
 					},
 					{
 						"items": [
-							"tempat_waktu_level2_t5"
+							"tempat_waktu_level2_t5",
+							"timetxt_lvl_2_t5"
 						],
 						"subfolders": [],
 						"name": "Time"
+					},
+					{
+						"items": [
+							"finish",
+							"jikasalah",
+							"petunjuk",
+							"motivasi"
+						],
+						"subfolders": [],
+						"name": "Notifications"
 					}
 				],
 				"name": "Level_2_T5"

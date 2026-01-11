@@ -461,7 +461,7 @@
 								"componentType": "segment1",
 								"X_origin": 933,
 								"Y_origin": 425,
-								"isPlaced": 0
+								"isPlaced": false
 							},
 							"behaviors": {
 								"DragDrop": {
@@ -483,10 +483,10 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 933,
-								"y": 425,
-								"width": 296,
-								"height": 167,
+								"x": 941,
+								"y": 443,
+								"width": 384,
+								"height": 188,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
@@ -515,7 +515,7 @@
 								"componentType": "segment2",
 								"X_origin": 1034,
 								"Y_origin": 349,
-								"isPlaced": 0
+								"isPlaced": false
 							},
 							"behaviors": {
 								"DragDrop": {
@@ -537,10 +537,10 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 1034,
-								"y": 349,
+								"x": 1036,
+								"y": 372,
 								"width": 172,
-								"height": 162,
+								"height": 188,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
@@ -569,7 +569,7 @@
 								"componentType": "segment3",
 								"X_origin": 849,
 								"Y_origin": 340,
-								"isPlaced": 0
+								"isPlaced": false
 							},
 							"behaviors": {
 								"DragDrop": {
@@ -591,10 +591,10 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 849,
-								"y": 340,
-								"width": 172,
-								"height": 162,
+								"x": 840,
+								"y": 360,
+								"width": 188,
+								"height": 188,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [
@@ -667,6 +667,207 @@
 								"y": 99,
 								"width": 747,
 								"height": 135,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "timetxt_lvl_2_t5",
+							"properties": {
+								"text": "Time : ",
+								"enable-bbcode": true,
+								"font": "Arial",
+								"size": 12,
+								"line-height": 0,
+								"bold": true,
+								"italic": true,
+								"color": [
+									0,
+									0,
+									0,
+									1
+								],
+								"horizontal-alignment": "left",
+								"vertical-alignment": "center",
+								"wrapping": "cjk",
+								"text-direction": "ltr",
+								"icon-set": -1,
+								"initially-visible": true,
+								"origin": "top-left",
+								"read-aloud": false
+							},
+							"uid": 160,
+							"sid": 371054917340531,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 371054917340531,
+								"expanded": true
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": 157,
+								"y": 87,
+								"width": 97,
+								"height": 30,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "motivasi",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Default",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 161,
+							"sid": 607907129280526,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 607907129280526,
+								"expanded": true
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": 184,
+								"y": 816,
+								"width": 286,
+								"height": 174,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "jikasalah",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Default",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 162,
+							"sid": 669641605568633,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 669641605568633,
+								"expanded": true
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": 830,
+								"y": 834,
+								"width": 286,
+								"height": 174,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "finish",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Default",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 163,
+							"sid": 776285289178236,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 776285289178236,
+								"expanded": true
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": 504,
+								"y": 816,
+								"width": 286,
+								"height": 174,
+								"originX": 0.5,
+								"originY": 0.5,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
+						{
+							"type": "petunjuk",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Default",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 164,
+							"sid": 929138725399179,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {},
+							"instanceFolderItem": {
+								"sid": 929138725399179,
+								"expanded": true
+							},
+							"showing": true,
+							"locked": false,
+							"world": {
+								"x": 1125,
+								"y": 844,
+								"width": 286,
+								"height": 174,
 								"originX": 0.5,
 								"originY": 0.5,
 								"color": [

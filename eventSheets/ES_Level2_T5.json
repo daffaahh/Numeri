@@ -28,9 +28,9 @@
 		{
 			"eventType": "variable",
 			"name": "gameActive",
-			"type": "boolean",
+			"type": "number",
 			"initialValue": "0",
-			"comment": "Status apakah game sedang berjalan",
+			"comment": "Status apakah game sedang berjalan (0=tidak aktif, 1=aktif)",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 193054672196003
@@ -111,6 +111,38 @@
 							}
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "motivasi",
+							"sid": 193054672196200,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikasalah",
+							"sid": 193054672196201,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "finish",
+							"sid": 193054672196202,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "petunjuk",
+							"sid": 193054672196203,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 193054672196017,
@@ -125,7 +157,7 @@
 							"sid": 193054672196018,
 							"parameters": {
 								"variable": "gameActive",
-								"value": "0"
+								"value": "1"
 							}
 						},
 						{
@@ -135,6 +167,14 @@
 							"parameters": {
 								"variable": "timeRemaining",
 								"value": "120"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_lvl_2_t5",
+							"sid": 193054672196204,
+							"parameters": {
+								"text": "\"Time: 02:00\""
 							}
 						}
 					],
@@ -305,7 +345,7 @@
 			"children": [
 				{
 					"eventType": "comment",
-					"text": "=== ITEM 1 → TARGET 1 ==="
+					"text": "=== ITEM 1 → TARGET 3 (MERAH → ATAS) ==="
 				},
 				{
 					"eventType": "block",
@@ -378,6 +418,23 @@
 										"variable": "itemsPlaced",
 										"value": "1"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "motivasi",
+									"sid": 193054672196210,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "motivasi",
+									"sid": 193054672196211,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 193054672196058
@@ -400,6 +457,23 @@
 										"x": "item_1_level2_t5.X_origin",
 										"y": "item_1_level2_t5.Y_origin"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "jikasalah",
+									"sid": 193054672196212,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikasalah",
+									"sid": 193054672196213,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 193054672196061
@@ -408,7 +482,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "=== ITEM 2 → TARGET 2 ==="
+					"text": "=== ITEM 2 → TARGET 2 (KUNING → KIRI BAWAH) ==="
 				},
 				{
 					"eventType": "block",
@@ -481,6 +555,23 @@
 										"variable": "itemsPlaced",
 										"value": "1"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "motivasi",
+									"sid": 193054672196214,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "motivasi",
+									"sid": 193054672196215,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 193054672196078
@@ -503,6 +594,23 @@
 										"x": "item_2_level2_t5.X_origin",
 										"y": "item_2_level2_t5.Y_origin"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "jikasalah",
+									"sid": 193054672196216,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikasalah",
+									"sid": 193054672196217,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 193054672196081
@@ -511,7 +619,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "=== ITEM 3 → TARGET 3 ==="
+					"text": "=== ITEM 3 → TARGET 1 (HIJAU → KANAN BAWAH) ==="
 				},
 				{
 					"eventType": "block",
@@ -584,6 +692,23 @@
 										"variable": "itemsPlaced",
 										"value": "1"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "motivasi",
+									"sid": 193054672196218,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "motivasi",
+									"sid": 193054672196219,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 193054672196098
@@ -605,6 +730,23 @@
 									"parameters": {
 										"x": "item_3_level2_t5.X_origin",
 										"y": "item_3_level2_t5.Y_origin"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "jikasalah",
+									"sid": 193054672196220,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikasalah",
+									"sid": 193054672196221,
+									"parameters": {
+										"visibility": "visible"
 									}
 								}
 							],
@@ -662,6 +804,14 @@
 							"parameters": {
 								"variable": "timeRemaining",
 								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_lvl_2_t5",
+							"sid": 193054672196230,
+							"parameters": {
+								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2)"
 							}
 						}
 					],
@@ -731,6 +881,14 @@
 							"parameters": {
 								"state": "disabled"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_lvl_2_t5",
+							"sid": 193054672196231,
+							"parameters": {
+								"text": "\"Time: 00:00\""
+							}
 						}
 					],
 					"sid": 193054672196121
@@ -754,7 +912,7 @@
 							"sid": 193054672196130,
 							"parameters": {
 								"variable": "itemsPlaced",
-								"comparison": 0,
+								"comparison": 5,
 								"value": "totalItems"
 							}
 						},
@@ -780,6 +938,55 @@
 							}
 						},
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 193054672196300,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "motivasi",
+							"sid": 193054672196240,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "finish",
+							"sid": 193054672196241,
+							"parameters": {
+								"x": "640",
+								"y": "400"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "finish",
+							"sid": 193054672196242,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 193054672196243,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "finish",
+							"sid": 193054672196244,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "hasil_akhir_t5",
 							"sid": 193054672196133,
@@ -792,6 +999,82 @@
 				}
 			],
 			"sid": 193054672196129
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 5B - Auto Hide Notifications",
+			"description": "Sembunyikan notifikasi setelah 1.5 detik",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "=== AUTO HIDE MOTIVASI ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "motivasi",
+							"sid": 193054672196250
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 193054672196251,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "motivasi",
+							"sid": 193054672196252,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 193054672196253
+				},
+				{
+					"eventType": "comment",
+					"text": "=== AUTO HIDE JIKASALAH ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "jikasalah",
+							"sid": 193054672196254
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 193054672196255,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikasalah",
+							"sid": 193054672196256,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 193054672196257
+				}
+			],
+			"sid": 193054672196249
 		},
 		{
 			"eventType": "group",
