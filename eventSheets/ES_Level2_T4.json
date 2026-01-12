@@ -302,7 +302,7 @@
 							"objectClass": "timetxt",
 							"sid": 141708704191851,
 							"parameters": {
-								"text": "\"Time: \" & timer"
+								"text": "zeropad(floor(timer/60),2) & \":\" & zeropad(timer%60,2)"
 							}
 						}
 					],
@@ -521,7 +521,7 @@
 							"objectClass": "timetxt",
 							"sid": 141708704192014,
 							"parameters": {
-								"text": "\"Time: \" & timer"
+								"text": "zeropad(floor(timer/60),2) & \":\" & zeropad(timer%60,2)"
 							}
 						}
 					],
@@ -2044,7 +2044,7 @@
 							"objectClass": "timetxt",
 							"sid": 141708704194014,
 							"parameters": {
-								"text": "\"Time: \" & timer"
+								"text": "zeropad(floor(timer/60),2) & \":\" & zeropad(timer%60,2)"
 							}
 						}
 					],

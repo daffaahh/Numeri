@@ -801,9 +801,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "timetxt_lvl_2_t5",
-							"sid": 193054672196230,
+							"sid": 689603249478703,
 							"parameters": {
-								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2) & \" | Items: \" & itemsPlaced"
+								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2) & \" Items: \" & itemsPlaced"
 							}
 						}
 					],
