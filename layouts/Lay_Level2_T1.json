@@ -1261,10 +1261,10 @@
 				{
 					"type": "waktu_text_level2",
 					"properties": {
-						"text": "2:00",
+						"text": "02:00",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 20,
+						"size": 30,
 						"line-height": -1,
 						"bold": false,
 						"italic": false,
@@ -1295,10 +1295,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 159,
-						"y": 63,
-						"width": 96,
-						"height": 34,
+						"x": 148,
+						"y": 56,
+						"width": 111,
+						"height": 49,
 						"originX": 0,
 						"originY": 0,
 						"color": [

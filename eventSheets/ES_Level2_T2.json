@@ -6,6 +6,26 @@
 			"includeSheet": "ES_Global"
 		},
 		{
+			"eventType": "variable",
+			"name": "TimeLeft",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "Waktu dalam detik (2 menit = 120 detik)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 906234567890001
+		},
+		{
+			"eventType": "variable",
+			"name": "TimerRunning",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Flag apakah timer sedang berjalan (0=tidak, 1=ya)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 906234567890002
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Step 1 - System Initialization",
@@ -294,6 +314,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 904234567890398,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "0"
+							}
+						},
 						{
 							"id": "play",
 							"objectClass": "Audio",
@@ -588,10 +617,241 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Step 6 - Helper Functions (Optional)",
-			"description": "Function helper untuk randomization, reset, dll",
+			"title": "Step 6 - Timer 2 Menit",
+			"description": "Countdown timer 2 menit untuk quiz",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 906234567890011
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 906234567890012,
+							"parameters": {
+								"variable": "TimeLeft",
+								"value": "120"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 906234567890013,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "text_time_lvl2_t2",
+							"sid": 906234567890014,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaWaktuHabis_level_2_t2",
+							"sid": 906234567890015,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 906234567890010
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 906234567890021,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "dialog_level_2_t2_2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 906234567890022,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "text_time_lvl2_t2",
+							"sid": 906234567890023,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 906234567890020
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 906234567890031,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 906234567890032,
+							"parameters": {
+								"variable": "TimerRunning",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 906234567890033,
+							"parameters": {
+								"variable": "TimeLeft",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 906234567890034,
+							"parameters": {
+								"variable": "TimeLeft",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_time_lvl2_t2",
+							"sid": 906234567890035,
+							"parameters": {
+								"text": "zeropad(floor(TimeLeft/60),2) & \":\" & zeropad(TimeLeft%60,2)"
+							}
+						}
+					],
+					"sid": 906234567890030
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 906234567890041,
+							"parameters": {
+								"variable": "TimeLeft",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 906234567890042,
+							"parameters": {
+								"variable": "TimerRunning",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 906234567890043,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "soal_persegi_level_2_t2",
+							"sid": 906234567890044,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bener_level_2_t2",
+							"sid": 906234567890045,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "salah2_level_2_t2",
+							"sid": 906234567890046,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "salah3_level_2_t2",
+							"sid": 906234567890047,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaWaktuHabis_level_2_t2",
+							"sid": 906234567890048,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 906234567890049,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 906234567890050
+						}
+					],
+					"sid": 906234567890040
+				},
+				{
+					"eventType": "comment",
+					"text": "Timer Logic:\n- Timer mulai saat dialog_2 diklik (quiz mulai)\n- Countdown setiap detik, format MM:SS\n- Waktu habis → hide quiz, show jikaWaktuHabis 2 detik → restart layout"
+				}
+			],
 			"sid": 123456789012306
 		}
 	],

@@ -1171,13 +1171,13 @@
 				{
 					"type": "timetxt_t3",
 					"properties": {
-						"text": "Time :",
+						"text": "02:00",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 12,
+						"size": 25,
 						"line-height": 0,
-						"bold": true,
-						"italic": true,
+						"bold": false,
+						"italic": false,
 						"color": [
 							0,
 							0,
@@ -1205,10 +1205,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 161,
-						"y": 68,
+						"x": 163,
+						"y": 58,
 						"width": 98,
-						"height": 30,
+						"height": 41,
 						"originX": 0,
 						"originY": 0,
 						"color": [
