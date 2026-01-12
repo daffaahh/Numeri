@@ -564,6 +564,20 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 570385299440500,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "dinding_level_2_t3",
 									"sid": 570385299440326,
@@ -1961,7 +1975,7 @@
 							"sid": 570385299440599,
 							"parameters": {
 								"audio-file": {
-									"path": "Level2/Success"
+									"path": "Level2/jawaban benar"
 								},
 								"loop": "not-looping",
 								"volume": "0",

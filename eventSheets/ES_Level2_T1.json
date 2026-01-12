@@ -378,7 +378,7 @@
 					"sid": 234567890123599,
 					"parameters": {
 						"audio-file": {
-							"path": "Level2/Success"
+							"path": "Level2/jawaban benar"
 						},
 						"loop": "not-looping",
 						"volume": "0",
@@ -450,6 +450,20 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 234567890123700,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-enabled",
 							"objectClass": "persegi_jendela_level2_t1",
 							"sid": 702405562563544,
@@ -494,6 +508,20 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 234567890123701,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-enabled",
 							"objectClass": "persegi_buku_level2_t1",

@@ -376,6 +376,20 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 193054672196301,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "item_1_level2_t5",
 									"sid": 193054672196054,
@@ -513,6 +527,20 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 193054672196302,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "item_2_level2_t5",
 									"sid": 193054672196074,
@@ -649,6 +677,20 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 193054672196303,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
 								{
 									"id": "set-position",
 									"objectClass": "item_3_level2_t5",
@@ -920,6 +962,20 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 193054672196300,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban benar"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",

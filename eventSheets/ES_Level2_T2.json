@@ -329,7 +329,7 @@
 							"sid": 904234567890399,
 							"parameters": {
 								"audio-file": {
-									"path": "Level2/Success"
+									"path": "Level2/jawaban benar"
 								},
 								"loop": "not-looping",
 								"volume": "0",
@@ -436,6 +436,20 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 904234567890500,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-1"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "salah2_level_2_t2",
 							"sid": 904234567890323,
@@ -501,6 +515,20 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 904234567890501,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-2"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-visible",
 							"objectClass": "salah3_level_2_t2",
