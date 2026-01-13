@@ -1,5 +1,5 @@
 {
-	"name": "Intro_L1_T2",
+	"name": "Intro_T1",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Tingkat2_Intro",
+					"type": "Tingkat1_Intro",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -15,22 +15,22 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 151,
-					"sid": 395332770283967,
+					"uid": 157,
+					"sid": 245011338567159,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 395332770283967,
+						"sid": 245011338567159,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 639.9979237002096,
-						"y": 360.0343302588373,
-						"width": 1279.9810835062885,
-						"height": 720.0315785281165,
+						"x": 640.1612997156956,
+						"y": 360.0630566618247,
+						"width": 1279.6707998386116,
+						"height": 719.8247889025158,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -44,7 +44,7 @@
 					}
 				}
 			],
-			"sid": 250758819470275,
+			"sid": 256165738200416,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -78,7 +78,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 560669511051094,
+	"sid": 123117602040987,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2560,
@@ -87,5 +87,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "ES_Level1_Intro2"
+	"eventSheet": "ES_Intro_T1"
 }

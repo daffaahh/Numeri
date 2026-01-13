@@ -72,9 +72,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 289253918079321,
+					"sid": 618771754433419,
 					"parameters": {
-						"layout": "Intro_L1_T2"
+						"layout": "Intro_T2"
 					}
 				}
 			],

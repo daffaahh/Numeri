@@ -147,6 +147,16 @@
 								"comparison": 0,
 								"second-value": "\"Level1_T1_1\""
 							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 806064850251400,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"Level1_T2_1\"\n"
+							}
 						}
 					],
 					"actions": [

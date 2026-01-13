@@ -2,6 +2,10 @@
 	"name": "ES_Level1_T2",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Level1_Global"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "T1",
@@ -151,9 +155,50 @@
 							"parameters": {
 								"layout": "Level1_T2_FullNumber"
 							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 108347130168212,
+							"parameters": {
+								"variable": "L1_TimerRunning",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 208726239449236
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drag-start",
+							"objectClass": "NumberBlock1",
+							"sid": 849647666039984,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 701204975047511,
+							"parameters": {
+								"variable": "L1_TimerRunning"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 740129010821148,
+							"parameters": {
+								"variable": "L1_TimerRunning",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 178988931752911
 				}
 			],
 			"sid": 110366899314846
