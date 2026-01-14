@@ -1,7 +1,7 @@
 {
 	"name": "Tingkat1_Intro",
 	"plugin-id": "Sprite",
-	"sid": 795736971396244,
+	"sid": 770636859589037,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2036318,
+						"imageSpriteId": 5121426,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 414575040656278,
+				"sid": 932780492965209,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

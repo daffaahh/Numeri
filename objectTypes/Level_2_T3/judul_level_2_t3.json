@@ -1,7 +1,7 @@
 {
 	"name": "judul_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 415179608301536,
+	"sid": 720604520832994,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6211090,
+						"imageSpriteId": 997784,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 770660189530492,
+				"sid": 964122977342269,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

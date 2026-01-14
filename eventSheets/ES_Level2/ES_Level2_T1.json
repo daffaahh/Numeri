@@ -13,7 +13,7 @@
 			"comment": "Timer countdown dalam detik (2 menit)",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 234567890123456
+			"sid": 232970223177879
 		},
 		{
 			"eventType": "variable",
@@ -23,7 +23,7 @@
 			"comment": "Jumlah item yang berhasil dikelompokkan",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 234567890123457
+			"sid": 496992529799608
 		},
 		{
 			"eventType": "variable",
@@ -33,7 +33,7 @@
 			"comment": "Total item yang harus dikelompokkan (Group 1)",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 234567890123458
+			"sid": 168804464880263
 		},
 		{
 			"eventType": "variable",
@@ -43,7 +43,7 @@
 			"comment": "Status apakah game sedang berjalan",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 234567890123459
+			"sid": 108139139656520
 		},
 		{
 			"eventType": "block",
@@ -51,14 +51,27 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 234567890123460
+					"sid": 427323355933568
 				}
 			],
 			"actions": [
 				{
+					"callFunction": "startGame",
+					"sid": 185715973268305
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 205541113640105,
+					"parameters": {
+						"seconds": "0.3",
+						"use-timescale": true
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "info_level2_t1",
-					"sid": 234567890123461,
+					"sid": 350371518432551,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -66,7 +79,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "berhasil_level2_t1",
-					"sid": 234567890123462,
+					"sid": 829900595457929,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -74,7 +87,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "gagal_level2_t1",
-					"sid": 234567890123463,
+					"sid": 754277637426168,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -82,16 +95,16 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 234567890123464,
+					"sid": 305345214977914,
 					"parameters": {
 						"variable": "timer",
-						"value": "120"
+						"value": "10"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 234567890123465,
+					"sid": 133515332423609,
 					"parameters": {
 						"variable": "score",
 						"value": "0"
@@ -100,7 +113,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 234567890123466,
+					"sid": 585618010665081,
 					"parameters": {
 						"variable": "gameActive",
 						"value": "0"
@@ -109,7 +122,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "persegi_jendela_level2_t1",
-					"sid": 234567890123470,
+					"sid": 940967777311954,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -118,7 +131,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "persegi_jendela_level2_t1",
-					"sid": 234567890123471,
+					"sid": 512863663387700,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -127,7 +140,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "persegi_buku_level2_t1",
-					"sid": 234567890123472,
+					"sid": 722108066195062,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -136,7 +149,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "persegi_buku_level2_t1",
-					"sid": 234567890123473,
+					"sid": 700733655693138,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -145,7 +158,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "persegi_whiteboard_level2_t1",
-					"sid": 234567890123474,
+					"sid": 654441100159309,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -154,7 +167,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "persegi_whiteboard_level2_t1",
-					"sid": 234567890123475,
+					"sid": 297670731281049,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -163,7 +176,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "segitiga_level2_t1",
-					"sid": 234567890123476,
+					"sid": 890719699158749,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -172,7 +185,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "segitiga_level2_t1",
-					"sid": 234567890123477,
+					"sid": 771082676842898,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -181,7 +194,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "segitiga_penggariskuning_level2_t1",
-					"sid": 234567890123478,
+					"sid": 702398246098261,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -190,7 +203,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "segitiga_penggariskuning_level2_t1",
-					"sid": 234567890123479,
+					"sid": 953777083490823,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -199,7 +212,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "segitiga_penggarispink_level2_t1",
-					"sid": 234567890123480,
+					"sid": 871226246260066,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -208,7 +221,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "segitiga_penggarispink_level2_t1",
-					"sid": 234567890123487,
+					"sid": 902987105207898,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -217,7 +230,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "ling_bola_level2_t1",
-					"sid": 234567890123488,
+					"sid": 497246717562159,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -226,7 +239,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "ling_bola_level2_t1",
-					"sid": 234567890123489,
+					"sid": 749490180453624,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -235,7 +248,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "ling_cermin_level2_t1",
-					"sid": 234567890123490,
+					"sid": 492853564811160,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -244,7 +257,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "ling_cermin_level2_t1",
-					"sid": 234567890123491,
+					"sid": 528928947440521,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -253,7 +266,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "ling_jam_level2_t1",
-					"sid": 234567890123492,
+					"sid": 272283815965977,
 					"parameters": {
 						"instance-variable": "X_origin",
 						"value": "Self.X"
@@ -262,7 +275,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "ling_jam_level2_t1",
-					"sid": 234567890123493,
+					"sid": 592664792848330,
 					"parameters": {
 						"instance-variable": "Y_origin",
 						"value": "Self.Y"
@@ -271,13 +284,13 @@
 				{
 					"id": "set-text",
 					"objectClass": "waktu_text_level2",
-					"sid": 234567890123486,
+					"sid": 694985407398383,
 					"parameters": {
 						"text": "\"02:00\""
 					}
 				}
 			],
-			"sid": 234567890123468
+			"sid": 940588712749584
 		},
 		{
 			"eventType": "block",
@@ -285,19 +298,19 @@
 				{
 					"id": "on-any-click",
 					"objectClass": "Mouse",
-					"sid": 234567890123469
+					"sid": 554915716685213
 				},
 				{
 					"id": "is-visible",
 					"objectClass": "info_level2_t1",
-					"sid": 234567890123481
+					"sid": 541208159668170
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "info_level2_t1",
-					"sid": 234567890123482,
+					"sid": 184108930104462,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -305,14 +318,14 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 234567890123483,
+					"sid": 137815481939962,
 					"parameters": {
 						"variable": "gameActive",
 						"value": "1"
 					}
 				}
 			],
-			"sid": 234567890123484
+			"sid": 136822422605407
 		},
 		{
 			"eventType": "block",
@@ -320,7 +333,7 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 234567890123470,
+					"sid": 696533471363488,
 					"parameters": {
 						"interval-seconds": "1"
 					}
@@ -328,7 +341,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 234567890123471,
+					"sid": 503627617375691,
 					"parameters": {
 						"variable": "gameActive",
 						"comparison": 0,
@@ -340,7 +353,7 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 234567890123472,
+					"sid": 990565148232536,
 					"parameters": {
 						"variable": "timer",
 						"value": "1"
@@ -349,13 +362,13 @@
 				{
 					"id": "set-text",
 					"objectClass": "waktu_text_level2",
-					"sid": 234567890123487,
+					"sid": 172212622021388,
 					"parameters": {
 						"text": "zeropad(floor(timer / 60), 2) & \":\" & zeropad(timer % 60, 2)"
 					}
 				}
 			],
-			"sid": 234567890123473
+			"sid": 196221673546956
 		},
 		{
 			"eventType": "block",
@@ -363,7 +376,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 234567890123501,
+					"sid": 737656914010198,
 					"parameters": {
 						"variable": "score",
 						"comparison": 0,
@@ -373,9 +386,37 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 115833132744052,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/jawaban benar"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 883310163964936,
+					"parameters": {
+						"seconds": "4.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 211102762636766
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 234567890123502,
+					"sid": 806325539079048,
 					"parameters": {
 						"variable": "gameActive",
 						"value": "0"
@@ -384,7 +425,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "berhasil_level2_t1",
-					"sid": 234567890123503,
+					"sid": 236043250846592,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -392,22 +433,21 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 234567890123504,
+					"sid": 442791766054812,
 					"parameters": {
-						"seconds": "3",
+						"seconds": "0.3",
 						"use-timescale": true
 					}
 				},
 				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 234567890123505,
-					"parameters": {
-						"layout": "\"Lay_Level2_T2\""
-					}
+					"callFunction": "winGame",
+					"sid": 471264322235623,
+					"parameters": [
+						"\"Lay_Level2_T2\""
+					]
 				}
 			],
-			"sid": 234567890123506
+			"sid": 769559676742767
 		},
 		{
 			"eventType": "group",
@@ -422,13 +462,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 185154121734300,
+							"sid": 668725972962258,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 557698110452610,
+							"sid": 238211312431611,
 							"parameters": {
 								"object": "kotak_persegi_t1"
 							}
@@ -436,9 +476,23 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 566558932501459,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-enabled",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 702405562563544,
+							"sid": 588069559578964,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -447,7 +501,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563553,
+							"sid": 799342683362576,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -456,10 +510,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 702405562563554
+							"sid": 129235635443628
 						}
 					],
-					"sid": 814850357673581
+					"sid": 710322017682666
 				},
 				{
 					"eventType": "block",
@@ -467,13 +521,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 185154121734301,
+							"sid": 115247993886010,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 557698110452611,
+							"sid": 884247005961545,
 							"parameters": {
 								"object": "kotak_persegi_t1"
 							}
@@ -481,9 +535,23 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 660096070080421,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-enabled",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 702405562563545,
+							"sid": 983685107426870,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -492,7 +560,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563555,
+							"sid": 421337608538728,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -501,10 +569,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 702405562563556
+							"sid": 417155730560541
 						}
 					],
-					"sid": 814850357673582
+					"sid": 490812520369772
 				},
 				{
 					"eventType": "block",
@@ -512,13 +580,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 185154121734302,
+							"sid": 315544917687130,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 557698110452612,
+							"sid": 298224482611654,
 							"parameters": {
 								"object": "kotak_persegi_t1"
 							}
@@ -528,7 +596,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 702405562563546,
+							"sid": 156175134202625,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -537,7 +605,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563557,
+							"sid": 206976670033199,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -546,10 +614,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 702405562563558
+							"sid": 586610523845465
 						}
 					],
-					"sid": 814850357673583
+					"sid": 822287640062389
 				},
 				{
 					"eventType": "block",
@@ -557,13 +625,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 185154121734309,
+							"sid": 502304173498397,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 557698110452619,
+							"sid": 983272719145785,
 							"parameters": {
 								"object": "kotak_persegi_t1"
 							},
@@ -574,7 +642,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123600,
+							"sid": 250062966752396,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -582,7 +650,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123601,
+							"sid": 313789502729391,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -591,7 +659,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123602,
+							"sid": 734363761971947,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -599,14 +667,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 702405562563571,
+							"sid": 845490268524797,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673590
+					"sid": 319259517260445
 				},
 				{
 					"eventType": "block",
@@ -614,13 +682,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 185154121734310,
+							"sid": 926401939172571,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 557698110452620,
+							"sid": 897486139770289,
 							"parameters": {
 								"object": "kotak_persegi_t1"
 							},
@@ -631,7 +699,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123603,
+							"sid": 238010923290036,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -639,7 +707,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123604,
+							"sid": 299358280187720,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -648,7 +716,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123605,
+							"sid": 913674504258854,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -656,14 +724,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 702405562563572,
+							"sid": 289414933291895,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673591
+					"sid": 853676799980204
 				},
 				{
 					"eventType": "block",
@@ -671,13 +739,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 185154121734311,
+							"sid": 332023475842534,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 557698110452621,
+							"sid": 198847861014796,
 							"parameters": {
 								"object": "kotak_persegi_t1"
 							},
@@ -688,7 +756,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123606,
+							"sid": 808840856779842,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -696,7 +764,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123607,
+							"sid": 701746088499961,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -705,7 +773,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123608,
+							"sid": 624574623729908,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -713,17 +781,17 @@
 						{
 							"id": "set-position",
 							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 702405562563573,
+							"sid": 671541726222858,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673592
+					"sid": 458453426181541
 				}
 			],
-			"sid": 409712131882954
+			"sid": 573413875780679
 		},
 		{
 			"eventType": "group",
@@ -738,13 +806,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "segitiga_level2_t1",
-							"sid": 185154121734303,
+							"sid": 372903564529713,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "segitiga_level2_t1",
-							"sid": 557698110452613,
+							"sid": 834875432122916,
 							"parameters": {
 								"object": "kotak_segitiga_t1"
 							}
@@ -754,7 +822,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "segitiga_level2_t1",
-							"sid": 702405562563547,
+							"sid": 383415401284795,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -763,7 +831,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563559,
+							"sid": 906797283161648,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -772,10 +840,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "segitiga_level2_t1",
-							"sid": 702405562563560
+							"sid": 824792638777180
 						}
 					],
-					"sid": 814850357673584
+					"sid": 976207715869728
 				},
 				{
 					"eventType": "block",
@@ -783,13 +851,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 185154121734304,
+							"sid": 998223678615967,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 557698110452614,
+							"sid": 845664434551947,
 							"parameters": {
 								"object": "kotak_segitiga_t1"
 							}
@@ -799,7 +867,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 702405562563548,
+							"sid": 864842642774588,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -808,7 +876,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563561,
+							"sid": 458297330312253,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -817,10 +885,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 702405562563562
+							"sid": 674540336282064
 						}
 					],
-					"sid": 814850357673585
+					"sid": 833038605440323
 				},
 				{
 					"eventType": "block",
@@ -828,13 +896,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 185154121734305,
+							"sid": 440272815027549,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 557698110452615,
+							"sid": 246478360474231,
 							"parameters": {
 								"object": "kotak_segitiga_t1"
 							}
@@ -844,7 +912,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 702405562563549,
+							"sid": 680708664002278,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -853,7 +921,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563563,
+							"sid": 156585091885221,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -862,10 +930,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 702405562563564
+							"sid": 663201317567582
 						}
 					],
-					"sid": 814850357673586
+					"sid": 565441698085806
 				},
 				{
 					"eventType": "block",
@@ -873,13 +941,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "segitiga_level2_t1",
-							"sid": 185154121734312,
+							"sid": 280915893305929,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "segitiga_level2_t1",
-							"sid": 557698110452622,
+							"sid": 658468903462009,
 							"parameters": {
 								"object": "kotak_segitiga_t1"
 							},
@@ -890,7 +958,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123609,
+							"sid": 461236622847716,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -898,7 +966,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123610,
+							"sid": 534783133365307,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -907,7 +975,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123611,
+							"sid": 638401771465152,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -915,14 +983,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "segitiga_level2_t1",
-							"sid": 702405562563574,
+							"sid": 460239957428272,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673593
+					"sid": 928247964007576
 				},
 				{
 					"eventType": "block",
@@ -930,13 +998,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 185154121734313,
+							"sid": 321683099960463,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 557698110452623,
+							"sid": 136732436864436,
 							"parameters": {
 								"object": "kotak_segitiga_t1"
 							},
@@ -947,7 +1015,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123612,
+							"sid": 394794203124353,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -955,7 +1023,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123613,
+							"sid": 124322821240015,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -964,7 +1032,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123614,
+							"sid": 545114575426820,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -972,14 +1040,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 702405562563575,
+							"sid": 953817200549489,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673594
+					"sid": 337005742438453
 				},
 				{
 					"eventType": "block",
@@ -987,13 +1055,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 185154121734314,
+							"sid": 835399290535021,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 557698110452624,
+							"sid": 230153627339159,
 							"parameters": {
 								"object": "kotak_segitiga_t1"
 							},
@@ -1004,7 +1072,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123615,
+							"sid": 192858025637226,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1012,7 +1080,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123616,
+							"sid": 479708075963101,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -1021,7 +1089,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123617,
+							"sid": 869497354985615,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1029,17 +1097,17 @@
 						{
 							"id": "set-position",
 							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 702405562563576,
+							"sid": 661316844269947,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673595
+					"sid": 893683351634613
 				}
 			],
-			"sid": 409712131882955
+			"sid": 189160520576182
 		},
 		{
 			"eventType": "group",
@@ -1054,13 +1122,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "ling_bola_level2_t1",
-							"sid": 185154121734306,
+							"sid": 596041298580684,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "ling_bola_level2_t1",
-							"sid": 557698110452616,
+							"sid": 440037159199887,
 							"parameters": {
 								"object": "kotak_lingkaran_t1"
 							}
@@ -1070,7 +1138,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "ling_bola_level2_t1",
-							"sid": 702405562563550,
+							"sid": 283748647619872,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -1079,7 +1147,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563565,
+							"sid": 267081786975382,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -1088,10 +1156,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "ling_bola_level2_t1",
-							"sid": 702405562563566
+							"sid": 237166228272746
 						}
 					],
-					"sid": 814850357673587
+					"sid": 226276523403201
 				},
 				{
 					"eventType": "block",
@@ -1099,13 +1167,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "ling_cermin_level2_t1",
-							"sid": 185154121734307,
+							"sid": 175272117273973,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "ling_cermin_level2_t1",
-							"sid": 557698110452617,
+							"sid": 278881109132653,
 							"parameters": {
 								"object": "kotak_lingkaran_t1"
 							}
@@ -1115,7 +1183,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "ling_cermin_level2_t1",
-							"sid": 702405562563551,
+							"sid": 579423835433053,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -1124,7 +1192,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563567,
+							"sid": 848518854858611,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -1133,10 +1201,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "ling_cermin_level2_t1",
-							"sid": 702405562563568
+							"sid": 119718404938087
 						}
 					],
-					"sid": 814850357673588
+					"sid": 942462636950376
 				},
 				{
 					"eventType": "block",
@@ -1144,13 +1212,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "ling_jam_level2_t1",
-							"sid": 185154121734308,
+							"sid": 324806313107748,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "ling_jam_level2_t1",
-							"sid": 557698110452618,
+							"sid": 838076939703784,
 							"parameters": {
 								"object": "kotak_lingkaran_t1"
 							}
@@ -1160,7 +1228,7 @@
 						{
 							"id": "set-enabled",
 							"objectClass": "ling_jam_level2_t1",
-							"sid": 702405562563552,
+							"sid": 418357146297748,
 							"behaviorType": "DragDrop",
 							"parameters": {
 								"state": "disabled"
@@ -1169,7 +1237,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 702405562563569,
+							"sid": 114597112762449,
 							"parameters": {
 								"variable": "score",
 								"value": "1"
@@ -1178,10 +1246,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "ling_jam_level2_t1",
-							"sid": 702405562563570
+							"sid": 512604256734742
 						}
 					],
-					"sid": 814850357673589
+					"sid": 431226159818664
 				},
 				{
 					"eventType": "block",
@@ -1189,13 +1257,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "ling_bola_level2_t1",
-							"sid": 185154121734315,
+							"sid": 269519584105481,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "ling_bola_level2_t1",
-							"sid": 557698110452625,
+							"sid": 721861933703674,
 							"parameters": {
 								"object": "kotak_lingkaran_t1"
 							},
@@ -1206,7 +1274,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123618,
+							"sid": 199428040235129,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1214,7 +1282,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123619,
+							"sid": 764098295039349,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -1223,7 +1291,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123620,
+							"sid": 661693583813736,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1231,14 +1299,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "ling_bola_level2_t1",
-							"sid": 702405562563577,
+							"sid": 119099691924409,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673596
+					"sid": 447588278279479
 				},
 				{
 					"eventType": "block",
@@ -1246,13 +1314,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "ling_cermin_level2_t1",
-							"sid": 185154121734316,
+							"sid": 351804213843015,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "ling_cermin_level2_t1",
-							"sid": 557698110452626,
+							"sid": 450226095909983,
 							"parameters": {
 								"object": "kotak_lingkaran_t1"
 							},
@@ -1263,7 +1331,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123621,
+							"sid": 961413726976685,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1271,7 +1339,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123622,
+							"sid": 429748497399668,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -1280,7 +1348,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123623,
+							"sid": 146932225904868,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1288,14 +1356,14 @@
 						{
 							"id": "set-position",
 							"objectClass": "ling_cermin_level2_t1",
-							"sid": 702405562563578,
+							"sid": 394324667171338,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673597
+					"sid": 459560933983394
 				},
 				{
 					"eventType": "block",
@@ -1303,13 +1371,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "ling_jam_level2_t1",
-							"sid": 185154121734317,
+							"sid": 962966573602226,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "ling_jam_level2_t1",
-							"sid": 557698110452627,
+							"sid": 393247449507696,
 							"parameters": {
 								"object": "kotak_lingkaran_t1"
 							},
@@ -1320,7 +1388,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123624,
+							"sid": 403322726291554,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1328,7 +1396,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 234567890123625,
+							"sid": 690073856961759,
 							"parameters": {
 								"seconds": "0.5",
 								"use-timescale": true
@@ -1337,7 +1405,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
-							"sid": 234567890123626,
+							"sid": 378251578704333,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1345,18 +1413,18 @@
 						{
 							"id": "set-position",
 							"objectClass": "ling_jam_level2_t1",
-							"sid": 702405562563579,
+							"sid": 439966945255562,
 							"parameters": {
 								"x": "Self.X_origin",
 								"y": "Self.Y_origin"
 							}
 						}
 					],
-					"sid": 814850357673598
+					"sid": 157172326066245
 				}
 			],
-			"sid": 409712131882956
+			"sid": 666611316006698
 		}
 	],
-	"sid": 106789448648930
+	"sid": 649436962275623
 }

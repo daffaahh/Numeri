@@ -1,7 +1,7 @@
 {
 	"name": "jikaSalahpilih_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 949821551752845,
+	"sid": 782221356570864,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5400877,
+						"imageSpriteId": 6488287,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 547830775772177,
+				"sid": 941605210218718,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

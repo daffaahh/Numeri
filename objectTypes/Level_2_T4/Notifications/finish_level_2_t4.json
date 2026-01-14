@@ -1,11 +1,22 @@
 {
 	"name": "finish_level_2_t4",
 	"plugin-id": "Sprite",
-	"sid": 371076048756376,
+	"sid": 360989790859381,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 949089469151052
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 326243150825501
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,13 +31,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2351266,
+						"imageSpriteId": 9062414,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 292976861191455,
+				"sid": 504401527548837,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

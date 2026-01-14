@@ -1,10 +1,18 @@
 {
 	"name": "depan_level_2_t4",
 	"plugin-id": "Sprite",
-	"sid": 168307086080381,
+	"sid": 805524320997419,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "direction",
+			"type": "string",
+			"desc": "Biru ↑",
+			"show": true,
+			"sid": 428285445102325
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -20,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9957799,
+						"imageSpriteId": 9856678,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 399269115500497,
+				"sid": 989163675108138,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

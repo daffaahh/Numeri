@@ -150,6 +150,131 @@
 				}
 			],
 			"sid": 469844870874663
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 104734463852030,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 533622329897394,
+					"parameters": [
+						"\"Lay_Level2_T1\""
+					]
+				}
+			],
+			"sid": 421404300933978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 519338104245593,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 526722910297836,
+					"parameters": [
+						"\"Lay_Level2_T2\""
+					]
+				}
+			],
+			"sid": 786863493171712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 612823254711038,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 420936650554833,
+					"parameters": [
+						"\"Lay_Level2_T3\""
+					]
+				}
+			],
+			"sid": 297424610845927
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 511762290459652,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 263460791026831,
+					"parameters": [
+						"\"Lay_Level2_T4\""
+					]
+				}
+			],
+			"sid": 779271761696710
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 873461209569797,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 721989425063978,
+					"parameters": [
+						"\"Lay_Level2_T5\""
+					]
+				}
+			],
+			"sid": 802956831323673
 		}
 	],
 	"sid": 241361781550435

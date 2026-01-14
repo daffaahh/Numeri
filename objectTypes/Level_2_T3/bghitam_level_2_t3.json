@@ -1,7 +1,7 @@
 {
 	"name": "bghitam_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 516275246783771,
+	"sid": 369664631268366,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1121034,
+						"imageSpriteId": 1420682,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 814687487583737,
+				"sid": 270788852863910,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

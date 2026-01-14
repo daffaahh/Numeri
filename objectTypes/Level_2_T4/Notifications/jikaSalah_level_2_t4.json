@@ -1,32 +1,43 @@
 {
 	"name": "jikaSalah_level_2_t4",
 	"plugin-id": "Sprite",
-	"sid": 250069041894308,
+	"sid": 960473092711206,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 475747541706640
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 511897906550284
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 1023,
-						"height": 629,
+						"width": 1449,
+						"height": 600,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 342346,
+						"imageSpriteId": 1358305,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 279556638390406,
+				"sid": 653536899482326,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

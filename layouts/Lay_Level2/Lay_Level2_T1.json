@@ -15,13 +15,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 27,
-					"sid": 526318237897540,
+					"uid": 88,
+					"sid": 226205551426845,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 526318237897540,
+						"sid": 226205551426845,
 						"expanded": true
 					},
 					"showing": true,
@@ -52,13 +52,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 31,
-					"sid": 791433410669619,
+					"uid": 89,
+					"sid": 653174261057983,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 791433410669619,
+						"sid": 653174261057983,
 						"expanded": true
 					},
 					"showing": true,
@@ -89,13 +89,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 26,
-					"sid": 923251434147253,
+					"uid": 234,
+					"sid": 177518286845255,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 923251434147253,
+						"sid": 177518286845255,
 						"expanded": true
 					},
 					"showing": true,
@@ -118,7 +118,7 @@
 					}
 				}
 			],
-			"sid": 569278868344854,
+			"sid": 631279360378014,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -161,13 +161,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 28,
-					"sid": 530899761081681,
+					"uid": 235,
+					"sid": 338108566935906,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 530899761081681,
+						"sid": 338108566935906,
 						"expanded": true
 					},
 					"showing": true,
@@ -198,13 +198,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 29,
-					"sid": 744559634162093,
+					"uid": 236,
+					"sid": 290050980996374,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 744559634162093,
+						"sid": 290050980996374,
 						"expanded": true
 					},
 					"showing": true,
@@ -235,13 +235,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 30,
-					"sid": 498622454564931,
+					"uid": 237,
+					"sid": 714385301372946,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 498622454564931,
+						"sid": 714385301372946,
 						"expanded": true
 					},
 					"showing": true,
@@ -264,7 +264,7 @@
 					}
 				}
 			],
-			"sid": 975006077500006,
+			"sid": 537577854030858,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -307,8 +307,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 13,
-					"sid": 813724548546544,
+					"uid": 238,
+					"sid": 600716778001738,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "persegi",
@@ -329,7 +329,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 813724548546544,
+						"sid": 600716778001738,
 						"expanded": true
 					},
 					"showing": true,
@@ -360,8 +360,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 18,
-					"sid": 385648537430021,
+					"uid": 239,
+					"sid": 613798668535183,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "segitiga",
@@ -382,7 +382,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 385648537430021,
+						"sid": 613798668535183,
 						"expanded": true
 					},
 					"showing": true,
@@ -413,8 +413,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 19,
-					"sid": 858902286838114,
+					"uid": 240,
+					"sid": 591647511758412,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "segitiga",
@@ -435,7 +435,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 858902286838114,
+						"sid": 591647511758412,
 						"expanded": true
 					},
 					"showing": true,
@@ -466,8 +466,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 20,
-					"sid": 870178638936926,
+					"uid": 241,
+					"sid": 486180901646377,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "lingkaran",
@@ -488,7 +488,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 870178638936926,
+						"sid": 486180901646377,
 						"expanded": true
 					},
 					"showing": true,
@@ -519,8 +519,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 21,
-					"sid": 521460456849545,
+					"uid": 242,
+					"sid": 390170714505529,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "persegi",
@@ -541,7 +541,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 521460456849545,
+						"sid": 390170714505529,
 						"expanded": true
 					},
 					"showing": true,
@@ -572,8 +572,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
-					"sid": 814246188183495,
+					"uid": 243,
+					"sid": 681622469307761,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "persegi",
@@ -594,7 +594,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 814246188183495,
+						"sid": 681622469307761,
 						"expanded": true
 					},
 					"showing": true,
@@ -625,8 +625,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
-					"sid": 182402985581263,
+					"uid": 244,
+					"sid": 957606336316073,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "segitiga",
@@ -647,7 +647,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 182402985581263,
+						"sid": 957606336316073,
 						"expanded": true
 					},
 					"showing": true,
@@ -678,8 +678,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 24,
-					"sid": 623770417886646,
+					"uid": 245,
+					"sid": 930496360102622,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "lingkaran",
@@ -700,7 +700,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 623770417886646,
+						"sid": 930496360102622,
 						"expanded": true
 					},
 					"showing": true,
@@ -731,8 +731,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 25,
-					"sid": 891617505902526,
+					"uid": 246,
+					"sid": 474252038859139,
 					"tags": "",
 					"instanceVariables": {
 						"bentuk": "lingkaran",
@@ -753,7 +753,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 891617505902526,
+						"sid": 474252038859139,
 						"expanded": true
 					},
 					"showing": true,
@@ -776,7 +776,7 @@
 					}
 				}
 			],
-			"sid": 176511096540138,
+			"sid": 656479799548127,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -819,15 +819,15 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 15,
-					"sid": 861418670746584,
+					"uid": 247,
+					"sid": 624752468118852,
 					"tags": "",
 					"instanceVariables": {
 						"bentukYangDiterima": "segitiga"
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 861418670746584,
+						"sid": 624752468118852,
 						"expanded": true
 					},
 					"showing": true,
@@ -858,15 +858,15 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 16,
-					"sid": 433709697157607,
+					"uid": 248,
+					"sid": 252061254146638,
 					"tags": "",
 					"instanceVariables": {
 						"bentukYangDiterima": "persegi"
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 433709697157607,
+						"sid": 252061254146638,
 						"expanded": true
 					},
 					"showing": true,
@@ -897,15 +897,15 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 17,
-					"sid": 984658330618159,
+					"uid": 249,
+					"sid": 278291635878566,
 					"tags": "",
 					"instanceVariables": {
 						"bentukYangDiterima": "lingkaran"
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 984658330618159,
+						"sid": 278291635878566,
 						"expanded": true
 					},
 					"showing": true,
@@ -928,7 +928,7 @@
 					}
 				}
 			],
-			"sid": 880316619718036,
+			"sid": 188881147056834,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -971,13 +971,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 14,
-					"sid": 502386547975044,
+					"uid": 250,
+					"sid": 991385781533506,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 502386547975044,
+						"sid": 991385781533506,
 						"expanded": true
 					},
 					"showing": true,
@@ -1008,13 +1008,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 12,
-					"sid": 653765565097207,
+					"uid": 251,
+					"sid": 645614004695306,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 653765565097207,
+						"sid": 645614004695306,
 						"expanded": true
 					},
 					"showing": true,
@@ -1045,13 +1045,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 32,
-					"sid": 620481918892204,
+					"uid": 252,
+					"sid": 816356030191880,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 620481918892204,
+						"sid": 816356030191880,
 						"expanded": true
 					},
 					"showing": true,
@@ -1082,13 +1082,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 33,
-					"sid": 458062048081703,
+					"uid": 253,
+					"sid": 826955461163228,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 458062048081703,
+						"sid": 826955461163228,
 						"expanded": true
 					},
 					"showing": true,
@@ -1119,13 +1119,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 34,
-					"sid": 522461385913694,
+					"uid": 254,
+					"sid": 842965808796039,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 522461385913694,
+						"sid": 842965808796039,
 						"expanded": true
 					},
 					"showing": true,
@@ -1156,13 +1156,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 35,
-					"sid": 465690523811806,
+					"uid": 255,
+					"sid": 675635928597028,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 465690523811806,
+						"sid": 675635928597028,
 						"expanded": true
 					},
 					"showing": true,
@@ -1193,13 +1193,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 36,
-					"sid": 385514900609856,
+					"uid": 256,
+					"sid": 976944062034913,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 385514900609856,
+						"sid": 976944062034913,
 						"expanded": true
 					},
 					"showing": true,
@@ -1230,13 +1230,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 37,
-					"sid": 213321139273789,
+					"uid": 257,
+					"sid": 670067073655738,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 213321139273789,
+						"sid": 670067073655738,
 						"expanded": true
 					},
 					"showing": true,
@@ -1261,10 +1261,10 @@
 				{
 					"type": "waktu_text_level2",
 					"properties": {
-						"text": "2:00",
+						"text": "02:00",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 20,
+						"size": 30,
 						"line-height": -1,
 						"bold": false,
 						"italic": false,
@@ -1283,22 +1283,22 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 38,
-					"sid": 608794178065394,
+					"uid": 258,
+					"sid": 268936520364160,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 608794178065394,
+						"sid": 268936520364160,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 159,
-						"y": 63,
-						"width": 96,
-						"height": 34,
+						"x": 148,
+						"y": 56,
+						"width": 111,
+						"height": 49,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1312,7 +1312,7 @@
 					}
 				}
 			],
-			"sid": 689197379720652,
+			"sid": 196752066336325,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -1340,13 +1340,81 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "OverlayInGame",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 189902435537178,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "TransitionLayer",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 367021282729136,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"scene-graphs-folder-root": {
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 228901816348467,
+	"sid": 389660528344518,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2560,

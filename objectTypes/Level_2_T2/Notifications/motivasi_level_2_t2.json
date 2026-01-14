@@ -1,7 +1,7 @@
 {
 	"name": "motivasi_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 709082691778348,
+	"sid": 859055926550168,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7594080,
+						"imageSpriteId": 377778,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 336940195369673,
+				"sid": 281263762322652,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

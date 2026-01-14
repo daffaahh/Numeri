@@ -1,7 +1,7 @@
 {
 	"name": "atas_stiga_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 392940357457563,
+	"sid": 126451965879588,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,54 +10,54 @@
 			"type": "string",
 			"desc": "Tipe komponen (atap_segitiga)",
 			"show": true,
-			"sid": 845483457467104
+			"sid": 170428456275213
 		},
 		{
 			"name": "X_origin",
 			"type": "number",
 			"desc": "Posisi awal X (untuk reset saat salah drop)",
 			"show": true,
-			"sid": 249645840537089
+			"sid": 427085035166379
 		},
 		{
 			"name": "Y_origin",
 			"type": "number",
 			"desc": "Posisi awal Y (untuk reset saat salah drop)",
 			"show": true,
-			"sid": 167860471143502
+			"sid": 561355107438360
 		},
 		{
 			"name": "X_target",
 			"type": "number",
 			"desc": "Posisi target X yang benar (snap position)",
 			"show": true,
-			"sid": 748095827038656
+			"sid": 363193412767250
 		},
 		{
 			"name": "Y_target",
 			"type": "number",
 			"desc": "Posisi target Y yang benar (snap position)",
 			"show": true,
-			"sid": 165864742918671
+			"sid": 496049008749270
 		},
 		{
 			"name": "isPlaced",
 			"type": "boolean",
 			"desc": "Status sudah terpasang dengan benar atau belum",
 			"show": true,
-			"sid": 262395955712409
+			"sid": 393630868332151
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 784916477055305
+			"sid": 293452584901296
 		},
 		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
-			"sid": 702921933256233
+			"sid": 142108850313788
 		}
 	],
 	"effectTypes": [],
@@ -74,13 +74,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3254282,
+						"imageSpriteId": 7831525,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 155892659159195,
+				"sid": 591941802086246,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

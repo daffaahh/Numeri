@@ -1,7 +1,7 @@
 {
 	"name": "numi_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 443470418588714,
+	"sid": 786769127229239,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1462351,
+						"imageSpriteId": 7631086,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 737496213332732,
+				"sid": 391787737084618,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

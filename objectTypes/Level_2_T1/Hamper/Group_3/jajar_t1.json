@@ -1,7 +1,7 @@
 {
 	"name": "jajar_t1",
 	"plugin-id": "Sprite",
-	"sid": 946717306714697,
+	"sid": 541151549478995,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9919025,
+						"imageSpriteId": 7087745,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 433428043780844,
+				"sid": 570556415249127,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
 	"name": "bener_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 554114455666745,
+	"sid": 187469907646238,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "boolean",
 			"desc": "Apakah ini jawaban yang benar",
 			"show": true,
-			"sid": 822362702481090
+			"sid": 599913122557373
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1486258,
+						"imageSpriteId": 6593630,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 660510630444188,
+				"sid": 643169594321656,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

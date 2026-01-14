@@ -2,6 +2,30 @@
 	"name": "ES_Level2_T2",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
+			"eventType": "variable",
+			"name": "TimeLeft",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "Waktu dalam detik (2 menit = 120 detik)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 100379891927554
+		},
+		{
+			"eventType": "variable",
+			"name": "TimerRunning",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Flag apakah timer sedang berjalan (0=tidak, 1=ya)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 795181672454096
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Step 1 - System Initialization",
@@ -14,14 +38,27 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 901234567890101
+							"sid": 998931154275205
 						}
 					],
 					"actions": [
 						{
+							"callFunction": "startGame",
+							"sid": 924527361002505
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 125666912160280,
+							"parameters": {
+								"seconds": "0.3",
+								"use-timescale": true
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "bg_level_2_t2",
-							"sid": 901234567890102,
+							"sid": 293001154215635,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -29,7 +66,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "dialog_level_2_t2_1",
-							"sid": 901234567890103,
+							"sid": 628765179329114,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -37,7 +74,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "dialog_level_2_t2_2",
-							"sid": 901234567890104,
+							"sid": 338951324094105,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -45,7 +82,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "PETUNJUKPERSEGI_level_2_t2",
-							"sid": 901234567890105,
+							"sid": 196972556359542,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -53,7 +90,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "soal_persegi_level_2_t2",
-							"sid": 901234567890106,
+							"sid": 582956189640596,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -61,7 +98,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "bener_level_2_t2",
-							"sid": 901234567890107,
+							"sid": 289777208616073,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -69,7 +106,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "salah2_level_2_t2",
-							"sid": 901234567890108,
+							"sid": 808127416799929,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -77,7 +114,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "salah3_level_2_t2",
-							"sid": 901234567890109,
+							"sid": 173328643864239,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -85,7 +122,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaBenar_level_2_t2",
-							"sid": 901234567890110,
+							"sid": 913111287352673,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -93,7 +130,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaSalahpilih_level_2_t2",
-							"sid": 901234567890111,
+							"sid": 131811428477588,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -101,7 +138,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "finish_level_2_t2",
-							"sid": 901234567890112,
+							"sid": 218030239480999,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -109,20 +146,20 @@
 						{
 							"id": "set-visible",
 							"objectClass": "motivasi_level_2_t2",
-							"sid": 901234567890113,
+							"sid": 710538550202492,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 901234567890100
+					"sid": 548942787629658
 				},
 				{
 					"eventType": "comment",
 					"text": "Catatan: Instance variables isCorrect sudah di-set di layout:\n- bener_level_2_t2: isCorrect = true\n- salah2_level_2_t2: isCorrect = false\n- salah3_level_2_t2: isCorrect = false"
 				}
 			],
-			"sid": 123456789012301
+			"sid": 169964924438810
 		},
 		{
 			"eventType": "group",
@@ -137,7 +174,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 381124337302283,
+							"sid": 455951702556150,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -147,14 +184,14 @@
 						{
 							"id": "is-visible",
 							"objectClass": "dialog_level_2_t2_1",
-							"sid": 902234567890201
+							"sid": 547582236874465
 						}
 					],
 					"actions": [
 						{
 							"id": "set-visible",
 							"objectClass": "dialog_level_2_t2_1",
-							"sid": 902234567890203,
+							"sid": 432881458746005,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -162,7 +199,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 902234567890205,
+							"sid": 847978863597254,
 							"parameters": {
 								"seconds": "0.1",
 								"use-timescale": true
@@ -171,13 +208,13 @@
 						{
 							"id": "set-visible",
 							"objectClass": "dialog_level_2_t2_2",
-							"sid": 902234567890204,
+							"sid": 983684434173641,
 							"parameters": {
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 902234567890200
+					"sid": 602042402388058
 				},
 				{
 					"eventType": "block",
@@ -185,7 +222,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 125542397977769,
+							"sid": 620318919073996,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -195,14 +232,14 @@
 						{
 							"id": "is-visible",
 							"objectClass": "dialog_level_2_t2_2",
-							"sid": 902234567890211
+							"sid": 642037376077269
 						}
 					],
 					"actions": [
 						{
 							"id": "set-visible",
 							"objectClass": "dialog_level_2_t2_2",
-							"sid": 902234567890213,
+							"sid": 377779162242127,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -210,7 +247,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "soal_persegi_level_2_t2",
-							"sid": 902234567890214,
+							"sid": 962851674411734,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -218,7 +255,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "bener_level_2_t2",
-							"sid": 902234567890215,
+							"sid": 214548762539366,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -226,7 +263,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "salah2_level_2_t2",
-							"sid": 902234567890216,
+							"sid": 611045155607369,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -234,20 +271,20 @@
 						{
 							"id": "set-visible",
 							"objectClass": "salah3_level_2_t2",
-							"sid": 902234567890217,
+							"sid": 588989349443171,
 							"parameters": {
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 902234567890210
+					"sid": 832967788564835
 				},
 				{
 					"eventType": "comment",
 					"text": "Flow: Dialog 1 (intro) → klik → Dialog 2 (instruksi) → klik → Quiz muncul (soal + 3 pilihan)"
 				}
 			],
-			"sid": 123456789012302
+			"sid": 706200115748124
 		},
 		{
 			"eventType": "group",
@@ -256,7 +293,7 @@
 			"description": "Tampilkan soal dan pilihan jawaban",
 			"isActiveOnStart": true,
 			"children": [],
-			"sid": 123456789012303
+			"sid": 214596806170695
 		},
 		{
 			"eventType": "group",
@@ -271,7 +308,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 904234567890301,
+							"sid": 543299256481597,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -281,7 +318,7 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "bener_level_2_t2",
-							"sid": 904234567890302,
+							"sid": 359701318155797,
 							"parameters": {
 								"instance-variable": "isCorrect",
 								"comparison": 0,
@@ -291,9 +328,32 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 542060487226024,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 597075348303003,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban benar"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "bener_level_2_t2",
-							"sid": 904234567890303,
+							"sid": 163961684938399,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -301,7 +361,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "salah2_level_2_t2",
-							"sid": 904234567890304,
+							"sid": 494726589043144,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -309,7 +369,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "salah3_level_2_t2",
-							"sid": 904234567890305,
+							"sid": 306223822611571,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -317,7 +377,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "soal_persegi_level_2_t2",
-							"sid": 904234567890306,
+							"sid": 442179625540140,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -325,7 +385,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaBenar_level_2_t2",
-							"sid": 904234567890307,
+							"sid": 679840406872961,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -333,7 +393,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 904234567890308,
+							"sid": 882858935336204,
 							"parameters": {
 								"seconds": "1.5",
 								"use-timescale": true
@@ -342,7 +402,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaBenar_level_2_t2",
-							"sid": 904234567890309,
+							"sid": 278395489151132,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -350,13 +410,13 @@
 						{
 							"id": "set-visible",
 							"objectClass": "finish_level_2_t2",
-							"sid": 904234567890310,
+							"sid": 739266835437186,
 							"parameters": {
 								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 904234567890300
+					"sid": 716300440307806
 				},
 				{
 					"eventType": "block",
@@ -364,7 +424,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 904234567890321,
+							"sid": 380696605483216,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -374,7 +434,7 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "salah2_level_2_t2",
-							"sid": 904234567890322,
+							"sid": 236501876086098,
 							"parameters": {
 								"instance-variable": "isCorrect",
 								"comparison": 0,
@@ -384,14 +444,28 @@
 						{
 							"id": "is-visible",
 							"objectClass": "salah2_level_2_t2",
-							"sid": 904234567890327
+							"sid": 238506608193951
 						}
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 171490160003828,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-1"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "salah2_level_2_t2",
-							"sid": 904234567890323,
+							"sid": 131406168112418,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -399,7 +473,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaSalahpilih_level_2_t2",
-							"sid": 904234567890324,
+							"sid": 956198098780064,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -407,7 +481,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 904234567890325,
+							"sid": 890579521831382,
 							"parameters": {
 								"seconds": "1",
 								"use-timescale": true
@@ -416,13 +490,13 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaSalahpilih_level_2_t2",
-							"sid": 904234567890326,
+							"sid": 934821538907811,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 904234567890320
+					"sid": 576901166174454
 				},
 				{
 					"eventType": "block",
@@ -430,7 +504,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 904234567890341,
+							"sid": 262482352442860,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -440,7 +514,7 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "salah3_level_2_t2",
-							"sid": 904234567890342,
+							"sid": 662075488227479,
 							"parameters": {
 								"instance-variable": "isCorrect",
 								"comparison": 0,
@@ -450,14 +524,28 @@
 						{
 							"id": "is-visible",
 							"objectClass": "salah3_level_2_t2",
-							"sid": 904234567890347
+							"sid": 371492153965722
 						}
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 485653579551421,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-2"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "salah3_level_2_t2",
-							"sid": 904234567890343,
+							"sid": 247081861480934,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -465,7 +553,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaSalahpilih_level_2_t2",
-							"sid": 904234567890344,
+							"sid": 742921430414584,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -473,7 +561,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 904234567890345,
+							"sid": 803707063424941,
 							"parameters": {
 								"seconds": "1",
 								"use-timescale": true
@@ -482,20 +570,20 @@
 						{
 							"id": "set-visible",
 							"objectClass": "jikaSalahpilih_level_2_t2",
-							"sid": 904234567890346,
+							"sid": 837966094327080,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 904234567890340
+					"sid": 228657947344109
 				},
 				{
 					"eventType": "comment",
 					"text": "Logic:\n- Klik jawaban benar → hide semua pilihan & soal → jikaBenar (1.5s) → finish\n- Klik jawaban salah → hide pilihan yang diklik → jikaSalahpilih (1s) → retry dengan sisa pilihan"
 				}
 			],
-			"sid": 123456789012304
+			"sid": 194194486509319
 		},
 		{
 			"eventType": "group",
@@ -510,7 +598,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 905234567890401,
+							"sid": 924497161899804,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -520,14 +608,14 @@
 						{
 							"id": "is-visible",
 							"objectClass": "finish_level_2_t2",
-							"sid": 905234567890407
+							"sid": 996903765273543
 						}
 					],
 					"actions": [
 						{
 							"id": "set-visible",
 							"objectClass": "finish_level_2_t2",
-							"sid": 905234567890402,
+							"sid": 444255674470593,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -535,7 +623,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "motivasi_level_2_t2",
-							"sid": 905234567890403,
+							"sid": 852302681933291,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -543,39 +631,268 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 905234567890404,
+							"sid": 260180670149463,
 							"parameters": {
-								"seconds": "3",
+								"seconds": "0.3",
 								"use-timescale": true
 							}
 						},
 						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 905234567890406,
-							"parameters": {
-								"layout": "Lay_Level2_T3"
-							}
+							"callFunction": "winGame",
+							"sid": 772629726092245,
+							"parameters": [
+								"\"Lay_Level2_T3\""
+							]
 						}
 					],
-					"sid": 905234567890400
+					"sid": 538925201337813
 				},
 				{
 					"eventType": "comment",
 					"text": "Flow: Klik finish → motivasi muncul 3 detik → otomatis ke Level 2 Tingkat 3"
 				}
 			],
-			"sid": 123456789012305
+			"sid": 237382689940402
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Step 6 - Helper Functions (Optional)",
-			"description": "Function helper untuk randomization, reset, dll",
+			"title": "Step 6 - Timer 2 Menit",
+			"description": "Countdown timer 2 menit untuk quiz",
 			"isActiveOnStart": true,
-			"children": [],
-			"sid": 123456789012306
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 128649934659903
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 303900501061641,
+							"parameters": {
+								"variable": "TimeLeft",
+								"value": "120"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 659475994099308,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "text_time_lvl2_t2",
+							"sid": 439485394123284,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaWaktuHabis_level_2_t2",
+							"sid": 155739003212197,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 426216873702742
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 584128105933368,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "dialog_level_2_t2_2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 115477046380728,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "text_time_lvl2_t2",
+							"sid": 518702788286926,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 556719779449360
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 114678977329892,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 856092958840121,
+							"parameters": {
+								"variable": "TimerRunning",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 311060537785637,
+							"parameters": {
+								"variable": "TimeLeft",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 354670644915529,
+							"parameters": {
+								"variable": "TimeLeft",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_time_lvl2_t2",
+							"sid": 805760670262927,
+							"parameters": {
+								"text": "zeropad(floor(TimeLeft/60),2) & \":\" & zeropad(TimeLeft%60,2)"
+							}
+						}
+					],
+					"sid": 499009813919744
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 256828075897617,
+							"parameters": {
+								"variable": "TimeLeft",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 284747523352952,
+							"parameters": {
+								"variable": "TimerRunning",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 710911859367546,
+							"parameters": {
+								"variable": "TimerRunning",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "soal_persegi_level_2_t2",
+							"sid": 119662963833378,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bener_level_2_t2",
+							"sid": 336252093664277,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "salah2_level_2_t2",
+							"sid": 778666334057221,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "salah3_level_2_t2",
+							"sid": 479633347522887,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikaWaktuHabis_level_2_t2",
+							"sid": 383535104535323,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 476483428254663,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"callFunction": "LoseGame",
+							"sid": 608941102205634
+						}
+					],
+					"sid": 360737276267330
+				},
+				{
+					"eventType": "comment",
+					"text": "Timer Logic:\n- Timer mulai saat dialog_2 diklik (quiz mulai)\n- Countdown setiap detik, format MM:SS\n- Waktu habis → hide quiz, show jikaWaktuHabis 2 detik → restart layout"
+				}
+			],
+			"sid": 775649603301859
 		}
 	],
-	"sid": 927457987809483
+	"sid": 539032594225758
 }

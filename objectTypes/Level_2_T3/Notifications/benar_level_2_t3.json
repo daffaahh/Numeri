@@ -1,7 +1,7 @@
 {
 	"name": "benar_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 586562387682275,
+	"sid": 451411506156895,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5834890,
+						"imageSpriteId": 5163047,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 968774079226618,
+				"sid": 299186248137656,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

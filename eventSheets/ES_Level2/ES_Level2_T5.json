@@ -1,0 +1,1152 @@
+{
+	"name": "ES_Level2_T5",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
+			"eventType": "variable",
+			"name": "itemsPlaced",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Jumlah item yang sudah terpasang dengan benar",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 214514874159957
+		},
+		{
+			"eventType": "variable",
+			"name": "totalItems2",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "Total item belah ketupat yang harus dipasang",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 563105581821228
+		},
+		{
+			"eventType": "variable",
+			"name": "gameActive2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Status apakah game sedang berjalan (0=tidak aktif, 1=aktif)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 108186916231022
+		},
+		{
+			"eventType": "variable",
+			"name": "timeRemaining",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "Waktu tersisa dalam detik (120 detik = 2 menit)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 362523599697254
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 1 - System Initialization",
+			"description": "Setup awal layout, set visibility, save posisi origin untuk semua items",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 583795101686464
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "bg_level2_t5",
+							"sid": 575199872895592,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bg_item_level_t5",
+							"sid": 398314115616061,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "bg_target_level2_t5",
+							"sid": 217192679301982,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"callFunction": "startGame",
+							"sid": 421622535877372
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 405019349910437,
+							"parameters": {
+								"seconds": "0.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "soal_level2_t5",
+							"sid": 510856397921741,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "tempat_waktu_level2_t5",
+							"sid": 275300553007706,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "motivasi",
+							"sid": 100958736850958,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikasalah",
+							"sid": 815225181057188,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "finish",
+							"sid": 591967352640530,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "petunjuk",
+							"sid": 874144976346042,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 748538257506800,
+							"parameters": {
+								"variable": "itemsPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 990021715540857,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 459357524382675,
+							"parameters": {
+								"variable": "timeRemaining",
+								"value": "120"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_lvl_2_t5",
+							"sid": 276873078899939,
+							"parameters": {
+								"text": "\"Time: 02:00\""
+							}
+						}
+					],
+					"sid": 231356204857731
+				},
+				{
+					"eventType": "comment",
+					"text": "=== SAVE POSISI ORIGIN UNTUK SEMUA ITEMS ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 380027103407588
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_1_level2_t5",
+							"sid": 797871023625686,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "item_1_level2_t5.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_1_level2_t5",
+							"sid": 222801429531782,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "item_1_level2_t5.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_1_level2_t5",
+							"sid": 340558372119493,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_2_level2_t5",
+							"sid": 683946868754675,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "item_2_level2_t5.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_2_level2_t5",
+							"sid": 581306283009638,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "item_2_level2_t5.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_2_level2_t5",
+							"sid": 451669737517484,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_3_level2_t5",
+							"sid": 523441396849758,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "item_3_level2_t5.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_3_level2_t5",
+							"sid": 260581222231407,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "item_3_level2_t5.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "item_3_level2_t5",
+							"sid": 460804725705275,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 589353262791556
+				}
+			],
+			"sid": 958513454660870
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 2 - Dialog Flow",
+			"description": "Click soal panel untuk memulai game",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 990996122942987,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "soal_level2_t5"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 942737826443094,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "soal_level2_t5",
+							"sid": 948581277284451,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 441256560557701,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 291556268762488
+				}
+			],
+			"sid": 223068119494615
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 3 - Drop Validation (Overlap Detection)",
+			"description": "Validasi drop menggunakan overlap dengan target sprites",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "=== ITEM 1 → TARGET 3 (MERAH → ATAS) ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "item_1_level2_t5",
+							"sid": 397178829462423,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "item_1_level2_t5",
+							"sid": 341687961937667,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 823169041272272,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "item_1_level2_t5",
+									"sid": 142737924773731,
+									"parameters": {
+										"object": "target_3_level2_t5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 120423499637206,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "item_1_level2_t5",
+									"sid": 986997838519564,
+									"parameters": {
+										"x": "target_3_level2_t5.X",
+										"y": "target_3_level2_t5.Y"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "item_1_level2_t5",
+									"sid": 754328103969835,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "item_1_level2_t5",
+									"sid": 891378767132530,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 234370572249828,
+									"parameters": {
+										"variable": "itemsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "motivasi",
+									"sid": 249628896239461,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "motivasi",
+									"sid": 268055964453967,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 818412422367827
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 816805633441237
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "item_1_level2_t5",
+									"sid": 597936759227986,
+									"parameters": {
+										"x": "item_1_level2_t5.X_origin",
+										"y": "item_1_level2_t5.Y_origin"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "jikasalah",
+									"sid": 526037597718537,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikasalah",
+									"sid": 966335916567764,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 562675948644987
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== ITEM 2 → TARGET 2 (KUNING → KIRI BAWAH) ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "item_2_level2_t5",
+							"sid": 306808348575764,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "item_2_level2_t5",
+							"sid": 865049893283311,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 561209038987340,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "item_2_level2_t5",
+									"sid": 672386460140888,
+									"parameters": {
+										"object": "target_2_level2_t5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 360711777085275,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "item_2_level2_t5",
+									"sid": 522904729295781,
+									"parameters": {
+										"x": "target_2_level2_t5.X",
+										"y": "target_2_level2_t5.Y"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "item_2_level2_t5",
+									"sid": 556380006232566,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "item_2_level2_t5",
+									"sid": 961232521991327,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 644928566376192,
+									"parameters": {
+										"variable": "itemsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "motivasi",
+									"sid": 277260281698471,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "motivasi",
+									"sid": 152602750699795,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 242075790810614
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 322219707778697
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "item_2_level2_t5",
+									"sid": 602006680170300,
+									"parameters": {
+										"x": "item_2_level2_t5.X_origin",
+										"y": "item_2_level2_t5.Y_origin"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "jikasalah",
+									"sid": 262721615423983,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikasalah",
+									"sid": 402568554248003,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 984896432764966
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== ITEM 3 → TARGET 1 (HIJAU → KANAN BAWAH) ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "item_3_level2_t5",
+							"sid": 938823693009278,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "item_3_level2_t5",
+							"sid": 906732035883264,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 343764598510174,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "item_3_level2_t5",
+									"sid": 366920514177448,
+									"parameters": {
+										"object": "target_1_level2_t5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 709647323567028,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "item_3_level2_t5",
+									"sid": 804472798878990,
+									"parameters": {
+										"x": "target_1_level2_t5.X",
+										"y": "target_1_level2_t5.Y"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "item_3_level2_t5",
+									"sid": 736892809789962,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "item_3_level2_t5",
+									"sid": 857700485265962,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 963207473659686,
+									"parameters": {
+										"variable": "itemsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "motivasi",
+									"sid": 125294208333764,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "motivasi",
+									"sid": 870173784726811,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 759083016425942
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 885794095688151
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "item_3_level2_t5",
+									"sid": 468139898422416,
+									"parameters": {
+										"x": "item_3_level2_t5.X_origin",
+										"y": "item_3_level2_t5.Y_origin"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "jikasalah",
+									"sid": 680894619587285,
+									"parameters": {
+										"x": "640",
+										"y": "400"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "jikasalah",
+									"sid": 573961436180380,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 150128363187275
+						}
+					]
+				}
+			],
+			"sid": 128161835493376
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 4 - Timer System",
+			"description": "Countdown timer setiap detik",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 279633592837183,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 253358344573480,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 439380432920173,
+							"parameters": {
+								"variable": "timeRemaining",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 558233500104386,
+							"parameters": {
+								"variable": "timeRemaining",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_lvl_2_t5",
+							"sid": 764235153354023,
+							"parameters": {
+								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2) & \" Items: \" & itemsPlaced"
+							}
+						}
+					],
+					"sid": 308591458253630
+				},
+				{
+					"eventType": "comment",
+					"text": "=== WAKTU HABIS ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 933183071580828,
+							"parameters": {
+								"variable": "timeRemaining",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 479768047686450,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 454944454947227,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "item_1_level2_t5",
+							"sid": 665750301886579,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "item_2_level2_t5",
+							"sid": 716211928780932,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "item_3_level2_t5",
+							"sid": 861327187751010,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_lvl_2_t5",
+							"sid": 263953895382241,
+							"parameters": {
+								"text": "\"Time: 00:00\""
+							}
+						}
+					],
+					"sid": 498333139338163
+				}
+			],
+			"sid": 547671661294541
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 5 - Win Condition",
+			"description": "Cek apakah semua item sudah terpasang dengan benar",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 309938875260346,
+							"parameters": {
+								"variable": "itemsPlaced",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 534119623991150,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 948763127548476,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban benar"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 670874352657081,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "motivasi",
+							"sid": 356509926590066,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "finish",
+							"sid": 458735911486420,
+							"parameters": {
+								"x": "640",
+								"y": "400"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "finish",
+							"sid": 588172877870777,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 680691365799161
+				}
+			],
+			"sid": 397020104028588
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 5B - Auto Hide Notifications",
+			"description": "Sembunyikan notifikasi setelah 1.5 detik",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "=== AUTO HIDE MOTIVASI ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "motivasi",
+							"sid": 882354225728539
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 216248097872577,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "motivasi",
+							"sid": 342513017915391,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 583109192560980
+				},
+				{
+					"eventType": "comment",
+					"text": "=== AUTO HIDE JIKASALAH ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "jikasalah",
+							"sid": 985903279644596
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 936719471853234,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "jikasalah",
+							"sid": 579777634601802,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 796487773835422
+				}
+			],
+			"sid": 962876635887553
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group 6 - Navigation",
+			"description": "Klik finish untuk ke RoadMap",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 297262248236469,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "finish"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "finish",
+							"sid": 437179493198123
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "winGame",
+							"sid": 619994899782492,
+							"parameters": [
+								"\"Lay_Level3_T1\""
+							]
+						}
+					],
+					"sid": 630118256568664
+				}
+			],
+			"sid": 565000564713598
+		}
+	],
+	"sid": 798000119661270
+}

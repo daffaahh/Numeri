@@ -1,0 +1,10 @@
+{
+	"name": "timetxt_t3",
+	"plugin-id": "Text",
+	"sid": 627264580055791,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

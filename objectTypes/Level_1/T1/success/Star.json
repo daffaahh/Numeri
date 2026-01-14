@@ -1,7 +1,7 @@
 {
 	"name": "Star",
 	"plugin-id": "Sprite",
-	"sid": 287125358532373,
+	"sid": 656840368568737,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9778337,
+						"imageSpriteId": 2082900,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 217083680574302,
+				"sid": 984618998782755,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

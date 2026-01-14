@@ -1,7 +1,7 @@
 {
 	"name": "soal_persegi_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 618685048329301,
+	"sid": 197960620394540,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1126210,
+						"imageSpriteId": 5720147,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 677180874908352,
+				"sid": 427700961380843,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

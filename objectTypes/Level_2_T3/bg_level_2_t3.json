@@ -1,7 +1,7 @@
 {
 	"name": "bg_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 407511824525068,
+	"sid": 289544316768903,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3620773,
+						"imageSpriteId": 1254925,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 314640737641394,
+				"sid": 592416510678698,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

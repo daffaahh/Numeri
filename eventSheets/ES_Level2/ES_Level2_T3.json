@@ -2,6 +2,10 @@
 	"name": "ES_Level2_T3",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Global"
+		},
+		{
 			"eventType": "variable",
 			"name": "componentsPlaced",
 			"type": "number",
@@ -9,7 +13,7 @@
 			"comment": "Jumlah komponen yang sudah terpasang dengan benar",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 570385299440268
+			"sid": 666144002604045
 		},
 		{
 			"eventType": "variable",
@@ -19,17 +23,17 @@
 			"comment": "Total komponen rumah yang harus dipasang",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 570385299440269
+			"sid": 692111521522794
 		},
 		{
 			"eventType": "variable",
-			"name": "gameActive",
+			"name": "gameActive4",
 			"type": "boolean",
 			"initialValue": "0",
 			"comment": "Status apakah game sedang berjalan",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 570385299440270
+			"sid": 781642129835941
 		},
 		{
 			"eventType": "variable",
@@ -39,12 +43,22 @@
 			"comment": "Toggle tampilan referensi rumah",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 570385299440271
+			"sid": 272254937687298
+		},
+		{
+			"eventType": "variable",
+			"name": "timeRemaining2",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "Waktu tersisa dalam detik (120 detik = 2 menit)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 495833436596443
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 1 - System Initialization",
+			"title": "Group 1 - System Initialization3",
 			"description": "Setup awal layout, hide notifications, save posisi origin & target untuk semua komponen",
 			"isActiveOnStart": true,
 			"children": [
@@ -54,14 +68,14 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 570385299440272
+							"sid": 798905048945212
 						}
 					],
 					"actions": [
 						{
 							"id": "set-visible",
 							"objectClass": "bg_level_2_t3",
-							"sid": 570385299440273,
+							"sid": 328840665817834,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -69,7 +83,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "bghitam_level_2_t3",
-							"sid": 570385299440274,
+							"sid": 350861389264314,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -77,7 +91,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "judul_level_2_t3",
-							"sid": 570385299440275,
+							"sid": 961282066581445,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -85,7 +99,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "dialog_level_2_t3",
-							"sid": 570385299440276,
+							"sid": 324935624137193,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -93,7 +107,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "rumahselesaidisusun_level_2_t3",
-							"sid": 570385299440277,
+							"sid": 666976978741273,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -101,7 +115,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "benar_level_2_t3",
-							"sid": 570385299440278,
+							"sid": 431312444745876,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -109,7 +123,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "berhasil_level_2_t3",
-							"sid": 570385299440279,
+							"sid": 196826026430842,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -117,7 +131,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "cobalagi_level_2_t3",
-							"sid": 570385299440280,
+							"sid": 235985775367048,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -125,7 +139,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "tap2_sering_level_2_t3",
-							"sid": 570385299440281,
+							"sid": 395015307688219,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -133,7 +147,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "numa_level_2_t3",
-							"sid": 570385299440282,
+							"sid": 956202961174983,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -141,7 +155,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "numi_level_2_t3",
-							"sid": 570385299440283,
+							"sid": 957476633086565,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -149,7 +163,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 570385299440284,
+							"sid": 615596296622889,
 							"parameters": {
 								"variable": "componentsPlaced",
 								"value": "0"
@@ -158,14 +172,18 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 570385299440285,
+							"sid": 497343474459364,
 							"parameters": {
 								"variable": "gameActive",
 								"value": "0"
 							}
+						},
+						{
+							"callFunction": "startGame",
+							"sid": 496126479450293
 						}
 					],
-					"sid": 570385299440286
+					"sid": 688571148558608
 				},
 				{
 					"eventType": "block",
@@ -173,14 +191,14 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 570385299440287
+							"sid": 976853637299544
 						}
 					],
 					"actions": [
 						{
 							"id": "set-instvar-value",
 							"objectClass": "dinding_level_2_t3",
-							"sid": 570385299440288,
+							"sid": 744190457181737,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "dinding_level_2_t3.X"
@@ -189,7 +207,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "dinding_level_2_t3",
-							"sid": 570385299440289,
+							"sid": 247716326629090,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "dinding_level_2_t3.Y"
@@ -198,7 +216,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "dinding_level_2_t3",
-							"sid": 570385299440290,
+							"sid": 798284064581971,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -207,7 +225,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "pintu_level_2_t3",
-							"sid": 570385299440291,
+							"sid": 256768855604042,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "pintu_level_2_t3.X"
@@ -216,7 +234,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "pintu_level_2_t3",
-							"sid": 570385299440292,
+							"sid": 266112068817084,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "pintu_level_2_t3.Y"
@@ -225,7 +243,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "pintu_level_2_t3",
-							"sid": 570385299440293,
+							"sid": 447727572490813,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -234,7 +252,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "jendela_level_2_t3",
-							"sid": 570385299440294,
+							"sid": 219786346510372,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "jendela_level_2_t3.X"
@@ -243,7 +261,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "jendela_level_2_t3",
-							"sid": 570385299440295,
+							"sid": 457512050109486,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "jendela_level_2_t3.Y"
@@ -252,7 +270,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "jendela_level_2_t3",
-							"sid": 570385299440296,
+							"sid": 968716777379439,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -261,7 +279,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "tangga_level_2_t3",
-							"sid": 570385299440297,
+							"sid": 371971016399031,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "tangga_level_2_t3.X"
@@ -270,7 +288,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "tangga_level_2_t3",
-							"sid": 570385299440298,
+							"sid": 820881573746538,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "tangga_level_2_t3.Y"
@@ -279,7 +297,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "tangga_level_2_t3",
-							"sid": 570385299440299,
+							"sid": 132947083303070,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -288,7 +306,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "atap_pg_level_2_t3",
-							"sid": 570385299440300,
+							"sid": 436172969922184,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "atap_pg_level_2_t3.X"
@@ -297,7 +315,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "atap_pg_level_2_t3",
-							"sid": 570385299440301,
+							"sid": 169052988945192,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "atap_pg_level_2_t3.Y"
@@ -306,7 +324,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "atap_pg_level_2_t3",
-							"sid": 570385299440302,
+							"sid": 928530132323585,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -315,7 +333,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "atas_stiga_level_2_t3",
-							"sid": 570385299440303,
+							"sid": 295791162486237,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "atas_stiga_level_2_t3.X"
@@ -324,7 +342,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "atas_stiga_level_2_t3",
-							"sid": 570385299440304,
+							"sid": 559814673068967,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "atas_stiga_level_2_t3.Y"
@@ -333,7 +351,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "atas_stiga_level_2_t3",
-							"sid": 570385299440305,
+							"sid": 382656125420635,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -342,7 +360,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "kunci_level_2_t3",
-							"sid": 570385299440306,
+							"sid": 450301017058782,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "kunci_level_2_t3.X"
@@ -351,7 +369,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "kunci_level_2_t3",
-							"sid": 570385299440307,
+							"sid": 746281298798283,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "kunci_level_2_t3.Y"
@@ -360,7 +378,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "kunci_level_2_t3",
-							"sid": 570385299440308,
+							"sid": 804351315700661,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -369,7 +387,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "layang_level_2_t3",
-							"sid": 570385299440309,
+							"sid": 975142849488645,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "layang_level_2_t3.X"
@@ -378,7 +396,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "layang_level_2_t3",
-							"sid": 570385299440310,
+							"sid": 574649945502582,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "layang_level_2_t3.Y"
@@ -387,7 +405,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "layang_level_2_t3",
-							"sid": 570385299440311,
+							"sid": 173017663853611,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
@@ -396,7 +414,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "polygon_level_2_t3",
-							"sid": 570385299440312,
+							"sid": 561519800629523,
 							"parameters": {
 								"instance-variable": "X_origin",
 								"value": "polygon_level_2_t3.X"
@@ -405,7 +423,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "polygon_level_2_t3",
-							"sid": 570385299440313,
+							"sid": 760480878453834,
 							"parameters": {
 								"instance-variable": "Y_origin",
 								"value": "polygon_level_2_t3.Y"
@@ -414,21 +432,21 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "polygon_level_2_t3",
-							"sid": 570385299440314,
+							"sid": 329695246649978,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"value": "0"
 							}
 						}
 					],
-					"sid": 570385299440315
+					"sid": 293701731936935
 				},
 				{
 					"eventType": "comment",
 					"text": "Catatan: X_target & Y_target untuk setiap komponen sudah di-set manual di layout.\nPosisi awal komponen (X_origin, Y_origin) disimpan saat start untuk reset jika salah drop."
 				}
 			],
-			"sid": 570385299440260
+			"sid": 857705630796289
 		},
 		{
 			"eventType": "group",
@@ -443,7 +461,7 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 570385299440316,
+							"sid": 460532244436716,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
@@ -453,14 +471,14 @@
 						{
 							"id": "is-visible",
 							"objectClass": "dialog_level_2_t3",
-							"sid": 570385299440317
+							"sid": 368219707613343
 						}
 					],
 					"actions": [
 						{
 							"id": "set-visible",
 							"objectClass": "dialog_level_2_t3",
-							"sid": 570385299440318,
+							"sid": 634478501265971,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -468,7 +486,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "rumahselesaidisusun_level_2_t3",
-							"sid": 570385299440319,
+							"sid": 623260804571997,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -476,7 +494,7 @@
 						{
 							"id": "set-opacity",
 							"objectClass": "rumahselesaidisusun_level_2_t3",
-							"sid": 570385299440320,
+							"sid": 156586587758578,
 							"parameters": {
 								"opacity": "50"
 							}
@@ -484,21 +502,21 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 570385299440321,
+							"sid": 261983634077852,
 							"parameters": {
 								"variable": "gameActive",
 								"value": "1"
 							}
 						}
 					],
-					"sid": 570385299440322
+					"sid": 758621434835464
 				},
 				{
 					"eventType": "comment",
 					"text": "Player klik dialog untuk mulai game. Referensi rumah ditampilkan semi-transparan sebagai panduan."
 				}
 			],
-			"sid": 570385299440261
+			"sid": 935811177037890
 		},
 		{
 			"eventType": "group",
@@ -517,13 +535,13 @@
 						{
 							"id": "on-drop",
 							"objectClass": "dinding_level_2_t3",
-							"sid": 570385299440323,
+							"sid": 736125884019985,
 							"behaviorType": "DragDrop"
 						},
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "dinding_level_2_t3",
-							"sid": 570385299440325,
+							"sid": 595099035612787,
 							"parameters": {
 								"instance-variable": "isPlaced",
 								"comparison": 0,
@@ -532,7 +550,7 @@
 						}
 					],
 					"actions": [],
-					"sid": 570385299440333,
+					"sid": 110512850349306,
 					"children": [
 						{
 							"eventType": "block",
@@ -540,19 +558,33 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 570385299440324,
+									"sid": 327567110324560,
 									"parameters": {
 										"first-value": "distance(dinding_level_2_t3.X, dinding_level_2_t3.Y, dinding_level_2_t3.X_target, dinding_level_2_t3.Y_target)",
 										"comparison": 3,
-										"second-value": "50"
+										"second-value": "100"
 									}
 								}
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 924335749617230,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/drop jawaban"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "dinding_level_2_t3",
-									"sid": 570385299440326,
+									"sid": 356995098291951,
 									"parameters": {
 										"x": "dinding_level_2_t3.X_target",
 										"y": "dinding_level_2_t3.Y_target"
@@ -561,7 +593,7 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "dinding_level_2_t3",
-									"sid": 570385299440327,
+									"sid": 857892133844851,
 									"parameters": {
 										"instance-variable": "isPlaced",
 										"value": "1"
@@ -570,7 +602,7 @@
 								{
 									"id": "set-enabled",
 									"objectClass": "dinding_level_2_t3",
-									"sid": 570385299440328,
+									"sid": 545149656884295,
 									"behaviorType": "DragDrop",
 									"parameters": {
 										"state": "disabled"
@@ -579,7 +611,7 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 570385299440329,
+									"sid": 533198645407678,
 									"parameters": {
 										"variable": "componentsPlaced",
 										"value": "1"
@@ -588,7 +620,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "benar_level_2_t3",
-									"sid": 570385299440330,
+									"sid": 855296079870375,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -596,7 +628,7 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 570385299440331,
+									"sid": 924541625618450,
 									"parameters": {
 										"seconds": "1",
 										"use-timescale": true
@@ -605,13 +637,13 @@
 								{
 									"id": "set-visible",
 									"objectClass": "benar_level_2_t3",
-									"sid": 570385299440332,
+									"sid": 794164955863476,
 									"parameters": {
 										"visibility": "invisible"
 									}
 								}
 							],
-							"sid": 570385299440341
+							"sid": 918078972965864
 						},
 						{
 							"eventType": "block",
@@ -619,14 +651,14 @@
 								{
 									"id": "else",
 									"objectClass": "System",
-									"sid": 570385299440335
+									"sid": 523844901788668
 								}
 							],
 							"actions": [
 								{
 									"id": "set-position",
 									"objectClass": "dinding_level_2_t3",
-									"sid": 570385299440336,
+									"sid": 937902628607020,
 									"parameters": {
 										"x": "dinding_level_2_t3.X_origin",
 										"y": "dinding_level_2_t3.Y_origin"
@@ -635,7 +667,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "cobalagi_level_2_t3",
-									"sid": 570385299440337,
+									"sid": 240633810973198,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -643,7 +675,7 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 570385299440338,
+									"sid": 418122314756213,
 									"parameters": {
 										"seconds": "1.5",
 										"use-timescale": true
@@ -652,22 +684,1258 @@
 								{
 									"id": "set-visible",
 									"objectClass": "cobalagi_level_2_t3",
-									"sid": 570385299440339,
+									"sid": 947758382351841,
 									"parameters": {
 										"visibility": "invisible"
 									}
 								}
 							],
-							"sid": 570385299440340
+							"sid": 272052962368756
 						}
 					]
 				},
 				{
 					"eventType": "comment",
-					"text": "Cara duplikasi via UI Construct 3:\n1. Klik kanan pada Event 'On drop + isPlaced=0' → Duplicate\n2. Ganti semua 'dinding_level_2_t3' dengan nama komponen berikutnya (misal 'pintu_level_2_t3')\n3. Sub-event distance < 50 → BENAR (snap ke target)\n4. Sub-event Else → SALAH (kembali ke origin)\n5. Lakukan untuk 8 komponen lainnya: pintu, jendela, tangga, atap_pg, atas_stiga, kunci, layang, polygon"
+					"text": "=== KOMPONEN 2: PINTU ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "pintu_level_2_t3",
+							"sid": 416333705209683,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "pintu_level_2_t3",
+							"sid": 796860940770839,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 466784870647310,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 136618731663247,
+									"parameters": {
+										"first-value": "distance(pintu_level_2_t3.X, pintu_level_2_t3.Y, pintu_level_2_t3.X_target, pintu_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "pintu_level_2_t3",
+									"sid": 369286855325403,
+									"parameters": {
+										"x": "pintu_level_2_t3.X_target",
+										"y": "pintu_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "pintu_level_2_t3",
+									"sid": 250208684694832,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "pintu_level_2_t3",
+									"sid": 804502172529362,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 988323123432658,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 758537940946244,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 938431558527436,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 366665552093412,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 241721018028812
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 400586468685655
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "pintu_level_2_t3",
+									"sid": 545874106977831,
+									"parameters": {
+										"x": "pintu_level_2_t3.X_origin",
+										"y": "pintu_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 638819504677699,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 189893210532697,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 948459620383486,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 530858530026464
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 3: JENDELA ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "jendela_level_2_t3",
+							"sid": 700038307963660,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "jendela_level_2_t3",
+							"sid": 674767813511962,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 197339084539913,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 808816398875067,
+									"parameters": {
+										"first-value": "distance(jendela_level_2_t3.X, jendela_level_2_t3.Y, jendela_level_2_t3.X_target, jendela_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "jendela_level_2_t3",
+									"sid": 964733129417604,
+									"parameters": {
+										"x": "jendela_level_2_t3.X_target",
+										"y": "jendela_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "jendela_level_2_t3",
+									"sid": 762081804096775,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "jendela_level_2_t3",
+									"sid": 224736913836449,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 408622609034240,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 602684630423403,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 489307600202078,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 249862491823827,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 962523964430338
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 434071285676579
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "jendela_level_2_t3",
+									"sid": 410124542676915,
+									"parameters": {
+										"x": "jendela_level_2_t3.X_origin",
+										"y": "jendela_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 832047428881629,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 327429308583783,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 116481939308434,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 755517584706300
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 4: TANGGA ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "tangga_level_2_t3",
+							"sid": 384734417213055,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "tangga_level_2_t3",
+							"sid": 171476205270497,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 584402496866972,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 722541592057202,
+									"parameters": {
+										"first-value": "distance(tangga_level_2_t3.X, tangga_level_2_t3.Y, tangga_level_2_t3.X_target, tangga_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "tangga_level_2_t3",
+									"sid": 825880348896864,
+									"parameters": {
+										"x": "tangga_level_2_t3.X_target",
+										"y": "tangga_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "tangga_level_2_t3",
+									"sid": 546672633432485,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "tangga_level_2_t3",
+									"sid": 680560891084199,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 183994535656354,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 361291465759534,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 692755248110702,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 893854042041665,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 713199240072276
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 788311422061652
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "tangga_level_2_t3",
+									"sid": 798816290079438,
+									"parameters": {
+										"x": "tangga_level_2_t3.X_origin",
+										"y": "tangga_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 361122732450468,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 910978551261867,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 664663581070926,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 724557709882155
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 5: ATAP_PG ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "atap_pg_level_2_t3",
+							"sid": 571749173126359,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "atap_pg_level_2_t3",
+							"sid": 830906759191047,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 266423485803547,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 786707365157187,
+									"parameters": {
+										"first-value": "distance(atap_pg_level_2_t3.X, atap_pg_level_2_t3.Y, atap_pg_level_2_t3.X_target, atap_pg_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "atap_pg_level_2_t3",
+									"sid": 582188846135109,
+									"parameters": {
+										"x": "atap_pg_level_2_t3.X_target",
+										"y": "atap_pg_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "atap_pg_level_2_t3",
+									"sid": 468939631746556,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "atap_pg_level_2_t3",
+									"sid": 132156920970357,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 247587147578299,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 391002947454195,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 633808611230166,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 750727990891035,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 503820614109837
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 472498019150224
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "atap_pg_level_2_t3",
+									"sid": 550507408656740,
+									"parameters": {
+										"x": "atap_pg_level_2_t3.X_origin",
+										"y": "atap_pg_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 807971047416621,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 400359985175895,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 127847473936332,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 537464592566451
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 6: ATAS_STIGA ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "atas_stiga_level_2_t3",
+							"sid": 472400012062152,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "atas_stiga_level_2_t3",
+							"sid": 168749540206763,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 649058519440436,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 239530372855968,
+									"parameters": {
+										"first-value": "distance(atas_stiga_level_2_t3.X, atas_stiga_level_2_t3.Y, atas_stiga_level_2_t3.X_target, atas_stiga_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "atas_stiga_level_2_t3",
+									"sid": 561141406793005,
+									"parameters": {
+										"x": "atas_stiga_level_2_t3.X_target",
+										"y": "atas_stiga_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "atas_stiga_level_2_t3",
+									"sid": 698248795151554,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "atas_stiga_level_2_t3",
+									"sid": 676324985991231,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 929354432494407,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 680213125657456,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 878362272521646,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 507495204568541,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 648100119950369
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 137181420923319
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "atas_stiga_level_2_t3",
+									"sid": 362425433909840,
+									"parameters": {
+										"x": "atas_stiga_level_2_t3.X_origin",
+										"y": "atas_stiga_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 281193048392090,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 333655123275601,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 667957894935401,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 155398852725793
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 7: KUNCI ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "kunci_level_2_t3",
+							"sid": 606085630028081,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "kunci_level_2_t3",
+							"sid": 141731068180391,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 929954271804557,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 999556176283338,
+									"parameters": {
+										"first-value": "distance(kunci_level_2_t3.X, kunci_level_2_t3.Y, kunci_level_2_t3.X_target, kunci_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "kunci_level_2_t3",
+									"sid": 203882804231065,
+									"parameters": {
+										"x": "kunci_level_2_t3.X_target",
+										"y": "kunci_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "kunci_level_2_t3",
+									"sid": 274577091775752,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "kunci_level_2_t3",
+									"sid": 167772822804495,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 325167027064623,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 511809413870847,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 583869019455352,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 107467277988023,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 878145262659809
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 154133058917885
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "kunci_level_2_t3",
+									"sid": 436915692866352,
+									"parameters": {
+										"x": "kunci_level_2_t3.X_origin",
+										"y": "kunci_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 581181091357761,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 386347539545019,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 921134185633748,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 318261011765399
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 8: LAYANG ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "layang_level_2_t3",
+							"sid": 160879644129231,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "layang_level_2_t3",
+							"sid": 594375734489774,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 481652352227484,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 108672456337361,
+									"parameters": {
+										"first-value": "distance(layang_level_2_t3.X, layang_level_2_t3.Y, layang_level_2_t3.X_target, layang_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "layang_level_2_t3",
+									"sid": 897659620210653,
+									"parameters": {
+										"x": "layang_level_2_t3.X_target",
+										"y": "layang_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "layang_level_2_t3",
+									"sid": 633715543090395,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "layang_level_2_t3",
+									"sid": 926841508505797,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 880943387531956,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 470369887871261,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 277179481760214,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 702194144351722,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 750296932302693
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 888745317023740
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "layang_level_2_t3",
+									"sid": 132489608086604,
+									"parameters": {
+										"x": "layang_level_2_t3.X_origin",
+										"y": "layang_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 528093869885753,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 953671346248439,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 838991976720951,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 587313249613420
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "=== KOMPONEN 9: POLYGON ==="
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "polygon_level_2_t3",
+							"sid": 443097738101468,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "polygon_level_2_t3",
+							"sid": 406879874825677,
+							"parameters": {
+								"instance-variable": "isPlaced",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 542532407417750,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 919995401610301,
+									"parameters": {
+										"first-value": "distance(polygon_level_2_t3.X, polygon_level_2_t3.Y, polygon_level_2_t3.X_target, polygon_level_2_t3.Y_target)",
+										"comparison": 3,
+										"second-value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "polygon_level_2_t3",
+									"sid": 768404471714152,
+									"parameters": {
+										"x": "polygon_level_2_t3.X_target",
+										"y": "polygon_level_2_t3.Y_target"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "polygon_level_2_t3",
+									"sid": 543318959283383,
+									"parameters": {
+										"instance-variable": "isPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "polygon_level_2_t3",
+									"sid": 111692440538458,
+									"behaviorType": "DragDrop",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 114561096941662,
+									"parameters": {
+										"variable": "componentsPlaced",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 869424482415794,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 652481200275832,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "benar_level_2_t3",
+									"sid": 447143064940343,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 878579713237930
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 290208101122780
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "polygon_level_2_t3",
+									"sid": 386194656120835,
+									"parameters": {
+										"x": "polygon_level_2_t3.X_origin",
+										"y": "polygon_level_2_t3.Y_origin"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 845520724510671,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 455291801023661,
+									"parameters": {
+										"seconds": "1.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cobalagi_level_2_t3",
+									"sid": 452557739014023,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 357275280285766
+						}
+					]
 				}
 			],
-			"sid": 570385299440262
+			"sid": 516127352011913
 		},
 		{
 			"eventType": "group",
@@ -675,45 +1943,277 @@
 			"title": "Group 4 - Win Condition",
 			"description": "Detect kemenangan (9 komponen terpasang) dan navigasi ke RoadMap",
 			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440263
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Cek setiap frame apakah semua 9 komponen sudah terpasang"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 531814138405506,
+							"parameters": {
+								"variable": "componentsPlaced",
+								"comparison": 0,
+								"value": "9"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 113302074373493,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 786472228919037,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban benar"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 726428734681602,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "rumahselesaidisusun_level_2_t3",
+							"sid": 393384643323657,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 519034614850035,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "berhasil_level_2_t3",
+							"sid": 485653691837835,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 700006952379081,
+							"parameters": {
+								"seconds": "0.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"callFunction": "winGame",
+							"sid": 916558364361908,
+							"parameters": [
+								"\"Lay_Level2_T4\""
+							]
+						}
+					],
+					"sid": 785686123727878
+				}
+			],
+			"sid": 396413224109384
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 5 - Maskot Dialog System",
-			"description": "Memberikan hints & feedback lewat maskot (Numa & Numi) pada berbagai progress points",
+			"title": "Group 5 - Timer System",
+			"description": "Sistem timer untuk menghitung waktu penyelesaian game (120 detik)",
 			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440264
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 6 - UI Controls",
-			"description": "Handle toggle reference rumah dan controls lainnya",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440265
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 7 - Notifications Management",
-			"description": "Auto-hide notifications (benar, cobalagi, tap2_sering) setelah beberapa detik",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440266
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 8 - Animations & Effects",
-			"description": "Particle effects, sound effects, hover animations (optional polish phase)",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 570385299440267
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set timer awal 120 detik saat layout dimulai"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 586064703261836
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 932000242876749,
+							"parameters": {
+								"variable": "timeRemaining",
+								"value": "120"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_t3",
+							"sid": 749002400909472,
+							"parameters": {
+								"text": "\"2:00\""
+							}
+						}
+					],
+					"sid": 344198379861286
+				},
+				{
+					"eventType": "comment",
+					"text": "Countdown setiap 1 detik selama game aktif"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 235714445173389,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 290091267482849,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 889425779859178,
+							"parameters": {
+								"variable": "timeRemaining",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 273881672874151,
+							"parameters": {
+								"variable": "timeRemaining",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_t3",
+							"sid": 395157978731925,
+							"parameters": {
+								"text": "zeropad(floor(timeRemaining/60),2) & \":\" & zeropad(timeRemaining%60,2)"
+							}
+						}
+					],
+					"sid": 149548877439020
+				},
+				{
+					"eventType": "comment",
+					"text": "Waktu habis - game over"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 124705457191048,
+							"parameters": {
+								"variable": "timeRemaining",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 916483419932173,
+							"parameters": {
+								"variable": "gameActive",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 612658180132578,
+							"parameters": {
+								"variable": "gameActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "timetxt_t3",
+							"sid": 197322317207099,
+							"parameters": {
+								"text": "\"0:00\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "cobalagi_level_2_t3",
+							"sid": 276232364080332,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 837654211025087,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"callFunction": "LoseGame",
+							"sid": 614549042802472
+						}
+					],
+					"sid": 703031511193694
+				}
+			],
+			"sid": 352572942341846
 		}
 	],
-	"sid": 570385299440259
+	"sid": 623174445604689
 }

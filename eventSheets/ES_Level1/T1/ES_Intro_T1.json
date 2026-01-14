@@ -1,0 +1,27 @@
+{
+	"name": "ES_Intro_T1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 334993928842329
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 339993364961911,
+					"parameters": {
+						"layout": "Level1_T1_1"
+					}
+				}
+			],
+			"sid": 475219628232813
+		}
+	],
+	"sid": 983153413297167
+}

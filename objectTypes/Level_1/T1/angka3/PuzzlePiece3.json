@@ -1,7 +1,7 @@
 {
 	"name": "PuzzlePiece3",
 	"plugin-id": "Sprite",
-	"sid": 490807704578779,
+	"sid": 176303324603988,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,28 +10,28 @@
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 748200604405954
+			"sid": 451526435100947
 		},
 		{
 			"name": "StartX",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 882526521802788
+			"sid": 778652161694503
 		},
 		{
 			"name": "StartY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 885607391127381
+			"sid": 960545469592481
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 949530864946161
+			"sid": 834231601997791
 		}
 	],
 	"effectTypes": [],
@@ -48,7 +48,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4762222,
+						"imageSpriteId": 8963321,
 						"collisionPoly": {
 							"points": [
 								0.10023866348448687,
@@ -76,7 +76,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9946378,
+						"imageSpriteId": 8388487,
 						"collisionPoly": {
 							"points": [
 								0.24150943396226415,
@@ -110,7 +110,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6477776,
+						"imageSpriteId": 4869927,
 						"collisionPoly": {
 							"points": [
 								0.005639097744360902,
@@ -144,7 +144,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8778994,
+						"imageSpriteId": 7613869,
 						"collisionPoly": {
 							"points": [
 								0.4950980392156863,
@@ -172,7 +172,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 337656800877810,
+				"sid": 747137857974454,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
 	"name": "segilima_t1",
 	"plugin-id": "Sprite",
-	"sid": 573088075646976,
+	"sid": 114665962234116,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6292476,
+						"imageSpriteId": 7062916,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 946937697271572,
+				"sid": 402237011460983,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
 	"name": "Instruction",
 	"plugin-id": "Sprite",
-	"sid": 104865431489820,
+	"sid": 325509663102296,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4236702,
+						"imageSpriteId": 7327584,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 279255706428455,
+				"sid": 668961126372192,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

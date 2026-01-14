@@ -1,7 +1,7 @@
 {
 	"name": "waktu_level2",
 	"plugin-id": "Sprite",
-	"sid": 524382557464132,
+	"sid": 276232629065274,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3734157,
+						"imageSpriteId": 9241469,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 371880231443950,
+				"sid": 856139982342599,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -26,23 +26,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 213382151921598,
-					"parameters": {
-						"variable": "IsGameOver",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "TransparantOverlay",
-					"sid": 465556548491393,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
 					"id": "set-enabled",
 					"objectClass": "Capybara",
 					"sid": 756974735129433,
@@ -70,129 +53,8 @@
 					}
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 368347845873932,
-					"parameters": {
-						"seconds": "2.0",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Ready",
-					"sid": 306942631091291,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "1280",
-						"end-y": "731",
-						"time": "0.5",
-						"ease": "easeoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 503434006227028,
-					"parameters": {
-						"seconds": "1.3",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Ready",
-					"sid": 162251758236029,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "0",
-						"end-y": "0",
-						"time": "0.5",
-						"ease": "easeinback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 631200474993117,
-					"parameters": {
-						"seconds": "0.5",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Go",
-					"sid": 253947610891350,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "843",
-						"end-y": "733",
-						"time": "0.5",
-						"ease": "easeoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 358294954465636,
-					"parameters": {
-						"seconds": "1.3",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Go",
-					"sid": 716457463556768,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "0",
-						"end-y": "0",
-						"time": "0.5",
-						"ease": "easeinback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 134288467664221,
-					"parameters": {
-						"variable": "IsGameOver",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "TransparantOverlay",
-					"sid": 763831171653599,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"callFunction": "startGame",
+					"sid": 885346045501644
 				},
 				{
 					"id": "set-eventvar-value",
@@ -317,66 +179,8 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "TransparantOverlay",
-					"sid": 746692292984664,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "LoseNotif",
-					"sid": 276868572281176,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "641.156986",
-						"end-y": "399.514906",
-						"time": "0.8",
-						"ease": "easeoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "home",
-					"sid": 894566739571980,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "73.038595",
-						"end-y": "79.546985",
-						"time": "0.1",
-						"ease": "easeoutback",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
-				},
-				{
-					"id": "tween-two-properties",
-					"objectClass": "Retry",
-					"sid": 371054116182651,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"\"",
-						"property": "size",
-						"end-x": "73.038595",
-						"end-y": "79.546985",
-						"time": "0.1",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no",
-						"repeat-count": "1"
-					}
+					"callFunction": "LoseGame",
+					"sid": 147793219705024
 				}
 			],
 			"sid": 748870620450017
@@ -960,129 +764,17 @@
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "TransparantOverlay",
-							"sid": 530938780152701,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "tween-two-properties",
-							"objectClass": "WinNotif",
-							"sid": 215119670540817,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"\"",
-								"property": "size",
-								"end-x": "710.083581",
-								"end-y": "548.955095",
-								"time": "0.8",
-								"ease": "easeoutback",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "tween-two-properties",
-							"objectClass": "home",
-							"sid": 870808291037394,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"\"",
-								"property": "size",
-								"end-x": "73.038595",
-								"end-y": "79.546985",
-								"time": "0.1",
-								"ease": "easeoutback",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "tween-two-properties",
-							"objectClass": "Retry",
-							"sid": 570967700402259,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "\"\"",
-								"property": "size",
-								"end-x": "73.038595",
-								"end-y": "79.546985",
-								"time": "0.1",
-								"ease": "default",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 371929494633903,
-							"parameters": {
-								"variable": "IsGameOver",
-								"value": "true"
-							}
+							"callFunction": "winGame",
+							"sid": 270198475801296,
+							"parameters": [
+								"\"Lay_Level3_T2\""
+							]
 						}
 					],
 					"sid": 484754863260103
 				}
 			],
 			"sid": 184133744800021
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 675018162027333,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "home"
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "GoToLayoutFunction",
-					"sid": 827746764237121,
-					"parameters": [
-						"\"Lay_RoadMap\""
-					]
-				}
-			],
-			"sid": 755725619894830
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 745124158083925,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Retry"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "restart-layout",
-					"objectClass": "System",
-					"sid": 175392417540716
-				}
-			],
-			"sid": 179020894964250
 		}
 	],
 	"sid": 216634530871288

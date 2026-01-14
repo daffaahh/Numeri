@@ -1,7 +1,7 @@
 {
 	"name": "layang_t1",
 	"plugin-id": "Sprite",
-	"sid": 137709242189356,
+	"sid": 647239517582119,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5675519,
+						"imageSpriteId": 9324795,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 489238968909615,
+				"sid": 870989666756998,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

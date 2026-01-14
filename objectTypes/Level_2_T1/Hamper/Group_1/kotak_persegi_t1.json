@@ -1,7 +1,7 @@
 {
 	"name": "kotak_persegi_t1",
 	"plugin-id": "Sprite",
-	"sid": 595750446315566,
+	"sid": 902182423293721,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "string",
 			"desc": "Bentuk yang diterima kotak ini",
 			"show": false,
-			"sid": 100000000000025
+			"sid": 695916528114578
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5332983,
+						"imageSpriteId": 3680696,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 654741717441823,
+				"sid": 657414565730706,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

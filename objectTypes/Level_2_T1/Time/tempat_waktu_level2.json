@@ -1,7 +1,7 @@
 {
 	"name": "tempat_waktu_level2",
 	"plugin-id": "Sprite",
-	"sid": 941757975523886,
+	"sid": 673973200121875,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9131422,
+						"imageSpriteId": 9459576,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 272458613884867,
+				"sid": 330658103228318,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

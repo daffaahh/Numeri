@@ -1,7 +1,7 @@
 {
 	"name": "jikaWaktuHabis_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 149231649265386,
+	"sid": 590263442879444,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4141618,
+						"imageSpriteId": 2646291,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 801755166398286,
+				"sid": 147442119459290,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

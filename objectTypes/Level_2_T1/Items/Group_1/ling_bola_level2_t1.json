@@ -1,7 +1,7 @@
 {
 	"name": "ling_bola_level2_t1",
 	"plugin-id": "Sprite",
-	"sid": 474874576071651,
+	"sid": 765474474496649,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,33 +10,33 @@
 			"type": "string",
 			"desc": "Tipe bentuk geometri item ini",
 			"show": true,
-			"sid": 913941221601314
+			"sid": 459780487010403
 		},
 		{
 			"name": "X_origin",
 			"type": "number",
 			"desc": "Save X position saat game start",
 			"show": true,
-			"sid": 857169012079279
+			"sid": 341068590408641
 		},
 		{
 			"name": "Y_origin",
 			"type": "number",
 			"desc": "Save Y position saat game start",
 			"show": true,
-			"sid": 215108997308546
+			"sid": 444504760159309
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 364037790471714
+			"sid": 309301291116750
 		},
 		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
-			"sid": 151191467618584
+			"sid": 892372158633241
 		}
 	],
 	"effectTypes": [],
@@ -53,13 +53,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4528852,
+						"imageSpriteId": 7035542,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 352417797480742,
+				"sid": 499021186987719,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

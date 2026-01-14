@@ -1,7 +1,7 @@
 {
 	"name": "trapesium_t1",
 	"plugin-id": "Sprite",
-	"sid": 215897297531676,
+	"sid": 861055536432425,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5747696,
+						"imageSpriteId": 5547619,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 580433539022291,
+				"sid": 982723563031438,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

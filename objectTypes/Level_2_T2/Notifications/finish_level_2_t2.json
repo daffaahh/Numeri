@@ -1,7 +1,7 @@
 {
 	"name": "finish_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 114243347435461,
+	"sid": 644944043043988,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5178157,
+						"imageSpriteId": 574675,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 488835037302678,
+				"sid": 495548547833597,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

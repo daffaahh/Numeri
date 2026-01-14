@@ -1,7 +1,7 @@
 {
 	"name": "Example_Number3",
 	"plugin-id": "Sprite",
-	"sid": 602946949425355,
+	"sid": 364803076057696,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9224598,
+						"imageSpriteId": 3617227,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 827456149879323,
+				"sid": 270902387694783,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

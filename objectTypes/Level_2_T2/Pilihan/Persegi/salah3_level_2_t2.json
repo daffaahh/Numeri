@@ -1,7 +1,7 @@
 {
 	"name": "salah3_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 926735090540876,
+	"sid": 326349162631906,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "boolean",
 			"desc": "Apakah ini jawaban yang benar",
 			"show": true,
-			"sid": 332329753473712
+			"sid": 984566938759615
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9585299,
+						"imageSpriteId": 4464816,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 923470568468256,
+				"sid": 637863049494769,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

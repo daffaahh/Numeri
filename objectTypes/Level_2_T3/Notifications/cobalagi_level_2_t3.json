@@ -1,7 +1,7 @@
 {
 	"name": "cobalagi_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 211310810572074,
+	"sid": 203231149534106,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5903129,
+						"imageSpriteId": 3121782,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 758437336305160,
+				"sid": 670204630933109,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -7,14 +7,14 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 264324446339917
+					"sid": 272764136230988
 				}
 			],
 			"actions": [
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 854042058063726,
+					"sid": 478225845042338,
 					"parameters": {
 						"audio-file": {
 							"path": "Level1/Success"
@@ -26,7 +26,7 @@
 					}
 				}
 			],
-			"sid": 806689340941674
+			"sid": 903780410447420
 		},
 		{
 			"eventType": "block",
@@ -34,28 +34,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 755998989972587,
+					"sid": 110557242582980,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "Home_Button"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 684485610370583
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 918651970307152,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "Next_Button"
+						"object-clicked": "Home_Button_T1"
 					}
 				}
 			],
@@ -63,14 +46,40 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 429112128140771,
+					"sid": 350261361431151,
 					"parameters": {
-						"layout": "Intro_L1_T2"
+						"layout": "Lay_RoadMap"
 					}
 				}
 			],
-			"sid": 564757166136373
+			"sid": 389440030139848
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 874390224554271,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Next_Button_T1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 419578988092305,
+					"parameters": {
+						"layout": "Intro_T2"
+					}
+				}
+			],
+			"sid": 834595759355636
 		}
 	],
-	"sid": 998135324306737
+	"sid": 589734819443836
 }

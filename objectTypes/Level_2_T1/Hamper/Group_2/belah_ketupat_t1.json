@@ -1,7 +1,7 @@
 {
 	"name": "belah_ketupat_t1",
 	"plugin-id": "Sprite",
-	"sid": 539146736675978,
+	"sid": 509591828328309,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 565338,
+						"imageSpriteId": 359547,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 305645438591450,
+				"sid": 686847584254132,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

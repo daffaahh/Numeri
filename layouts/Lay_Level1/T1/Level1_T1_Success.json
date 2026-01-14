@@ -15,20 +15,20 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 152,
-					"sid": 865245988377698,
+					"uid": 293,
+					"sid": 366236699562951,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 865245988377698,
+						"sid": 366236699562951,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 640.0319389794126,
-						"y": 359.92883179452326,
+						"x": 639.9390820892153,
+						"y": 360.046742250503,
 						"width": 1279.8498914340137,
 						"height": 720.076966329276,
 						"originX": 0.5,
@@ -52,20 +52,20 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 153,
-					"sid": 726860686428204,
+					"uid": 294,
+					"sid": 470025986530097,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 726860686428204,
+						"sid": 470025986530097,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 614.0319389794126,
-						"y": 204.92883179452326,
+						"x": 613.9390820892153,
+						"y": 205.04674225050297,
 						"width": 647.2619761588381,
 						"height": 404.82872702407604,
 						"originX": 0.5,
@@ -89,20 +89,20 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 154,
-					"sid": 679189477199103,
+					"uid": 295,
+					"sid": 934856588973176,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 679189477199103,
+						"sid": 934856588973176,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 618.0319389794126,
-						"y": 419.92883179452326,
+						"x": 617.9390820892153,
+						"y": 420.046742250503,
 						"width": 638.6684200475124,
 						"height": 128.54555064515608,
 						"originX": 0.5,
@@ -118,7 +118,7 @@
 					}
 				},
 				{
-					"type": "Home_Button",
+					"type": "Home_Button_T1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -126,20 +126,20 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 155,
-					"sid": 169402129377680,
+					"uid": 296,
+					"sid": 926191825980694,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 169402129377680,
+						"sid": 926191825980694,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 539.0319389794126,
-						"y": 586.9288317945233,
+						"x": 538.9390820892153,
+						"y": 587.046742250503,
 						"width": 128.9633913871819,
 						"height": 136.1490348955586,
 						"originX": 0.5,
@@ -155,7 +155,7 @@
 					}
 				},
 				{
-					"type": "Next_Button",
+					"type": "Next_Button_T1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -163,20 +163,20 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 156,
-					"sid": 644722579852473,
+					"uid": 297,
+					"sid": 624704086775820,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 644722579852473,
+						"sid": 624704086775820,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 694.0319389794126,
-						"y": 587.9288317945233,
+						"x": 693.9390820892153,
+						"y": 588.046742250503,
 						"width": 129.12980665297582,
 						"height": 136.32472256619147,
 						"originX": 0.5,
@@ -192,7 +192,7 @@
 					}
 				}
 			],
-			"sid": 960664095036148,
+			"sid": 874834443556701,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -226,7 +226,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 757684513942400,
+	"sid": 765754114324695,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2560,

@@ -1,7 +1,7 @@
 {
 	"name": "berhasil_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 347574043491953,
+	"sid": 291564348702589,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5622485,
+						"imageSpriteId": 6331132,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 901299912835970,
+				"sid": 193591815814627,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

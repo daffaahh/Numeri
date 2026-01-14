@@ -1,7 +1,7 @@
 {
 	"name": "PETUNJUKPERSEGI_level_2_t2",
 	"plugin-id": "Sprite",
-	"sid": 651572650127017,
+	"sid": 263886515233281,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6831884,
+						"imageSpriteId": 5142343,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 548958139865830,
+				"sid": 404723440950809,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

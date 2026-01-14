@@ -1,7 +1,7 @@
 {
 	"name": "kotak_lingkaran_t1",
 	"plugin-id": "Sprite",
-	"sid": 112440044954918,
+	"sid": 389396326863213,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "string",
 			"desc": "Bentuk yang diterima kotak ini",
 			"show": true,
-			"sid": 186409821254676
+			"sid": 330247870783650
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5699496,
+						"imageSpriteId": 1242534,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 276013819754122,
+				"sid": 922612236035905,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
 	"name": "segitiga_level2_t1",
 	"plugin-id": "Sprite",
-	"sid": 814416630314127,
+	"sid": 704228669311671,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,33 +10,33 @@
 			"type": "string",
 			"desc": "Tipe bentuk geometri item ini",
 			"show": true,
-			"sid": 100000000000016
+			"sid": 106694507396412
 		},
 		{
 			"name": "X_origin",
 			"type": "number",
 			"desc": "Posisi X awal item untuk return saat drop salah",
 			"show": true,
-			"sid": 939703366450008
+			"sid": 744312958350475
 		},
 		{
 			"name": "Y_origin",
 			"type": "number",
 			"desc": "Posisi Y awal item untuk return saat drop salah",
 			"show": true,
-			"sid": 600094754032696
+			"sid": 855279877916461
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 100000000000017
+			"sid": 118739486900580
 		},
 		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
-			"sid": 100000000000018
+			"sid": 851857916197898
 		}
 	],
 	"effectTypes": [],
@@ -53,13 +53,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2658881,
+						"imageSpriteId": 6884292,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 659607390290400,
+				"sid": 751283536591921,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

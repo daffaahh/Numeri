@@ -1,7 +1,7 @@
 {
 	"name": "dialog_level_2_t2_1",
 	"plugin-id": "Sprite",
-	"sid": 648607890823408,
+	"sid": 909966905543762,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8032122,
+						"imageSpriteId": 2729924,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 532022421771672,
+				"sid": 604985631491071,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

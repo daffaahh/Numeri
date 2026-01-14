@@ -12,205 +12,637 @@
 			"sid": 823114908700331
 		},
 		{
-			"functionName": "GoToLayoutFunction",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Common Button Config",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"name": "TargetName",
-					"type": "string",
-					"initialValue": "",
-					"comment": "Layout name to go to",
-					"sid": 805276995328831
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 827755493290202,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "home"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "GoToLayoutFunction",
+							"sid": 635649314255574,
+							"parameters": [
+								"\"Lay_RoadMap\""
+							]
+						}
+					],
+					"sid": 163869891329634
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 277013168266022,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Retry"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 104676255093995
+						}
+					],
+					"sid": 768565790903502
 				}
 			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 184386852990994,
-					"parameters": {
-						"variable": "NextLayoutName",
-						"value": "TargetName"
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 978216149390745,
-					"parameters": {
-						"object-to-create": "Wipe1",
-						"layer": "\"TransitionLayer\"",
-						"x": "2941",
-						"y": "ViewportBottom(\"TransitionLayer\")-150",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 326430435568791,
-					"parameters": {
-						"object-to-create": "Wipe2",
-						"layer": "\"TransitionLayer\"",
-						"x": "-1749",
-						"y": "ViewportTop(\"TransitionLayer\")+150",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "Wipe1",
-					"sid": 332577806788963,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"acceleration": "20000"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Wipe1",
-					"sid": 115187281175835,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"max-speed": "20000"
-					}
-				},
-				{
-					"id": "set-deceleration",
-					"objectClass": "Wipe1",
-					"sid": 589170864635905,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"deceleration": "1000"
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "Wipe2",
-					"sid": 200886393060514,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"acceleration": "20000"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Wipe2",
-					"sid": 479814956188370,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"max-speed": "20000"
-					}
-				},
-				{
-					"id": "set-deceleration",
-					"objectClass": "Wipe2",
-					"sid": 545193075110858,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"deceleration": "1000"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "Wipe1",
-					"sid": 939318433734716,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "Self.X - 2300",
-						"y": "Self.Y",
-						"mode": "direct"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "Wipe2",
-					"sid": 503731494693862,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "Self.X + 2300",
-						"y": "Self.Y",
-						"mode": "direct"
-					}
-				}
-			],
-			"sid": 833487308293903
+			"sid": 974570760356432
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Transition",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-arrived",
-					"objectClass": "Wipe1",
-					"sid": 257809773995501,
-					"behaviorType": "MoveTo"
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 190658024355506,
-					"parameters": {
-						"layout": "NextLayoutName"
-					}
+					"functionName": "GoToLayoutFunction",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "TargetName",
+							"type": "string",
+							"initialValue": "",
+							"comment": "Layout name to go to",
+							"sid": 805276995328831
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 430603526899325,
+							"parameters": {
+								"variable": "NextLayoutName",
+								"value": "TargetName"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 118929792854958,
+							"parameters": {
+								"object-to-create": "Wipe1",
+								"layer": "\"TransitionLayer\"",
+								"x": "2941",
+								"y": "ViewportBottom(\"TransitionLayer\")-150",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 658765841433488,
+							"parameters": {
+								"object-to-create": "Wipe2",
+								"layer": "\"TransitionLayer\"",
+								"x": "-1749",
+								"y": "ViewportTop(\"TransitionLayer\")+150",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Wipe1",
+							"sid": 192338260326133,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"acceleration": "20000"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Wipe1",
+							"sid": 109837004489709,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"max-speed": "20000"
+							}
+						},
+						{
+							"id": "set-deceleration",
+							"objectClass": "Wipe1",
+							"sid": 829140739952375,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"deceleration": "1000"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Wipe2",
+							"sid": 860059980251016,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"acceleration": "20000"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Wipe2",
+							"sid": 228971851506530,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"max-speed": "20000"
+							}
+						},
+						{
+							"id": "set-deceleration",
+							"objectClass": "Wipe2",
+							"sid": 407957717115791,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"deceleration": "1000"
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "Wipe1",
+							"sid": 394971557080350,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Self.X - 2300",
+								"y": "Self.Y",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "Wipe2",
+							"sid": 877302022342043,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Self.X + 2300",
+								"y": "Self.Y",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 325399473449715
 				},
 				{
-					"id": "move-to-position",
-					"objectClass": "Wipe1",
-					"sid": 832287446163317,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "Self.X - 2000",
-						"y": "Self.Y",
-						"mode": "direct"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Wipe1",
+							"sid": 223533394343866,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 454550784103448,
+							"parameters": {
+								"layout": "NextLayoutName"
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "Wipe1",
+							"sid": 571267226749381,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Self.X - 2000",
+								"y": "Self.Y",
+								"mode": "direct"
+							}
+						},
+						{
+							"id": "move-to-position",
+							"objectClass": "Wipe2",
+							"sid": 316582392619768,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Self.X + 2000",
+								"y": "Self.Y",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 374796190977679
 				},
 				{
-					"id": "move-to-position",
-					"objectClass": "Wipe2",
-					"sid": 599403851179814,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "Self.X + 2000",
-						"y": "Self.Y",
-						"mode": "direct"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Wipe2",
+							"sid": 987281606727831,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Wipe1",
+							"sid": 304362212893840
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Wipe2",
+							"sid": 636293335242664
+						}
+					],
+					"sid": 568072628384822
 				}
 			],
-			"sid": 121542633857514
+			"sid": 849243006555070
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Start Game",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-arrived",
-					"objectClass": "Wipe2",
-					"sid": 206140782659094,
-					"behaviorType": "MoveTo"
+					"functionName": "startGame",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 200497093152301,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TransparantOverlay",
+							"sid": 496259198346633,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 545798121698546,
+							"parameters": {
+								"seconds": "2.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Ready",
+							"sid": 496325748168659,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "1280",
+								"end-y": "731",
+								"time": "0.5",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 953334630183048,
+							"parameters": {
+								"seconds": "1.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Ready",
+							"sid": 490777766692055,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "0",
+								"end-y": "0",
+								"time": "0.5",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 993651010910987,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Go",
+							"sid": 482411062956733,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "843",
+								"end-y": "733",
+								"time": "0.5",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 799414580288803,
+							"parameters": {
+								"seconds": "1.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Go",
+							"sid": 666628699399473,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "0",
+								"end-y": "0",
+								"time": "0.5",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 162950290959011,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TransparantOverlay",
+							"sid": 444561836324954,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 241635687324612
 				}
 			],
-			"actions": [
+			"sid": 795624493399232
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Win Game",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "destroy",
-					"objectClass": "Wipe1",
-					"sid": 958765476821448
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Wipe2",
-					"sid": 542532883084364
+					"functionName": "winGame",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "LevelLayoutName",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 289981892528128
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TransparantOverlay",
+							"sid": 401432720853484,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "WinNotif",
+							"sid": 521973853213549,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "710.083581",
+								"end-y": "548.955095",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "home",
+							"sid": 617733286019243,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "73.038595",
+								"end-y": "79.546985",
+								"time": "0.1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Retry",
+							"sid": 731788509330666,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "73.038595",
+								"end-y": "79.546985",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 873821416574194,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 845022297987941
 				}
 			],
-			"sid": 608661902880229
+			"sid": 227248756575249
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Lose Game",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "LoseGame",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 282055021542356,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TransparantOverlay",
+							"sid": 121940384603255,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "LoseNotif",
+							"sid": 243520549290688,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "641.156986",
+								"end-y": "399.514906",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "home",
+							"sid": 634218658863317,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "73.038595",
+								"end-y": "79.546985",
+								"time": "0.1",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Retry",
+							"sid": 660547334762116,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "73.038595",
+								"end-y": "79.546985",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 557249509136893
+				}
+			],
+			"sid": 427535136300611
 		}
 	],
 	"sid": 648758802609752

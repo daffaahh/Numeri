@@ -1,7 +1,7 @@
 {
 	"name": "tap2_sering_level_2_t3",
 	"plugin-id": "Sprite",
-	"sid": 519696390948914,
+	"sid": 720748580450782,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8704624,
+						"imageSpriteId": 6217827,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 356490134269514,
+				"sid": 705152621162949,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,11 +1,30 @@
 {
 	"name": "belakang_level_2_t4",
 	"plugin-id": "Sprite",
-	"sid": 218695666206878,
+	"sid": 962421700178608,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "direction",
+			"type": "string",
+			"desc": "Merah ↓",
+			"show": true,
+			"sid": 549878506444305
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 116605181222712
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 301701915227698
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,13 +39,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1283382,
+						"imageSpriteId": 4129405,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 210629081735409,
+				"sid": 692727087649310,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

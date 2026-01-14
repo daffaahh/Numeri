@@ -1,7 +1,7 @@
 {
 	"name": "Success_Text",
 	"plugin-id": "Sprite",
-	"sid": 812986516234451,
+	"sid": 268843182524177,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2462287,
+						"imageSpriteId": 8129658,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 121842134756055,
+				"sid": 306125144465253,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

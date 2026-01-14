@@ -1,7 +1,7 @@
 {
 	"name": "Puzzle_Box1",
 	"plugin-id": "Sprite",
-	"sid": 152908975546861,
+	"sid": 644648054326680,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 882009143987501
+			"sid": 527540797291629
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9957483,
+						"imageSpriteId": 2911811,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 575075771596440,
+				"sid": 441764118331666,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

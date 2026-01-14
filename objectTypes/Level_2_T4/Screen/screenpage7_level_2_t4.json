@@ -1,10 +1,25 @@
 {
 	"name": "screenpage7_level_2_t4",
 	"plugin-id": "Sprite",
-	"sid": 863882533618320,
+	"sid": 714570736667880,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "correctAnswer",
+			"type": "string",
+			"desc": "Numi menghadap kanan",
+			"show": true,
+			"sid": 689889478364406
+		},
+		{
+			"name": "screen",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 283796174024046
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -20,13 +35,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7071278,
+						"imageSpriteId": 4937055,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 840317302908325,
+				"sid": 340242187544811,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

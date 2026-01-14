@@ -1,7 +1,7 @@
 {
 	"name": "gagal_level2_t1",
 	"plugin-id": "Sprite",
-	"sid": 419003957612970,
+	"sid": 183480042323042,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7304861,
+						"imageSpriteId": 488818,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 438558651485663,
+				"sid": 867254596059094,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
 	"name": "Puzzle_Box4",
 	"plugin-id": "Sprite",
-	"sid": 522660320678620,
+	"sid": 514694245243116,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 658341310062795
+			"sid": 412532517253805
 		}
 	],
 	"behaviorTypes": [],
@@ -28,7 +28,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1617778,
+						"imageSpriteId": 5714750,
 						"collisionPoly": {
 							"points": [
 								0.09884169884169884,
@@ -60,7 +60,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 892812698317119,
+				"sid": 353637118094885,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

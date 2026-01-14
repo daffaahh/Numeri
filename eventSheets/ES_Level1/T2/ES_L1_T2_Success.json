@@ -1,0 +1,85 @@
+{
+	"name": "ES_L1_T2_Success",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 282725703640131
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 680206265737068,
+					"parameters": {
+						"audio-file": {
+							"path": "Level1/Success"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 719898271027453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 691991853795112,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Home_Button_T2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 932764857671811,
+					"parameters": {
+						"layout": "Lay_RoadMap"
+					}
+				}
+			],
+			"sid": 310131395326351
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 489757524370469,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Next_Button_T2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 381086878605396,
+					"parameters": {
+						"layout": "Intro_T3"
+					}
+				}
+			],
+			"sid": 767494619593456
+		}
+	],
+	"sid": 727151817804682
+}

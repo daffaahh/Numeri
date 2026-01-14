@@ -1,7 +1,7 @@
 {
 	"name": "waktu",
 	"plugin-id": "Sprite",
-	"sid": 676194990793850,
+	"sid": 235036656629291,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4101906,
+						"imageSpriteId": 5503573,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 895354654844008,
+				"sid": 429153838173881,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
