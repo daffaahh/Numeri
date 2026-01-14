@@ -384,7 +384,7 @@
 											"path": "Level2/drop jawaban"
 										},
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-15",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -474,6 +474,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 193054672196310,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-1"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "jikasalah",
 									"sid": 193054672196213,
@@ -535,7 +549,7 @@
 											"path": "Level2/drop jawaban"
 										},
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-15",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -625,6 +639,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 193054672196311,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-2"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "jikasalah",
 									"sid": 193054672196217,
@@ -686,7 +714,7 @@
 											"path": "Level2/drop jawaban"
 										},
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-15",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -773,6 +801,20 @@
 									"parameters": {
 										"x": "640",
 										"y": "400"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 193054672196312,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-1"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
@@ -971,7 +1013,7 @@
 									"path": "Level2/jawaban benar"
 								},
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-15",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}

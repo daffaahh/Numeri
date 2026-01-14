@@ -1034,7 +1034,7 @@
 											"path": "Level2/jawaban benar"
 										},
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-15",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -1119,6 +1119,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726470001,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-1"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "jikaSalah_level_2_t4",
 									"sid": 836062121922161,
@@ -1171,6 +1185,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726470002,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-2"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "jikaSalah_level_2_t4",
 									"sid": 836062121922163,
@@ -1220,6 +1248,20 @@
 									"parameters": {
 										"variable": "notifShowing",
 										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726470003,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-1"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
@@ -1669,6 +1711,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726470004,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-2"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "jikaSalah_level_2_t4",
 									"sid": 936062121922171,
@@ -1709,6 +1765,20 @@
 									"parameters": {
 										"variable": "notifShowing",
 										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726470005,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-1"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
@@ -1755,6 +1825,20 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726470006,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-2"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "jikaSalah_level_2_t4",
 									"sid": 936062121922175,
@@ -1795,6 +1879,20 @@
 									"parameters": {
 										"variable": "notifShowing",
 										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 689039726470007,
+									"parameters": {
+										"audio-file": {
+											"path": "Level2/jawaban salah-variasi-1"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
@@ -1862,6 +1960,20 @@
 							"parameters": {
 								"variable": "notifShowing",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 689039726470008,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-1"
+								},
+								"loop": "not-looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -1936,6 +2048,20 @@
 							"parameters": {
 								"variable": "notifShowing",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 689039726470009,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-2"
+								},
+								"loop": "not-looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{

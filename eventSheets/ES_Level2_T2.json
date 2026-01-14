@@ -332,7 +332,7 @@
 									"path": "Level2/jawaban benar"
 								},
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-15",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
@@ -444,7 +444,7 @@
 									"path": "Level2/jawaban salah-variasi-1"
 								},
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-15",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
@@ -524,7 +524,7 @@
 									"path": "Level2/jawaban salah-variasi-2"
 								},
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-15",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
