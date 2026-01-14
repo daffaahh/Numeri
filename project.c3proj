@@ -90,7 +90,7 @@
 			"CloudWipe2",
 			"CameraFocus",
 			"BG_RoadMap",
-			"BG_T2_"
+			"Instruction6"
 		],
 		"subfolders": [
 			{
@@ -356,51 +356,151 @@
 							{
 								"items": [
 									"Example_Number",
-									"PuzzlePiece1",
 									"Instruction",
 									"Puzzle_Box1"
 								],
-								"subfolders": [],
+								"subfolders": [
+									{
+										"items": [
+											"box1_1",
+											"box1_2",
+											"box1_3",
+											"box1_4"
+										],
+										"subfolders": [],
+										"name": "box"
+									},
+									{
+										"items": [
+											"piece1_1",
+											"piece1_2",
+											"piece1_3",
+											"piece1_4"
+										],
+										"subfolders": [],
+										"name": "piece"
+									}
+								],
 								"name": "angka1"
 							},
 							{
 								"items": [
-									"PuzzlePiece2",
 									"Instruction2",
 									"Puzzle_Box2",
 									"Example_Number2"
 								],
-								"subfolders": [],
+								"subfolders": [
+									{
+										"items": [
+											"box2_1",
+											"box2_2",
+											"box2_3",
+											"box2_4"
+										],
+										"subfolders": [],
+										"name": "box"
+									},
+									{
+										"items": [
+											"piece2_1",
+											"piece2_2",
+											"piece2_3",
+											"piece2_4"
+										],
+										"subfolders": [],
+										"name": "piece"
+									}
+								],
 								"name": "angka2"
 							},
 							{
 								"items": [
 									"Example_Number3",
 									"Instruction3",
-									"Puzzle_Box3",
-									"PuzzlePiece3"
+									"Puzzle_Box3"
 								],
-								"subfolders": [],
+								"subfolders": [
+									{
+										"items": [
+											"box3_1",
+											"box3_2",
+											"box3_3",
+											"box3_4"
+										],
+										"subfolders": [],
+										"name": "box"
+									},
+									{
+										"items": [
+											"piece3_1",
+											"piece3_2",
+											"piece3_3",
+											"piece3_4"
+										],
+										"subfolders": [],
+										"name": "piece"
+									}
+								],
 								"name": "angka3"
 							},
 							{
 								"items": [
 									"Example_Number4",
 									"Instruction4",
-									"Puzzle_Box4",
-									"PuzzlePiece4"
+									"Puzzle_Box4"
 								],
-								"subfolders": [],
+								"subfolders": [
+									{
+										"items": [
+											"box4_1",
+											"box4_2",
+											"box4_3",
+											"box4_4"
+										],
+										"subfolders": [],
+										"name": "box"
+									},
+									{
+										"items": [
+											"piece4_1",
+											"piece4_2",
+											"piece4_3",
+											"piece4_4"
+										],
+										"subfolders": [],
+										"name": "piece"
+									}
+								],
 								"name": "angka4"
 							},
 							{
 								"items": [
 									"Example_Number5",
 									"Instruction5",
-									"Puzzle_Box5",
-									"PuzzlePiece5"
+									"Puzzle_Box5"
 								],
-								"subfolders": [],
+								"subfolders": [
+									{
+										"items": [
+											"box5_1",
+											"box5_2",
+											"box5_3",
+											"box5_4"
+										],
+										"subfolders": [],
+										"name": "box"
+									},
+									{
+										"items": [
+											"piece5_1",
+											"piece5_2",
+											"piece5_3",
+											"piece5_4"
+										],
+										"subfolders": [],
+										"name": "piece"
+									}
+								],
 								"name": "angka5"
 							},
 							{
@@ -420,7 +520,8 @@
 						"items": [
 							"Tingkat2_Intro",
 							"BG_T2_1",
-							"Next_Button_Success"
+							"Next_Button_Success",
+							"BG_T2_2"
 						],
 						"subfolders": [
 							{
@@ -457,6 +558,18 @@
 							}
 						],
 						"name": "T2"
+					},
+					{
+						"items": [
+							"Tingkat3_Intro",
+							"BG_T3",
+							"Laci",
+							"Baju",
+							"BG_Baju",
+							"BG_Laci"
+						],
+						"subfolders": [],
+						"name": "T3"
 					}
 				],
 				"name": "Level_1"
@@ -499,7 +612,7 @@
 					{
 						"items": [
 							"Intro_T2",
-							"Level1_T2_1",
+							"Level1_T2",
 							"Level1_T2_FullNumber",
 							"Level1_T2_Success"
 						],
@@ -508,10 +621,17 @@
 					},
 					{
 						"items": [
-							"Intro_T3"
+							"Intro_T3",
+							"Level1_T3",
+							"Level1_T3_Success"
 						],
 						"subfolders": [],
 						"name": "T3"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "T4"
 					}
 				],
 				"name": "Lay_Level1"
@@ -555,7 +675,9 @@
 					},
 					{
 						"items": [
-							"ES_L1_T3_Intro"
+							"ES_Intro_T3",
+							"ES_Level1_T3",
+							"ES_Level1_T3_Success"
 						],
 						"subfolders": [],
 						"name": "T3"

@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "BG_T2_",
+					"type": "BG_T2_2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",

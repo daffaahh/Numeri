@@ -129,9 +129,7 @@
 					"uid": 94,
 					"sid": 716192001308573,
 					"tags": "",
-					"instanceVariables": {
-						"totalPlaced": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 716192001308573,
@@ -194,7 +192,7 @@
 					}
 				},
 				{
-					"type": "PuzzlePiece1",
+					"type": "piece1_1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -206,7 +204,6 @@
 					"sid": 587701517252751,
 					"tags": "",
 					"instanceVariables": {
-						"isPlaced": false,
 						"StartX": 0,
 						"StartY": 0
 					},
@@ -225,154 +222,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 674,
-						"y": 328,
+						"x": 715,
+						"y": 346,
 						"width": 221.55543446210822,
 						"height": 280.3895330872135,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PuzzlePiece1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 96,
-					"sid": 391606248991904,
-					"tags": "",
-					"instanceVariables": {
-						"isPlaced": false,
-						"StartX": 0,
-						"StartY": 0
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 391606248991904,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 928,
-						"y": 303,
-						"width": 282.3036797114276,
-						"height": 216.6270262701199,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PuzzlePiece1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 2,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 97,
-					"sid": 696215849707236,
-					"tags": "",
-					"instanceVariables": {
-						"isPlaced": false,
-						"StartX": 0,
-						"StartY": 0
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 696215849707236,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 710,
-						"y": 568,
-						"width": 295.5501182291867,
-						"height": 229.09186495278823,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PuzzlePiece1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 3,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 98,
-					"sid": 696386642775211,
-					"tags": "",
-					"instanceVariables": {
-						"isPlaced": false,
-						"StartX": 0,
-						"StartY": 0
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 696386642775211,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 958,
-						"y": 549,
-						"width": 218.66535930603658,
-						"height": 287.66171054337826,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -428,6 +281,303 @@
 						"height": 42,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box1_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 209,
+					"sid": 209861640106168,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 209861640106168,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 111.83303343232495,
+						"y": 257.8211815531224,
+						"width": 23.363476220465884,
+						"height": 30.12461081802836,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box1_2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 96,
+					"sid": 865086420058307,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 865086420058307,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 504.7385865824682,
+						"y": 256.03609282873674,
+						"width": 30.842112551536864,
+						"height": 23.724701962720665,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box1_3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 97,
+					"sid": 587881280273534,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 587881280273534,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 113.6519479886619,
+						"y": 652.4984157732821,
+						"width": 32.15848842950252,
+						"height": 24.73729879192502,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box1_4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 98,
+					"sid": 347046540687358,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 347046540687358,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 508.35551861891014,
+						"y": 650.82800113206,
+						"width": 22.630099752911654,
+						"height": 29.17900321838448,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "piece1_2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 210,
+					"sid": 535305258938025,
+					"tags": "",
+					"instanceVariables": {
+						"StartX": 0,
+						"StartY": 0
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 535305258938025,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 998.2042336981599,
+						"y": 301.96937623498786,
+						"width": 290.918505289143,
+						"height": 223.23765227628422,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "piece1_3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 211,
+					"sid": 180508243792405,
+					"tags": "",
+					"instanceVariables": {
+						"StartX": 0,
+						"StartY": 0
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 180508243792405,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 745,
+						"y": 586,
+						"width": 294.4393379618915,
+						"height": 228.23085794486653,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "piece1_4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 212,
+					"sid": 483036328942399,
+					"tags": "",
+					"instanceVariables": {
+						"StartX": 0,
+						"StartY": 0
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 483036328942399,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1028,
+						"y": 556,
+						"width": 222.86802952916264,
+						"height": 293.1904660310829,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

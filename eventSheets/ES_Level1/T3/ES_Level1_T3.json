@@ -1,0 +1,193 @@
+{
+	"name": "ES_Level1_T3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 957211094412731
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Baju",
+					"sid": 270753907722065,
+					"parameters": {
+						"instance-variable": "StartX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Baju",
+					"sid": 801839549914568,
+					"parameters": {
+						"instance-variable": "StartY",
+						"value": "Self.Y"
+					}
+				}
+			],
+			"sid": 231087146250089
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Baju",
+					"sid": 202820029523188,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Baju",
+					"sid": 267071690124732,
+					"parameters": {
+						"object": "Laci"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Baju",
+					"sid": 128409313145933,
+					"parameters": {
+						"instance-variable": "isPlaced"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Baju",
+					"sid": 117304660096269,
+					"parameters": {
+						"instance-variable": "isPlaced",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Baju",
+					"sid": 931435635528124,
+					"behaviorType": "DragDrop",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 852247846773674,
+					"parameters": {
+						"variable": "L1_T3_TotalPlaced",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 332633921523121,
+					"parameters": {
+						"audio-file": {
+							"path": "Level1/PuzzlePiece"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Baju",
+					"sid": 975760895355784,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 165367408344292,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Baju",
+							"sid": 170498560110718,
+							"parameters": {
+								"object": "Laci"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 761991698235738
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Baju",
+					"sid": 358574562472243,
+					"behaviorType": "DragDrop"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 469206226756212,
+					"parameters": {
+						"variable": "L1_TimerRunning"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 357214303066274,
+					"parameters": {
+						"variable": "L1_TimerRunning",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 923292650484470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 715884241394888,
+					"parameters": {
+						"variable": "L1_T3_TotalPlaced",
+						"comparison": 0,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 664031374428828,
+					"parameters": {
+						"layout": "Level1_T3_Success"
+					}
+				}
+			],
+			"sid": 912505476337443
+		}
+	],
+	"sid": 660085773348885
+}

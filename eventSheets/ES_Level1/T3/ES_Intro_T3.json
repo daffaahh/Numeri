@@ -1,0 +1,32 @@
+{
+	"name": "ES_Intro_T3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 182290287121736,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Tingkat3_Intro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 796172680935784,
+					"parameters": {
+						"layout": "Level1_T3"
+					}
+				}
+			],
+			"sid": 963566394051851
+		}
+	],
+	"sid": 220937878642812
+}

@@ -23,13 +23,23 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "L1_TotalPlaced",
+			"name": "L1_T2_TotalPlaced",
 			"type": "number",
 			"initialValue": "0",
-			"comment": "",
+			"comment": "untuk Tahap 2",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 587892221600273
+		},
+		{
+			"eventType": "variable",
+			"name": "L1_T3_TotalPlaced",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "untuk tahap 3",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 758157732327786
 		},
 		{
 			"eventType": "group",
@@ -187,15 +197,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Timer T2",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 315916507825978
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "Tahap1",
 			"description": "",
 			"isActiveOnStart": true,
@@ -225,7 +226,7 @@
 							"objectClass": "System",
 							"sid": 425219960423187,
 							"parameters": {
-								"variable": "L1_TotalPlaced",
+								"variable": "L1_T2_TotalPlaced",
 								"value": "0"
 							}
 						}

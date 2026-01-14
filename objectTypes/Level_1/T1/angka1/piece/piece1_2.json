@@ -1,0 +1,81 @@
+{
+	"name": "piece1_2",
+	"plugin-id": "Sprite",
+	"sid": 919412435718500,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "StartX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 106038135364287
+		},
+		{
+			"name": "StartY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 353835770065675
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 653804124895582
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 533,
+						"height": 409,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2111062,
+						"collisionPoly": {
+							"points": [
+								0.24202626641651032,
+								0,
+								0.9699812382739212,
+								0.0488997555012225,
+								1,
+								0.12224938875305623,
+								0.9962476547842402,
+								0.9877750611246944,
+								0.4971857410881801,
+								0.9902200488997555,
+								0.2401500938086304,
+								0.9779951100244498,
+								0.020637898686679174,
+								0.4718826405867971,
+								0.04127579737335835,
+								0.38875305623471884
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 176140659835435,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

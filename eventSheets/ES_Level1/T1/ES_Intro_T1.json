@@ -5,9 +5,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-click",
+					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 772894685879510
+					"sid": 609833515356269,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Tingkat1_Intro"
+					}
 				}
 			],
 			"actions": [

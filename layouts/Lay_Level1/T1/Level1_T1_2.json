@@ -166,9 +166,7 @@
 					"uid": 119,
 					"sid": 842195115855220,
 					"tags": "",
-					"instanceVariables": {
-						"totalPlaced": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
 						"sid": 842195115855220,
@@ -194,7 +192,7 @@
 					}
 				},
 				{
-					"type": "PuzzlePiece2",
+					"type": "piece2_1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -202,59 +200,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 115,
-					"sid": 971430617219770,
-					"tags": "",
-					"instanceVariables": {
-						"isPlaced": false,
-						"StartX": 0,
-						"StartY": 0
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 971430617219770,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 996,
-						"y": 343,
-						"width": 216.2050066015635,
-						"height": 283.00419496195224,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PuzzlePiece2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 116,
 					"sid": 238527653200070,
 					"tags": "",
 					"instanceVariables": {
-						"isPlaced": false,
 						"StartX": 0,
 						"StartY": 0
 					},
@@ -273,106 +222,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 681,
-						"y": 320,
-						"width": 283.51411243035216,
-						"height": 225.38352103276196,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PuzzlePiece2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 2,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 117,
-					"sid": 965845067785621,
-					"tags": "",
-					"instanceVariables": {
-						"isPlaced": false,
-						"StartX": 0,
-						"StartY": 0
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 965845067785621,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1033,
-						"y": 587,
-						"width": 287.08353470915154,
-						"height": 226.40335596956177,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PuzzlePiece2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 3,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 118,
-					"sid": 487607073836277,
-					"tags": "",
-					"instanceVariables": {
-						"isPlaced": false,
-						"StartX": 0,
-						"StartY": 0
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 487607073836277,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 715,
-						"y": 557,
-						"width": 220.28434634876282,
-						"height": 286.5736172407516,
+						"x": 990.1298193255336,
+						"y": 347.08272202103706,
+						"width": 220.75351099713592,
+						"height": 288.95801557408123,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -428,6 +281,303 @@
 						"height": 42,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box2_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 115,
+					"sid": 877434610837979,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 877434610837979,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 91.1657213032219,
+						"y": 254.27181574435434,
+						"width": 17.886935992461467,
+						"height": 23.063219720183422,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box2_2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 117,
+					"sid": 104107631278077,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 104107631278077,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 484.59018029843486,
+						"y": 254.7037250419651,
+						"width": 23.760620610782993,
+						"height": 18.277400469833076,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box2_3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 118,
+					"sid": 366608566512117,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 366608566512117,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 93.57784214628663,
+						"y": 651.66808964414,
+						"width": 23.056710945430062,
+						"height": 17.735931496484653,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "box2_4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 213,
+					"sid": 470180904362184,
+					"tags": "",
+					"instanceVariables": {
+						"Filled": false
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 470180904362184,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 488.2292147992954,
+						"y": 649.7148934649205,
+						"width": 20.55740092359047,
+						"height": 26.50648800758772,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "piece2_2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 214,
+					"sid": 506528253039943,
+					"tags": "",
+					"instanceVariables": {
+						"StartX": 0,
+						"StartY": 0
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 506528253039943,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 964.2939597634861,
+						"y": 605.3743131054421,
+						"width": 286.8602949071659,
+						"height": 228.04361573555278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "piece2_3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 215,
+					"sid": 288154669539685,
+					"tags": "",
+					"instanceVariables": {
+						"StartX": 0,
+						"StartY": 0
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 288154669539685,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 713.8838524055783,
+						"y": 283.25301117091385,
+						"width": 290.16519168504925,
+						"height": 228.83365028092692,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "piece2_4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 216,
+					"sid": 199970978377146,
+					"tags": "",
+					"instanceVariables": {
+						"StartX": 0,
+						"StartY": 0
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 199970978377146,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 688.2853608987057,
+						"y": 551.8944421202827,
+						"width": 221.1926247545481,
+						"height": 287.75522016679633,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

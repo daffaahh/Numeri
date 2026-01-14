@@ -1,17 +1,10 @@
 {
-	"name": "PuzzlePiece1",
+	"name": "piece1_1",
 	"plugin-id": "Sprite",
 	"sid": 537961417137247,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
-		{
-			"name": "isPlaced",
-			"type": "boolean",
-			"desc": "",
-			"show": true,
-			"sid": 524321395969339
-		},
 		{
 			"name": "StartX",
 			"type": "number",
@@ -48,7 +41,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5360113,
+						"imageSpriteId": 7423763,
 						"collisionPoly": {
 							"points": [
 								0.10047846889952153,
@@ -80,7 +73,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2946194,
+						"imageSpriteId": 7575404,
 						"collisionPoly": {
 							"points": [
 								0.24202626641651032,
@@ -114,7 +107,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1967756,
+						"imageSpriteId": 1275253,
 						"collisionPoly": {
 							"points": [
 								0.4716636197440585,
@@ -152,7 +145,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8183737,
+						"imageSpriteId": 7624198,
 						"collisionPoly": {
 							"points": [
 								0.5315533980582524,
