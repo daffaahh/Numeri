@@ -1,0 +1,64 @@
+{
+	"name": "heart",
+	"plugin-id": "Sprite",
+	"sid": 155101683949488,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 290,
+						"height": 252,
+						"originX": 0.5,
+						"originY": 0.4642857142857143,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4910652,
+						"collisionPoly": {
+							"points": [
+								0.2482758620689655,
+								0.003968253968253968,
+								0.9551724137931035,
+								0.14285714285714285,
+								0.993103448275862,
+								0.26587301587301587,
+								0.993103448275862,
+								0.3968253968253968,
+								0.9689655172413794,
+								0.5,
+								0.9103448275862069,
+								0.623015873015873,
+								0.47586206896551725,
+								0.9880952380952381,
+								0.05517241379310345,
+								0.5634920634920635,
+								0.006896551724137931,
+								0.3888888888888889,
+								0.12413793103448276,
+								0.051587301587301584
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 845442510722865,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

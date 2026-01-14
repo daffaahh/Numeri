@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 46600,
+	"savedWithRelease": 46602,
 	"name": "NUMERI",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -549,7 +549,15 @@
 					"SosisKecil",
 					"SosisSedang",
 					"SosisBesar",
-					"Instruksi3"
+					"Instruksi3",
+					"check",
+					"check2",
+					"check3",
+					"wrong",
+					"wrong2",
+					"wrong3",
+					"heart",
+					"heartCount"
 				],
 				"subfolders": [],
 				"name": "Level_3_T2"

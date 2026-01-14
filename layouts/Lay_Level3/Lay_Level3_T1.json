@@ -407,7 +407,7 @@
 						"x": 210,
 						"y": 368,
 						"width": 211,
-						"height": 175,
+						"height": 174.99999999999997,
 						"originX": 0.5,
 						"originY": 0.4223880597014925,
 						"color": [
@@ -683,7 +683,7 @@
 			"global": false
 		},
 		{
-			"name": "Overlay",
+			"name": "OverlayInGame",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -1010,7 +1010,7 @@
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
-			"global": false
+			"global": true
 		},
 		{
 			"name": "TransitionLayer",

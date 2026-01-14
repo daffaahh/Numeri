@@ -1,46 +1,52 @@
 {
-	"name": "kadal",
+	"name": "wrong3",
 	"plugin-id": "Sprite",
-	"sid": 321688047087044,
+	"sid": 176538035281209,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "IsLocked",
-			"type": "boolean",
-			"desc": "",
-			"show": true,
-			"sid": 689599912799013
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 602879996235606
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 349,
-						"height": 265,
+						"width": 500,
+						"height": 500,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8879437,
+						"imageSpriteId": 7909097,
 						"collisionPoly": {
 							"points": [
-								0.09169054441260745,
-								0.03773584905660377,
-								1,
-								0.18867924528301888,
-								1,
-								0.8188679245283019,
-								0.8997134670487106,
-								0.969811320754717,
-								0,
-								0.8452830188679246
+								0.346,
+								0.214,
+								0.724,
+								0.236,
+								0.79,
+								0.328,
+								0.77,
+								0.72,
+								0.682,
+								0.786,
+								0.29,
+								0.768,
+								0.222,
+								0.674,
+								0.244,
+								0.28,
+								0.298,
+								0.228
 							]
 						},
 						"useCollisionPoly": true,
@@ -48,7 +54,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 896976607656291,
+				"sid": 169820447068818,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
