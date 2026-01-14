@@ -60,6 +60,20 @@
 					"sid": 185715973268305
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 366714005962734,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/diruang kelas"
+						},
+						"loop": "not-looping",
+						"volume": "2",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 205541113640105,

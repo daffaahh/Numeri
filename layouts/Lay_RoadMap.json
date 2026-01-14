@@ -1132,30 +1132,30 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "BTN_SoundOff",
+					"type": "BTN_MusicOn",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 172,
-					"sid": 534928907759642,
+					"sid": 959704065725242,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 534928907759642,
+						"sid": 959704065725242,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 998,
-						"y": 92,
-						"width": 166,
-						"height": 167,
+						"x": 1163.3118429155752,
+						"y": 101.6881570844246,
+						"width": 126.80934977414887,
+						"height": 126.80934977414887,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1171,102 +1171,28 @@
 				{
 					"type": "BTN_MusicOff",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 173,
-					"sid": 820428241503379,
+					"sid": 869842139088247,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 820428241503379,
+						"sid": 869842139088247,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1132,
-						"y": 93,
-						"width": 152,
-						"height": 152,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BTN_SoundOn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 174,
-					"sid": 722563238642128,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 722563238642128,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 997,
-						"y": 91,
-						"width": 170,
-						"height": 171,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BTN_MusicOn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 175,
-					"sid": 221548145370401,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 221548145370401,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1132,
-						"y": 97,
-						"width": 152,
-						"height": 152,
+						"x": 1163.3118429155752,
+						"y": 101.6881570844246,
+						"width": 126.80934977414887,
+						"height": 126.80934977414887,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

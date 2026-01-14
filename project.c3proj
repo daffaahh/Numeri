@@ -852,7 +852,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "MainTheme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 194585541451060,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": [
 				{
 					"items": [
@@ -1088,6 +1097,20 @@
 					],
 					"subfolders": [],
 					"name": "Level2"
+				},
+				{
+					"items": [
+						{
+							"name": "latar kebun binatang.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 229801295253583,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "Level3"
 				}
 			]
 		},

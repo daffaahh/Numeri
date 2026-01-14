@@ -9,26 +9,63 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 574524333634449
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 399644666654245,
+					"parameters": {
+						"audio-file": {
+							"path": "MainTheme"
+						},
+						"loop": "looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"MainTheme\""
+					}
+				}
+			],
+			"sid": 553531532813296
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 152101442072099,
+					"sid": 923586747742061,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_11"
+						"object-clicked": "BTN_MusicOff"
 					}
 				}
 			],
 			"actions": [
 				{
-					"callFunction": "GoToLayoutFunction",
-					"sid": 385427079209505,
-					"parameters": [
-						"BTN_11.TargetLayout"
-					]
+					"id": "set-muted",
+					"objectClass": "Audio",
+					"sid": 900436572127186,
+					"parameters": {
+						"tag": "\"MainTheme\"",
+						"state": "unmuted"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BTN_MusicOn",
+					"sid": 976973329638086,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
-			"sid": 307012041410267
+			"sid": 933642491145226
 		},
 		{
 			"eventType": "block",
@@ -125,31 +162,6 @@
 				}
 			],
 			"sid": 217238684123761
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 920869807221737,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "BTN_12"
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "GoToLayoutFunction",
-					"sid": 495249893911642,
-					"parameters": [
-						"\"Lay_Level3_T2\""
-					]
-				}
-			],
-			"sid": 469844870874663
 		},
 		{
 			"eventType": "block",
@@ -275,6 +287,56 @@
 				}
 			],
 			"sid": 802956831323673
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 504518569999764,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 285588491407832,
+					"parameters": [
+						"BTN_11.TargetLayout"
+					]
+				}
+			],
+			"sid": 984446653007761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 218740845822903,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_12"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 212389355720586,
+					"parameters": [
+						"\"Lay_Level3_T2\""
+					]
+				}
+			],
+			"sid": 840414506682325
 		}
 	],
 	"sid": 241361781550435

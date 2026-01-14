@@ -26,6 +26,20 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 848731332886381,
+					"parameters": {
+						"audio-file": {
+							"path": "Level3/latar kebun binatang"
+						},
+						"loop": "looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-enabled",
 					"objectClass": "Capybara",
 					"sid": 756974735129433,
@@ -59,10 +73,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 984678569890560,
+					"sid": 333934663777700,
 					"parameters": {
 						"variable": "timer",
-						"value": "10"
+						"value": "30"
 					}
 				},
 				{
@@ -388,6 +402,20 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 897573014853250,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "Frame_rabbit",
 							"sid": 590934000439073
@@ -576,6 +604,20 @@
 								"instance-variable": "IsLocked",
 								"value": "true"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 532702435169638,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 380876819849348
@@ -715,6 +757,20 @@
 							"parameters": {
 								"instance-variable": "IsLocked",
 								"value": "true"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 550138252657903,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],

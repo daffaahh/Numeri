@@ -43,6 +43,20 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 157425333396488,
+					"parameters": {
+						"audio-file": {
+							"path": "Level3/latar kebun binatang"
+						},
+						"loop": "looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"callFunction": "startGame",
 					"sid": 916574365127331
 				}
@@ -89,6 +103,20 @@
 					"parameters": {
 						"instance-variable": "IsLocked",
 						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 775148361313807,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/jawaban benar"
+						},
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -143,6 +171,20 @@
 					"parameters": {
 						"text": "heartCount"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 923640913740406,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/jawaban salah-variasi-2"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 361216159468653
@@ -162,6 +204,20 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 237864713836766,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/jawaban benar"
+						},
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "tween-two-properties",
 					"objectClass": "check2",
@@ -207,6 +263,20 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 624485975870655,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/jawaban salah-variasi-2"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
@@ -261,6 +331,20 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 758843505540601,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/jawaban benar"
+						},
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "tween-two-properties",
 					"objectClass": "check",
 					"sid": 985391056409374,
@@ -305,6 +389,20 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 737884999035841,
+					"parameters": {
+						"audio-file": {
+							"path": "Level2/jawaban salah-variasi-2"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",

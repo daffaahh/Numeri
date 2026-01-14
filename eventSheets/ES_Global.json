@@ -65,6 +65,41 @@
 						}
 					],
 					"sid": 768565790903502
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 992854411346811,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "BTN_MusicOn"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-muted",
+							"objectClass": "Audio",
+							"sid": 857912595458853,
+							"parameters": {
+								"tag": "\"MainTheme\"",
+								"state": "muted"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BTN_MusicOn",
+							"sid": 768032667145029,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 211698905070633
 				}
 			],
 			"sid": 974570760356432
@@ -103,6 +138,11 @@
 								"variable": "NextLayoutName",
 								"value": "TargetName"
 							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 999943834194354
 						},
 						{
 							"id": "create-object",
@@ -473,6 +513,25 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 442358385462218
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 796707381259967,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/berhasil & muncul bintang"
+								},
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "TransparantOverlay",
 							"sid": 401432720853484,
@@ -567,6 +626,25 @@
 					"eventType": "function-block",
 					"conditions": [],
 					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 183491928282917
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 472131879498682,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-1"
+								},
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
