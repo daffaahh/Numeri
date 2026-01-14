@@ -602,15 +602,7 @@
 						{
 							"id": "set-visible",
 							"objectClass": "finish_level_2_t2",
-							"sid": 905234567890402,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "motivasi_level_2_t2",
-							"sid": 905234567890403,
+							"sid": 991259125429818,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -622,14 +614,6 @@
 							"parameters": {
 								"seconds": "3",
 								"use-timescale": true
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 905234567890406,
-							"parameters": {
-								"layout": "Lay_Level2_T3"
 							}
 						}
 					],
@@ -761,6 +745,12 @@
 								"comparison": 4,
 								"value": "0"
 							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "finish_level_2_t2",
+							"sid": 906234567890036,
+							"isInverted": true
 						}
 					],
 					"actions": [

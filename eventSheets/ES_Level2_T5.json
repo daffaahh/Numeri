@@ -164,9 +164,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "timetxt_lvl_2_t5",
-							"sid": 193054672196204,
+							"sid": 785529417542219,
 							"parameters": {
-								"text": "\"Time: 02:00\""
+								"text": "\"02:00\""
 							}
 						}
 					],
@@ -843,9 +843,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "timetxt_lvl_2_t5",
-							"sid": 689603249478703,
+							"sid": 576377663422295,
 							"parameters": {
-								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2) & \" Items: \" & itemsPlaced"
+								"text": "zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2)"
 							}
 						}
 					],
@@ -1120,16 +1120,7 @@
 							"sid": 193054672196143
 						}
 					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 193054672196141,
-							"parameters": {
-								"layout": "Lay_RoadMap"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 193054672196142
 				}
 			],

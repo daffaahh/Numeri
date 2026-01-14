@@ -411,14 +411,6 @@
 						"seconds": "3",
 						"use-timescale": true
 					}
-				},
-				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 234567890123505,
-					"parameters": {
-						"layout": "\"Lay_Level2_T2\""
-					}
 				}
 			],
 			"sid": 234567890123506

@@ -2083,16 +2083,7 @@
 							"sid": 141708704195003
 						}
 					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 260066845383722,
-							"parameters": {
-								"layout": "Lay_Level2_T5"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 141708704195000
 				}
 			],
