@@ -2483,6 +2483,11 @@
 							"parameters": {
 								"layout": "Level1_T1_Success"
 							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 377351616769778
 						}
 					],
 					"sid": 265351872585457
@@ -2521,6 +2526,43 @@
 				}
 			],
 			"sid": 153198086739359
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 367256385411521
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 724001909891569,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"Level1_T1_1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 547586400557327,
+					"parameters": {
+						"audio-file": {
+							"path": "Level1/dikamar tidur"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 511266369712921
 		}
 	],
 	"sid": 135080431379560
