@@ -6,56 +6,6 @@
 			"includeSheet": "ES_Global"
 		},
 		{
-			"eventType": "variable",
-			"name": "componentsPlaced",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "Jumlah komponen yang sudah terpasang dengan benar",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 666144002604045
-		},
-		{
-			"eventType": "variable",
-			"name": "totalComponents",
-			"type": "number",
-			"initialValue": "9",
-			"comment": "Total komponen rumah yang harus dipasang",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 692111521522794
-		},
-		{
-			"eventType": "variable",
-			"name": "gameActive4",
-			"type": "boolean",
-			"initialValue": "0",
-			"comment": "Status apakah game sedang berjalan",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 781642129835941
-		},
-		{
-			"eventType": "variable",
-			"name": "showReference",
-			"type": "boolean",
-			"initialValue": "1",
-			"comment": "Toggle tampilan referensi rumah",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 272254937687298
-		},
-		{
-			"eventType": "variable",
-			"name": "timeRemaining2",
-			"type": "number",
-			"initialValue": "120",
-			"comment": "Waktu tersisa dalam detik (120 detik = 2 menit)",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 495833436596443
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Group 1 - System Initialization3",
@@ -75,13 +25,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 851085693163150,
+							"sid": 496217265603935,
 							"parameters": {
 								"audio-file": {
 									"path": "Level2/diruang kelas"
 								},
 								"loop": "not-looping",
-								"volume": "2",
+								"volume": "3",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
@@ -177,24 +127,22 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 615596296622889,
+							"sid": 169761350207199,
 							"parameters": {
-								"variable": "componentsPlaced",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 497343474459364,
-							"parameters": {
-								"variable": "gameActive",
+								"variable": "score",
 								"value": "0"
 							}
 						},
 						{
 							"callFunction": "startGame",
 							"sid": 496126479450293
+						},
+						{
+							"callFunction": "Timer",
+							"sid": 406968326400275,
+							"parameters": [
+								"120"
+							]
 						}
 					],
 					"sid": 688571148558608
@@ -512,15 +460,6 @@
 							"parameters": {
 								"opacity": "50"
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 261983634077852,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "1"
-							}
 						}
 					],
 					"sid": 758621434835464
@@ -625,9 +564,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 533198645407678,
+									"sid": 817933314758955,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -780,9 +719,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 988323123432658,
+									"sid": 141692453113815,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -935,9 +874,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 408622609034240,
+									"sid": 311604090052856,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -1090,9 +1029,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 183994535656354,
+									"sid": 160944177486084,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -1245,9 +1184,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 247587147578299,
+									"sid": 902665063200473,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -1400,9 +1339,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 929354432494407,
+									"sid": 757618804672673,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -1555,9 +1494,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 325167027064623,
+									"sid": 460834509461607,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -1710,9 +1649,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 880943387531956,
+									"sid": 834681143544793,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -1865,9 +1804,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 114561096941662,
+									"sid": 143513961878505,
 									"parameters": {
-										"variable": "componentsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -1968,48 +1907,24 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 531814138405506,
+							"sid": 503698805227422,
 							"parameters": {
-								"variable": "componentsPlaced",
+								"variable": "score",
 								"comparison": 0,
 								"value": "9"
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 113302074373493,
+							"sid": 481257099658654,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 786472228919037,
-							"parameters": {
-								"audio-file": {
-									"path": "Level2/jawaban benar"
-								},
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 726428734681602,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "0"
-							}
-						},
 						{
 							"id": "set-visible",
 							"objectClass": "rumahselesaidisusun_level_2_t3",
@@ -2069,91 +1984,8 @@
 					"text": "Set timer awal 120 detik saat layout dimulai"
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 586064703261836
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 932000242876749,
-							"parameters": {
-								"variable": "timeRemaining",
-								"value": "120"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt_t3",
-							"sid": 749002400909472,
-							"parameters": {
-								"text": "\"2:00\""
-							}
-						}
-					],
-					"sid": 344198379861286
-				},
-				{
 					"eventType": "comment",
 					"text": "Countdown setiap 1 detik selama game aktif"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 235714445173389,
-							"parameters": {
-								"interval-seconds": "1"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 290091267482849,
-							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 889425779859178,
-							"parameters": {
-								"variable": "timeRemaining",
-								"comparison": 4,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 273881672874151,
-							"parameters": {
-								"variable": "timeRemaining",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt_t3",
-							"sid": 395157978731925,
-							"parameters": {
-								"text": "zeropad(floor(timeRemaining/60),2) & \":\" & zeropad(timeRemaining%60,2)"
-							}
-						}
-					],
-					"sid": 149548877439020
 				},
 				{
 					"eventType": "comment",
@@ -2165,41 +1997,27 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 124705457191048,
+							"sid": 963799326243265,
 							"parameters": {
-								"variable": "timeRemaining",
-								"comparison": 0,
-								"value": "0"
+								"variable": "timer",
+								"comparison": 2,
+								"value": "1"
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 916483419932173,
+							"sid": 355359510754256,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 612658180132578,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt_t3",
-							"sid": 197322317207099,
-							"parameters": {
-								"text": "\"0:00\""
-							}
+							"callFunction": "LoseGame",
+							"sid": 561087139887543
 						},
 						{
 							"id": "set-visible",
@@ -2208,19 +2026,6 @@
 							"parameters": {
 								"visibility": "visible"
 							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 837654211025087,
-							"parameters": {
-								"seconds": "2",
-								"use-timescale": true
-							}
-						},
-						{
-							"callFunction": "LoseGame",
-							"sid": 614549042802472
 						}
 					],
 					"sid": 703031511193694

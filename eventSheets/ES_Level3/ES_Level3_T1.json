@@ -71,13 +71,11 @@
 					"sid": 885346045501644
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 333934663777700,
-					"parameters": {
-						"variable": "timer",
-						"value": "30"
-					}
+					"callFunction": "Timer",
+					"sid": 905357482860915,
+					"parameters": [
+						"30"
+					]
 				},
 				{
 					"id": "set-enabled",
@@ -126,7 +124,7 @@
 			"actions": [
 				{
 					"id": "set-font-color",
-					"objectClass": "TImerL3",
+					"objectClass": "TImer",
 					"sid": 675955395066638,
 					"parameters": {
 						"color": "rgb(255, 0, 0)"
@@ -198,45 +196,6 @@
 				}
 			],
 			"sid": 748870620450017
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 119301524355860
-				},
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 444055472085835,
-					"parameters": {
-						"variable": "IsGameOver"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 166249439406173,
-					"parameters": {
-						"variable": "timer",
-						"value": "dt"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TImerL3",
-					"sid": 658991002076877,
-					"parameters": {
-						"text": "zeropad(floor(Timer / 60), 2) & \":\" & zeropad(floor(Timer % 60), 2)"
-					}
-				}
-			],
-			"sid": 553952724184348
 		},
 		{
 			"eventType": "group",

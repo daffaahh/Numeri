@@ -37,26 +37,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "gameActive3",
-			"type": "boolean",
-			"initialValue": "0",
-			"comment": "Status apakah game sedang berjalan",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 535977854038470
-		},
-		{
-			"eventType": "variable",
-			"name": "timer2",
-			"type": "number",
-			"initialValue": "120",
-			"comment": "Timer countdown dalam detik (2 menit)",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 984274775004916
-		},
-		{
-			"eventType": "variable",
 			"name": "notifShowing",
 			"type": "boolean",
 			"initialValue": "0",
@@ -95,28 +75,15 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 626926507091302,
+							"sid": 342557054911157,
 							"parameters": {
 								"audio-file": {
 									"path": "Level2/diruang kelas"
 								},
 								"loop": "not-looping",
-								"volume": "2",
+								"volume": "3",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
-							}
-						},
-						{
-							"callFunction": "startGame",
-							"sid": 442392535346043
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 790700291976532,
-							"parameters": {
-								"seconds": "0.4",
-								"use-timescale": true
 							}
 						},
 						{
@@ -135,24 +102,6 @@
 							"parameters": {
 								"variable": "correctAnswers",
 								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 279548913474476,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 722976219757363,
-							"parameters": {
-								"variable": "timer",
-								"value": "120"
 							}
 						},
 						{
@@ -301,17 +250,29 @@
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "screenview",
-							"sid": 110564584979617,
+							"callFunction": "startGame",
+							"sid": 184323262345068
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 724329823267739,
 							"parameters": {
-								"visibility": "visible"
+								"seconds": "0.4",
+								"use-timescale": true
 							}
 						},
 						{
+							"callFunction": "Timer",
+							"sid": 983049012014918,
+							"parameters": [
+								"120"
+							]
+						},
+						{
 							"id": "set-visible",
-							"objectClass": "timetxt",
-							"sid": 585872486990317,
+							"objectClass": "screenview",
+							"sid": 110564584979617,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -322,14 +283,6 @@
 							"sid": 820648667397891,
 							"parameters": {
 								"text": "\"Screen: \" & currentScreen & \"/\" & totalScreens"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt",
-							"sid": 199218737628400,
-							"parameters": {
-								"text": "zeropad(floor(timer/60),2) & \":\" & zeropad(timer%60,2)"
 							}
 						}
 					],
@@ -461,12 +414,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
+							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 165564437099881,
+							"sid": 293713538980763,
 							"parameters": {
-								"variable": "gameActive",
-								"value": "1"
+								"variable": "IsGameOver",
+								"value": "false"
 							}
 						},
 						{
@@ -542,14 +495,6 @@
 							"parameters": {
 								"text": "\"Screen: \" & currentScreen & \"/\" & totalScreens"
 							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt",
-							"sid": 519083338025553,
-							"parameters": {
-								"text": "zeropad(floor(timer/60),2) & \":\" & zeropad(timer%60,2)"
-							}
 						}
 					],
 					"sid": 614960313291265
@@ -572,14 +517,13 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 798749342756394,
+							"sid": 588629433383335,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -1027,15 +971,6 @@
 									}
 								},
 								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 836904389077216,
-									"parameters": {
-										"variable": "gameActive",
-										"value": "0"
-									}
-								},
-								{
 									"id": "set-visible",
 									"objectClass": "screenpage8_level_2_t4",
 									"sid": 599243147831855,
@@ -1069,7 +1004,7 @@
 								{
 									"id": "set-visible",
 									"objectClass": "finish_level_2_t4",
-									"sid": 140128410838010,
+									"sid": 124233360257971,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -1105,6 +1040,13 @@
 									"parameters": {
 										"visibility": "invisible"
 									}
+								},
+								{
+									"callFunction": "winGame",
+									"sid": 625332431216884,
+									"parameters": [
+										"\"Lay_Level2_T5\""
+									]
 								}
 							],
 							"sid": 268415808291450
@@ -1280,14 +1222,13 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 527831305772965,
+							"sid": 319563429668469,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -1855,14 +1796,13 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 260510300522175,
+							"sid": 695501395946587,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -1929,14 +1869,13 @@
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 457075542390965,
+							"sid": 963232864165404,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -1996,133 +1935,47 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "comment",
-					"text": "Update screenview text setiap tick"
-				},
-				{
 					"eventType": "block",
 					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 510395627718958
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "screenview",
-							"sid": 372636417390234,
-							"parameters": {
-								"text": "\"Screen: \" & currentScreen & \"/\" & totalScreens"
-							}
-						}
-					],
-					"sid": 812538215523789
-				},
-				{
-					"eventType": "comment",
-					"text": "Timer countdown setiap 1 detik (hanya saat gameActive=1)"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 151888547797639,
-							"parameters": {
-								"interval-seconds": "1"
-							}
-						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 393036308941466,
+							"sid": 364769683252530,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
+								"variable": "timer",
+								"comparison": 2,
 								"value": "1"
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 672292623090845,
+							"sid": 497529470440021,
 							"parameters": {
-								"variable": "timer",
-								"comparison": 4,
-								"value": "0"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "add-to-eventvar",
+							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 217922138046982,
+							"sid": 306522038109472,
 							"parameters": {
-								"variable": "timer",
-								"value": "-1"
+								"variable": "IsGameOver",
+								"value": "true"
 							}
 						},
 						{
-							"id": "set-text",
-							"objectClass": "timetxt",
-							"sid": 365597283693581,
-							"parameters": {
-								"text": "zeropad(floor(timer/60),2) & \":\" & zeropad(timer%60,2)"
-							}
+							"callFunction": "LoseGame",
+							"sid": 896683272693388
 						}
 					],
-					"sid": 269927156846077
+					"sid": 689940727937687
 				}
 			],
 			"sid": 672850649542025
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 5 - Win Condition2",
-			"description": "Handle kondisi menang dan klik finish untuk kembali ke roadmap",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "comment",
-					"text": "Klik finish_level_2_t4 untuk kembali ke RoadMap"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 362859992953808,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "finish_level_2_t4"
-							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "finish_level_2_t4",
-							"sid": 475725047643410
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "winGame",
-							"sid": 347706212791790,
-							"parameters": [
-								"\"Lay_Level2_T5\""
-							]
-						}
-					],
-					"sid": 162675881609343
-				}
-			],
-			"sid": 317588239287165
 		},
 		{
 			"eventType": "group",

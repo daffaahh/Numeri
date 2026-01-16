@@ -9,7 +9,7 @@
 			"eventType": "variable",
 			"name": "timer",
 			"type": "number",
-			"initialValue": "120",
+			"initialValue": "0",
 			"comment": "Timer countdown dalam detik (2 menit)",
 			"isStatic": false,
 			"isConstant": false,
@@ -26,442 +26,347 @@
 			"sid": 496992529799608
 		},
 		{
-			"eventType": "variable",
-			"name": "totalItems",
-			"type": "number",
-			"initialValue": "9",
-			"comment": "Total item yang harus dikelompokkan (Group 1)",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 168804464880263
-		},
-		{
-			"eventType": "variable",
-			"name": "gameActive",
-			"type": "boolean",
-			"initialValue": "0",
-			"comment": "Status apakah game sedang berjalan",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 108139139656520
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Rules",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 427323355933568
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "startGame",
-					"sid": 185715973268305
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 366714005962734,
-					"parameters": {
-						"audio-file": {
-							"path": "Level2/diruang kelas"
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 921419032798101
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "startGame",
+							"sid": 698167658560025
 						},
-						"loop": "not-looping",
-						"volume": "2",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 205541113640105,
-					"parameters": {
-						"seconds": "0.3",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "info_level2_t1",
-					"sid": 350371518432551,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "berhasil_level2_t1",
-					"sid": 829900595457929,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "gagal_level2_t1",
-					"sid": 754277637426168,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 305345214977914,
-					"parameters": {
-						"variable": "timer",
-						"value": "10"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 133515332423609,
-					"parameters": {
-						"variable": "score",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 585618010665081,
-					"parameters": {
-						"variable": "gameActive",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "persegi_jendela_level2_t1",
-					"sid": 940967777311954,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "persegi_jendela_level2_t1",
-					"sid": 512863663387700,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "persegi_buku_level2_t1",
-					"sid": 722108066195062,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "persegi_buku_level2_t1",
-					"sid": 700733655693138,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "persegi_whiteboard_level2_t1",
-					"sid": 654441100159309,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "persegi_whiteboard_level2_t1",
-					"sid": 297670731281049,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "segitiga_level2_t1",
-					"sid": 890719699158749,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "segitiga_level2_t1",
-					"sid": 771082676842898,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "segitiga_penggariskuning_level2_t1",
-					"sid": 702398246098261,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "segitiga_penggariskuning_level2_t1",
-					"sid": 953777083490823,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "segitiga_penggarispink_level2_t1",
-					"sid": 871226246260066,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "segitiga_penggarispink_level2_t1",
-					"sid": 902987105207898,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ling_bola_level2_t1",
-					"sid": 497246717562159,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ling_bola_level2_t1",
-					"sid": 749490180453624,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ling_cermin_level2_t1",
-					"sid": 492853564811160,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ling_cermin_level2_t1",
-					"sid": 528928947440521,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ling_jam_level2_t1",
-					"sid": 272283815965977,
-					"parameters": {
-						"instance-variable": "X_origin",
-						"value": "Self.X"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "ling_jam_level2_t1",
-					"sid": 592664792848330,
-					"parameters": {
-						"instance-variable": "Y_origin",
-						"value": "Self.Y"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "waktu_text_level2",
-					"sid": 694985407398383,
-					"parameters": {
-						"text": "\"02:00\""
-					}
-				}
-			],
-			"sid": 940588712749584
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-any-click",
-					"objectClass": "Mouse",
-					"sid": 554915716685213
-				},
-				{
-					"id": "is-visible",
-					"objectClass": "info_level2_t1",
-					"sid": 541208159668170
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "info_level2_t1",
-					"sid": 184108930104462,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 137815481939962,
-					"parameters": {
-						"variable": "gameActive",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 136822422605407
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 696533471363488,
-					"parameters": {
-						"interval-seconds": "1"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 503627617375691,
-					"parameters": {
-						"variable": "gameActive",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 990565148232536,
-					"parameters": {
-						"variable": "timer",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "waktu_text_level2",
-					"sid": 172212622021388,
-					"parameters": {
-						"text": "zeropad(floor(timer / 60), 2) & \":\" & zeropad(timer % 60, 2)"
-					}
-				}
-			],
-			"sid": 196221673546956
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 737656914010198,
-					"parameters": {
-						"variable": "score",
-						"comparison": 0,
-						"value": "totalItems"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 115833132744052,
-					"parameters": {
-						"audio-file": {
-							"path": "Level2/jawaban benar"
+						{
+							"callFunction": "Timer",
+							"sid": 703057398935490,
+							"parameters": [
+								"120"
+							]
 						},
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 968721492293440,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/diruang kelas"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 315184784820325,
+							"parameters": {
+								"seconds": "0.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "info_level2_t1",
+							"sid": 679830025300781,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "berhasil_level2_t1",
+							"sid": 942733162415636,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "gagal_level2_t1",
+							"sid": 574105584912971,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 868565052206456,
+							"parameters": {
+								"variable": "score",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "persegi_jendela_level2_t1",
+							"sid": 564830641848285,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "persegi_jendela_level2_t1",
+							"sid": 944816566735756,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "persegi_buku_level2_t1",
+							"sid": 534264587148202,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "persegi_buku_level2_t1",
+							"sid": 842803052791403,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "persegi_whiteboard_level2_t1",
+							"sid": 126647946194041,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "persegi_whiteboard_level2_t1",
+							"sid": 471578129459656,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "segitiga_level2_t1",
+							"sid": 118002580551327,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "segitiga_level2_t1",
+							"sid": 248046073452092,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "segitiga_penggariskuning_level2_t1",
+							"sid": 390203363417497,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "segitiga_penggariskuning_level2_t1",
+							"sid": 541279462819693,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "segitiga_penggarispink_level2_t1",
+							"sid": 385189809006333,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "segitiga_penggarispink_level2_t1",
+							"sid": 705061994998290,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ling_bola_level2_t1",
+							"sid": 417545092997786,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ling_bola_level2_t1",
+							"sid": 869913248496675,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ling_cermin_level2_t1",
+							"sid": 829598835338332,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ling_cermin_level2_t1",
+							"sid": 333279556047082,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ling_jam_level2_t1",
+							"sid": 714783794572365,
+							"parameters": {
+								"instance-variable": "X_origin",
+								"value": "Self.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ling_jam_level2_t1",
+							"sid": 110952095825211,
+							"parameters": {
+								"instance-variable": "Y_origin",
+								"value": "Self.Y"
+							}
+						}
+					],
+					"sid": 877271760978626
 				},
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 883310163964936,
-					"parameters": {
-						"seconds": "4.0",
-						"use-timescale": true
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 371619356910091,
+							"parameters": {
+								"variable": "score",
+								"comparison": 0,
+								"value": "9"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 352362618240209,
+							"parameters": {
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 855765703759539,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "berhasil_level2_t1",
+							"sid": 502082807279975,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 764628221470395,
+							"parameters": {
+								"seconds": "0.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"callFunction": "winGame",
+							"sid": 773642852591424,
+							"parameters": [
+								"\"Lay_Level2_T2\""
+							]
+						}
+					],
+					"sid": 535614042568130
 				},
 				{
-					"id": "stop-all",
-					"objectClass": "Audio",
-					"sid": 211102762636766
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 806325539079048,
-					"parameters": {
-						"variable": "gameActive",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "berhasil_level2_t1",
-					"sid": 236043250846592,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 442791766054812,
-					"parameters": {
-						"seconds": "0.3",
-						"use-timescale": true
-					}
-				},
-				{
-					"callFunction": "winGame",
-					"sid": 471264322235623,
-					"parameters": [
-						"\"Lay_Level2_T2\""
-					]
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 215720295533100,
+							"parameters": {
+								"variable": "timer",
+								"comparison": 2,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 646301731823503,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "true"
+							}
+						},
+						{
+							"callFunction": "LoseGame",
+							"sid": 165516545410874
+						}
+					],
+					"sid": 702601347130908
 				}
 			],
-			"sid": 769559676742767
+			"sid": 623620633608778
 		},
 		{
 			"eventType": "group",
@@ -504,13 +409,9 @@
 							}
 						},
 						{
-							"id": "set-enabled",
+							"id": "destroy",
 							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 588069559578964,
-							"behaviorType": "DragDrop",
-							"parameters": {
-								"state": "disabled"
-							}
+							"sid": 449983497257913
 						},
 						{
 							"id": "add-to-eventvar",
@@ -520,11 +421,6 @@
 								"variable": "score",
 								"value": "1"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 129235635443628
 						}
 					],
 					"sid": 710322017682666
@@ -563,13 +459,9 @@
 							}
 						},
 						{
-							"id": "set-enabled",
+							"id": "destroy",
 							"objectClass": "persegi_buku_level2_t1",
-							"sid": 983685107426870,
-							"behaviorType": "DragDrop",
-							"parameters": {
-								"state": "disabled"
-							}
+							"sid": 578848602165422
 						},
 						{
 							"id": "add-to-eventvar",
@@ -579,11 +471,6 @@
 								"variable": "score",
 								"value": "1"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "persegi_buku_level2_t1",
-							"sid": 417155730560541
 						}
 					],
 					"sid": 490812520369772
@@ -608,13 +495,23 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
-							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 156175134202625,
-							"behaviorType": "DragDrop",
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 791205029800701,
 							"parameters": {
-								"state": "disabled"
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "persegi_whiteboard_level2_t1",
+							"sid": 596987538281073
 						},
 						{
 							"id": "add-to-eventvar",
@@ -624,11 +521,6 @@
 								"variable": "score",
 								"value": "1"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 586610523845465
 						}
 					],
 					"sid": 822287640062389
@@ -654,6 +546,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 917339618182013,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "persegi_jendela_level2_t1",
+							"sid": 610675916092551,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 250062966752396,
@@ -676,15 +591,6 @@
 							"sid": 734363761971947,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "persegi_jendela_level2_t1",
-							"sid": 845490268524797,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -711,6 +617,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 130380497682428,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "persegi_buku_level2_t1",
+							"sid": 551663245867172,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 238010923290036,
@@ -733,15 +662,6 @@
 							"sid": 913674504258854,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "persegi_buku_level2_t1",
-							"sid": 289414933291895,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -768,6 +688,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 761482485555833,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "persegi_whiteboard_level2_t1",
+							"sid": 944849875231283,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 808840856779842,
@@ -790,15 +733,6 @@
 							"sid": 624574623729908,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "persegi_whiteboard_level2_t1",
-							"sid": 671541726222858,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -834,12 +768,17 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
-							"objectClass": "segitiga_level2_t1",
-							"sid": 383415401284795,
-							"behaviorType": "DragDrop",
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 347968229160470,
 							"parameters": {
-								"state": "disabled"
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -879,12 +818,17 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
-							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 864842642774588,
-							"behaviorType": "DragDrop",
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 352516722644878,
 							"parameters": {
-								"state": "disabled"
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -924,12 +868,17 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
-							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 680708664002278,
-							"behaviorType": "DragDrop",
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 220858744833827,
 							"parameters": {
-								"state": "disabled"
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -970,6 +919,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 649620344364484,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "segitiga_level2_t1",
+							"sid": 559109968143478,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 461236622847716,
@@ -992,15 +964,6 @@
 							"sid": 638401771465152,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "segitiga_level2_t1",
-							"sid": 460239957428272,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -1027,6 +990,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 578617353290165,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "segitiga_penggariskuning_level2_t1",
+							"sid": 825459901683019,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 394794203124353,
@@ -1049,15 +1035,6 @@
 							"sid": 545114575426820,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "segitiga_penggariskuning_level2_t1",
-							"sid": 953817200549489,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -1084,6 +1061,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 531145129699559,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "segitiga_penggarispink_level2_t1",
+							"sid": 849458468683687,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 192858025637226,
@@ -1106,15 +1106,6 @@
 							"sid": 869497354985615,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "segitiga_penggarispink_level2_t1",
-							"sid": 661316844269947,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -1150,12 +1141,17 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
-							"objectClass": "ling_bola_level2_t1",
-							"sid": 283748647619872,
-							"behaviorType": "DragDrop",
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 329982501314652,
 							"parameters": {
-								"state": "disabled"
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -1195,12 +1191,17 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
-							"objectClass": "ling_cermin_level2_t1",
-							"sid": 579423835433053,
-							"behaviorType": "DragDrop",
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 661038331268902,
 							"parameters": {
-								"state": "disabled"
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -1240,12 +1241,17 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
-							"objectClass": "ling_jam_level2_t1",
-							"sid": 418357146297748,
-							"behaviorType": "DragDrop",
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 489544574089491,
 							"parameters": {
-								"state": "disabled"
+								"audio-file": {
+									"path": "Level2/drop jawaban"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -1286,6 +1292,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 175638506040241,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ling_bola_level2_t1",
+							"sid": 157436801173935,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 199428040235129,
@@ -1308,15 +1337,6 @@
 							"sid": 661693583813736,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ling_bola_level2_t1",
-							"sid": 119099691924409,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -1343,6 +1363,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 571317097135535,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ling_cermin_level2_t1",
+							"sid": 638560033417283,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 961413726976685,
@@ -1365,15 +1408,6 @@
 							"sid": 146932225904868,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ling_cermin_level2_t1",
-							"sid": 394324667171338,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],
@@ -1400,6 +1434,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 495184437252030,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/puzzle salah"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "ling_jam_level2_t1",
+							"sid": 158598515945029,
+							"parameters": {
+								"x": "Self.X_origin",
+								"y": "Self.Y_origin"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "gagal_level2_t1",
 							"sid": 403322726291554,
@@ -1422,15 +1479,6 @@
 							"sid": 378251578704333,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ling_jam_level2_t1",
-							"sid": 439966945255562,
-							"parameters": {
-								"x": "Self.X_origin",
-								"y": "Self.Y_origin"
 							}
 						}
 					],

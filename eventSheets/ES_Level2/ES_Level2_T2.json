@@ -6,26 +6,6 @@
 			"includeSheet": "ES_Global"
 		},
 		{
-			"eventType": "variable",
-			"name": "TimeLeft",
-			"type": "number",
-			"initialValue": "120",
-			"comment": "Waktu dalam detik (2 menit = 120 detik)",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 100379891927554
-		},
-		{
-			"eventType": "variable",
-			"name": "TimerRunning",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "Flag apakah timer sedang berjalan (0=tidak, 1=ya)",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 795181672454096
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Step 1 - System Initialization",
@@ -43,8 +23,29 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 668390823423028,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/diruang kelas"
+								},
+								"loop": "not-looping",
+								"volume": "3",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"callFunction": "startGame",
 							"sid": 924527361002505
+						},
+						{
+							"callFunction": "Timer",
+							"sid": 490173795030065,
+							"parameters": [
+								"30"
+							]
 						},
 						{
 							"id": "wait",
@@ -53,20 +54,6 @@
 							"parameters": {
 								"seconds": "0.3",
 								"use-timescale": true
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 108282882770919,
-							"parameters": {
-								"audio-file": {
-									"path": "Level2/diruang kelas"
-								},
-								"loop": "not-looping",
-								"volume": "2",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -338,18 +325,18 @@
 								"comparison": 0,
 								"value": "1"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 521018785959986,
+							"parameters": {
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 542060487226024,
-							"parameters": {
-								"variable": "TimerRunning",
-								"value": "0"
-							}
-						},
 						{
 							"id": "play",
 							"objectClass": "Audio",
@@ -428,6 +415,39 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 179596860631076,
+							"parameters": {
+								"seconds": "1.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "finish_level_2_t2",
+							"sid": 994108015634745,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 434119404110180,
+							"parameters": {
+								"seconds": "0.3",
+								"use-timescale": true
+							}
+						},
+						{
+							"callFunction": "winGame",
+							"sid": 350998569665305,
+							"parameters": [
+								"\"Lay_Level2_T3\""
+							]
 						}
 					],
 					"sid": 716300440307806
@@ -465,10 +485,10 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 171490160003828,
+							"sid": 322381592674506,
 							"parameters": {
 								"audio-file": {
-									"path": "Level2/jawaban salah-variasi-1"
+									"path": "Level2/puzzle salah"
 								},
 								"loop": "not-looping",
 								"volume": "0",
@@ -545,10 +565,10 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 485653579551421,
+							"sid": 257549367198805,
 							"parameters": {
 								"audio-file": {
-									"path": "Level2/jawaban salah-variasi-2"
+									"path": "Level2/puzzle salah"
 								},
 								"loop": "not-looping",
 								"volume": "0",
@@ -591,82 +611,9 @@
 						}
 					],
 					"sid": 228657947344109
-				},
-				{
-					"eventType": "comment",
-					"text": "Logic:\n- Klik jawaban benar → hide semua pilihan & soal → jikaBenar (1.5s) → finish\n- Klik jawaban salah → hide pilihan yang diklik → jikaSalahpilih (1s) → retry dengan sisa pilihan"
 				}
 			],
 			"sid": 194194486509319
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Step 5 - Finish & Navigation",
-			"description": "Tampilkan motivasi, dan navigasi langsung ke Level 2 Tingkat 3",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 924497161899804,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "finish_level_2_t2"
-							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "finish_level_2_t2",
-							"sid": 996903765273543
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "finish_level_2_t2",
-							"sid": 444255674470593,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "motivasi_level_2_t2",
-							"sid": 852302681933291,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 260180670149463,
-							"parameters": {
-								"seconds": "0.3",
-								"use-timescale": true
-							}
-						},
-						{
-							"callFunction": "winGame",
-							"sid": 772629726092245,
-							"parameters": [
-								"\"Lay_Level2_T3\""
-							]
-						}
-					],
-					"sid": 538925201337813
-				},
-				{
-					"eventType": "comment",
-					"text": "Flow: Klik finish → motivasi muncul 3 detik → otomatis ke Level 2 Tingkat 3"
-				}
-			],
-			"sid": 237382689940402
 		},
 		{
 			"eventType": "group",
@@ -679,170 +626,20 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 128649934659903
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 303900501061641,
-							"parameters": {
-								"variable": "TimeLeft",
-								"value": "120"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 659475994099308,
-							"parameters": {
-								"variable": "TimerRunning",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "text_time_lvl2_t2",
-							"sid": 439485394123284,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "jikaWaktuHabis_level_2_t2",
-							"sid": 155739003212197,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 426216873702742
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 584128105933368,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "dialog_level_2_t2_2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 115477046380728,
-							"parameters": {
-								"variable": "TimerRunning",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "text_time_lvl2_t2",
-							"sid": 518702788286926,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 556719779449360
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 114678977329892,
-							"parameters": {
-								"interval-seconds": "1"
-							}
-						},
-						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 856092958840121,
+							"sid": 582585170252555,
 							"parameters": {
-								"variable": "TimerRunning",
-								"comparison": 0,
-								"value": "1"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 311060537785637,
-							"parameters": {
-								"variable": "TimeLeft",
-								"comparison": 4,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 354670644915529,
-							"parameters": {
-								"variable": "TimeLeft",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "text_time_lvl2_t2",
-							"sid": 805760670262927,
-							"parameters": {
-								"text": "zeropad(floor(TimeLeft/60),2) & \":\" & zeropad(TimeLeft%60,2)"
-							}
-						}
-					],
-					"sid": 499009813919744
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 256828075897617,
-							"parameters": {
-								"variable": "TimeLeft",
-								"comparison": 3,
-								"value": "0"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 284747523352952,
-							"parameters": {
-								"variable": "TimerRunning",
-								"comparison": 0,
+								"variable": "timer",
+								"comparison": 2,
 								"value": "1"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 710911859367546,
-							"parameters": {
-								"variable": "TimerRunning",
-								"value": "0"
-							}
+							"callFunction": "LoseGame",
+							"sid": 348644358060310
 						},
 						{
 							"id": "set-visible",
@@ -883,19 +680,6 @@
 							"parameters": {
 								"visibility": "visible"
 							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 476483428254663,
-							"parameters": {
-								"seconds": "2",
-								"use-timescale": true
-							}
-						},
-						{
-							"callFunction": "LoseGame",
-							"sid": 608941102205634
 						}
 					],
 					"sid": 360737276267330

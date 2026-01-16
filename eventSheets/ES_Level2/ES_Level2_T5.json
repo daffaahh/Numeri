@@ -6,46 +6,6 @@
 			"includeSheet": "ES_Global"
 		},
 		{
-			"eventType": "variable",
-			"name": "itemsPlaced",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "Jumlah item yang sudah terpasang dengan benar",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 214514874159957
-		},
-		{
-			"eventType": "variable",
-			"name": "totalItems2",
-			"type": "number",
-			"initialValue": "3",
-			"comment": "Total item belah ketupat yang harus dipasang",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 563105581821228
-		},
-		{
-			"eventType": "variable",
-			"name": "gameActive2",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "Status apakah game sedang berjalan (0=tidak aktif, 1=aktif)",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 108186916231022
-		},
-		{
-			"eventType": "variable",
-			"name": "timeRemaining",
-			"type": "number",
-			"initialValue": "120",
-			"comment": "Waktu tersisa dalam detik (120 detik = 2 menit)",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 362523599697254
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Group 1 - System Initialization",
@@ -65,13 +25,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 630082477673807,
+							"sid": 735091339020649,
 							"parameters": {
 								"audio-file": {
 									"path": "Level2/diruang kelas"
 								},
 								"loop": "not-looping",
-								"volume": "2",
+								"volume": "3",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
@@ -112,6 +72,13 @@
 								"seconds": "0.3",
 								"use-timescale": true
 							}
+						},
+						{
+							"callFunction": "Timer",
+							"sid": 602537056696359,
+							"parameters": [
+								"10"
+							]
 						},
 						{
 							"id": "set-visible",
@@ -164,36 +131,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 748538257506800,
+							"sid": 395810198196598,
 							"parameters": {
-								"variable": "itemsPlaced",
+								"variable": "score",
 								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 990021715540857,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 459357524382675,
-							"parameters": {
-								"variable": "timeRemaining",
-								"value": "120"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt_lvl_2_t5",
-							"sid": 276873078899939,
-							"parameters": {
-								"text": "\"Time: 02:00\""
 							}
 						}
 					],
@@ -303,61 +244,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group 2 - Dialog Flow",
-			"description": "Click soal panel untuk memulai game",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 990996122942987,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "soal_level2_t5"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 942737826443094,
-							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "soal_level2_t5",
-							"sid": 948581277284451,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 441256560557701,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 291556268762488
-				}
-			],
-			"sid": 223068119494615
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "Group 3 - Drop Validation (Overlap Detection)",
 			"description": "Validasi drop menggunakan overlap dengan target sprites",
 			"isActiveOnStart": true,
@@ -446,9 +332,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 234370572249828,
+									"sid": 737070210080781,
 									"parameters": {
-										"variable": "itemsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -597,9 +483,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 644928566376192,
+									"sid": 569389485477224,
 									"parameters": {
-										"variable": "itemsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -748,9 +634,9 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 963207473659686,
+									"sid": 274392915862143,
 									"parameters": {
-										"variable": "itemsPlaced",
+										"variable": "score",
 										"value": "1"
 									}
 								},
@@ -826,59 +712,6 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 279633592837183,
-							"parameters": {
-								"interval-seconds": "1"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 253358344573480,
-							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 439380432920173,
-							"parameters": {
-								"variable": "timeRemaining",
-								"comparison": 4,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 558233500104386,
-							"parameters": {
-								"variable": "timeRemaining",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt_lvl_2_t5",
-							"sid": 764235153354023,
-							"parameters": {
-								"text": "\"Time: \" & zeropad(floor(timeRemaining/60), 2) & \":\" & zeropad(timeRemaining%60, 2) & \" Items: \" & itemsPlaced"
-							}
-						}
-					],
-					"sid": 308591458253630
-				},
-				{
 					"eventType": "comment",
 					"text": "=== WAKTU HABIS ==="
 				},
@@ -888,33 +721,27 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 933183071580828,
+							"sid": 175296647396204,
 							"parameters": {
-								"variable": "timeRemaining",
+								"variable": "timer",
 								"comparison": 3,
 								"value": "0"
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 479768047686450,
+							"sid": 220632333056205,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 454944454947227,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "0"
-							}
+							"callFunction": "LoseGame",
+							"sid": 332603620338981
 						},
 						{
 							"id": "set-enabled",
@@ -942,14 +769,6 @@
 							"parameters": {
 								"state": "disabled"
 							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "timetxt_lvl_2_t5",
-							"sid": 263953895382241,
-							"parameters": {
-								"text": "\"Time: 00:00\""
-							}
 						}
 					],
 					"sid": 498333139338163
@@ -970,48 +789,24 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 309938875260346,
+							"sid": 888803370548818,
 							"parameters": {
-								"variable": "itemsPlaced",
+								"variable": "score",
 								"comparison": 0,
 								"value": "3"
 							}
 						},
 						{
-							"id": "compare-eventvar",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 534119623991150,
+							"sid": 327595594436731,
 							"parameters": {
-								"variable": "gameActive",
-								"comparison": 0,
-								"value": "1"
-							}
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 948763127548476,
-							"parameters": {
-								"audio-file": {
-									"path": "Level2/jawaban benar"
-								},
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 670874352657081,
-							"parameters": {
-								"variable": "gameActive",
-								"value": "0"
-							}
-						},
 						{
 							"id": "set-visible",
 							"objectClass": "motivasi",
@@ -1036,6 +831,13 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"callFunction": "winGame",
+							"sid": 489073557189360,
+							"parameters": [
+								"\"Lay_Level3_T1\""
+							]
 						}
 					],
 					"sid": 680691365799161
@@ -1120,46 +922,6 @@
 				}
 			],
 			"sid": 962876635887553
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Group 6 - Navigation",
-			"description": "Klik finish untuk ke RoadMap",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 297262248236469,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "finish"
-							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "finish",
-							"sid": 437179493198123
-						}
-					],
-					"actions": [
-						{
-							"callFunction": "winGame",
-							"sid": 619994899782492,
-							"parameters": [
-								"\"Lay_Level3_T1\""
-							]
-						}
-					],
-					"sid": 630118256568664
-				}
-			],
-			"sid": 565000564713598
 		}
 	],
 	"sid": 798000119661270

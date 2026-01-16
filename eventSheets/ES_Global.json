@@ -14,7 +14,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Common Button Config",
+			"title": "Common Config",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -72,6 +72,31 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
+							"sid": 245251913206250,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "next"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "GoToLayoutFunction",
+							"sid": 843420793601957,
+							"parameters": [
+								"NextLayoutName"
+							]
+						}
+					],
+					"sid": 332118466861168
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
 							"sid": 992854411346811,
 							"parameters": {
 								"mouse-button": "left",
@@ -100,6 +125,120 @@
 						}
 					],
 					"sid": 211698905070633
+				},
+				{
+					"functionName": "Timer",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "duration",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 459021278838276
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 413875052732994,
+							"parameters": {
+								"variable": "timer",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 522660261437105,
+							"parameters": {
+								"variable": "timer",
+								"value": "duration"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 340170976749912,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 524981575406434
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 649310988983192,
+							"parameters": {
+								"variable": "IsGameOver"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 167804120481507
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 424108522099889,
+							"parameters": {
+								"variable": "timer",
+								"value": "dt"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TImer",
+							"sid": 397437435877400,
+							"parameters": {
+								"text": "zeropad(floor(Timer / 60), 2) & \":\" & zeropad(floor(Timer % 60), 2)"
+							}
+						}
+					],
+					"sid": 648921199925771
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 980583459918011,
+							"parameters": {
+								"variable": "timer",
+								"comparison": 2,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "TImer",
+							"sid": 328362836252085,
+							"parameters": {
+								"color": "rgb(255, 0, 0)"
+							}
+						}
+					],
+					"sid": 621529304660571
 				}
 			],
 			"sid": 974570760356432
@@ -348,6 +487,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 190510484276061,
+							"parameters": {
+								"variable": "score",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "TransparantOverlay",
 							"sid": 496259198346633,
@@ -362,6 +510,20 @@
 							"parameters": {
 								"seconds": "2.0",
 								"use-timescale": true
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 927020459433163,
+							"parameters": {
+								"audio-file": {
+									"path": "ready"
+								},
+								"loop": "not-looping",
+								"volume": "4",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -437,6 +599,20 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 958835534785857,
+							"parameters": {
+								"audio-file": {
+									"path": "go"
+								},
+								"loop": "not-looping",
+								"volume": "4",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 799414580288803,
@@ -464,20 +640,20 @@
 							}
 						},
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 162950290959011,
-							"parameters": {
-								"variable": "IsGameOver",
-								"value": "false"
-							}
-						},
-						{
 							"id": "set-visible",
 							"objectClass": "TransparantOverlay",
 							"sid": 444561836324954,
 							"parameters": {
 								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 354464836122125,
+							"parameters": {
+								"variable": "IsGameOver",
+								"value": "false"
 							}
 						}
 					],
@@ -513,23 +689,18 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 909352260686717,
+							"parameters": {
+								"variable": "NextLayoutName",
+								"value": "LevelLayoutName"
+							}
+						},
+						{
 							"id": "stop-all",
 							"objectClass": "Audio",
 							"sid": 442358385462218
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 796707381259967,
-							"parameters": {
-								"audio-file": {
-									"path": "Level2/berhasil & muncul bintang"
-								},
-								"loop": "not-looping",
-								"volume": "1",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
 						},
 						{
 							"id": "set-visible",
@@ -537,6 +708,20 @@
 							"sid": 401432720853484,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 477582623637912,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/menang"
+								},
+								"loop": "not-looping",
+								"volume": "1/5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -577,8 +762,8 @@
 						},
 						{
 							"id": "tween-two-properties",
-							"objectClass": "Retry",
-							"sid": 731788509330666,
+							"objectClass": "next",
+							"sid": 629954809608550,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"\"",
@@ -596,7 +781,7 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 873821416574194,
+							"sid": 990717941110718,
 							"parameters": {
 								"variable": "IsGameOver",
 								"value": "true"
@@ -632,20 +817,6 @@
 							"sid": 183491928282917
 						},
 						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 472131879498682,
-							"parameters": {
-								"audio-file": {
-									"path": "Level2/jawaban salah-variasi-1"
-								},
-								"loop": "not-looping",
-								"volume": "1",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
 							"sid": 282055021542356,
@@ -660,6 +831,20 @@
 							"sid": 121940384603255,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 787298418130132,
+							"parameters": {
+								"audio-file": {
+									"path": "Level2/jawaban salah-variasi-1"
+								},
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{

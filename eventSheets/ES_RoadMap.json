@@ -169,20 +169,20 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 104734463852030,
+					"sid": 855188656368950,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_6"
+						"object-clicked": "BTN_1"
 					}
 				}
 			],
 			"actions": [
 				{
 					"callFunction": "GoToLayoutFunction",
-					"sid": 533622329897394,
+					"sid": 175326247005754,
 					"parameters": [
-						"\"Lay_Level2_T1\""
+						"\"basic 1-1\""
 					]
 				}
 			],
@@ -194,11 +194,36 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 519338104245593,
+					"sid": 398899144863523,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_7"
+						"object-clicked": "BTN_2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "GoToLayoutFunction",
+					"sid": 813278274605133,
+					"parameters": [
+						"\"Lay_Level2_T1\""
+					]
+				}
+			],
+			"sid": 404684643110476
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 102185874202995,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BTN_3"
 					}
 				}
 			],
@@ -219,11 +244,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 612823254711038,
+					"sid": 402275700931003,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_8"
+						"object-clicked": "BTN_4"
 					}
 				}
 			],
@@ -244,11 +269,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 511762290459652,
+					"sid": 333410409964771,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_9"
+						"object-clicked": "BTN_6"
 					}
 				}
 			],
@@ -269,11 +294,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 873461209569797,
+					"sid": 586073316135201,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_10"
+						"object-clicked": "BTN_7"
 					}
 				}
 			],
@@ -294,11 +319,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 504518569999764,
+					"sid": 166158940460126,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_11"
+						"object-clicked": "BTN_8"
 					}
 				}
 			],
@@ -319,11 +344,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 218740845822903,
+					"sid": 868986653497058,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "BTN_12"
+						"object-clicked": "BTN_9"
 					}
 				}
 			],

@@ -26,6 +26,20 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 681521110019071,
+					"parameters": {
+						"audio-file": {
+							"path": "Level3/latar kebun binatang"
+						},
+						"loop": "looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 165758532219137,
@@ -40,20 +54,6 @@
 					"sid": 474046282926802,
 					"parameters": {
 						"text": "heartCount"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 157425333396488,
-					"parameters": {
-						"audio-file": {
-							"path": "Level3/latar kebun binatang"
-						},
-						"loop": "looping",
-						"volume": "1",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -171,20 +171,6 @@
 					"parameters": {
 						"text": "heartCount"
 					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 923640913740406,
-					"parameters": {
-						"audio-file": {
-							"path": "Level2/jawaban salah-variasi-2"
-						},
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
 				}
 			],
 			"sid": 361216159468653
@@ -263,20 +249,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 624485975870655,
-					"parameters": {
-						"audio-file": {
-							"path": "Level2/jawaban salah-variasi-2"
-						},
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
@@ -389,20 +361,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 737884999035841,
-					"parameters": {
-						"audio-file": {
-							"path": "Level2/jawaban salah-variasi-2"
-						},
-						"loop": "not-looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",

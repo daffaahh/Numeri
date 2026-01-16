@@ -576,8 +576,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 633,
-						"y": 349,
+						"x": 1093,
+						"y": 109,
 						"width": 286,
 						"height": 174,
 						"originX": 0.5,
@@ -741,14 +741,14 @@
 					}
 				},
 				{
-					"type": "text_time_lvl2_t2",
+					"type": "TImer",
 					"properties": {
-						"text": "02:00",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 22,
+						"size": 19,
 						"line-height": 0,
-						"bold": false,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -766,21 +766,21 @@
 						"read-aloud": false
 					},
 					"uid": 26,
-					"sid": 651042002176225,
+					"sid": 271578682428393,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 651042002176225,
+						"sid": 271578682428393,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 95,
-						"y": 37,
-						"width": 92,
-						"height": 42,
+						"x": 93,
+						"y": 40,
+						"width": 75,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [

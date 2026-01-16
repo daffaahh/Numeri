@@ -229,7 +229,7 @@
 					}
 				},
 				{
-					"type": "TImerL3",
+					"type": "TImer",
 					"properties": {
 						"text": "",
 						"enable-bbcode": true,
@@ -968,6 +968,49 @@
 					"world": {
 						"x": 578.0192975139048,
 						"y": 591.2265076581235,
+						"width": 0,
+						"height": 0,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "next",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 327,
+					"sid": 193448711586793,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 193448711586793,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 686,
+						"y": 591,
 						"width": 0,
 						"height": 0,
 						"originX": 0.5,

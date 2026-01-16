@@ -29,13 +29,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "SVGPicture",
-			"name": "SVG Picture",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -109,11 +102,8 @@
 	"objectTypes": {
 		"items": [
 			"Mouse",
-			"Wipe1",
-			"Wipe2",
-			"Level_3_T",
 			"Keyboard",
-			"BG_T2_"
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -163,552 +153,472 @@
 				"name": "MainMenu"
 			},
 			{
-				"items": [
-					"bg_level3_t1",
-					"Frame_Gajah",
-					"Frame_capybara",
-					"Frame_rabbit",
-					"Plate",
-					"Rabbit",
-					"Capybara",
-					"Gajah",
-					"Notif1",
-					"WinNotif",
-					"TransparantOverlay",
-					"BannerTimer",
-					"TImerL3",
-					"Go",
-					"Ready",
-					"LoseNotif",
-					"Retry",
-					"home"
-				],
-				"subfolders": [],
-				"name": "Level_3_T1"
-			},
-			{
-				"items": [
-					"backgroundT3",
-					"referensitT31",
-					"JerapahBesar",
-					"JerapahKecil",
-					"instruksiT31"
-				],
-				"subfolders": [],
-				"name": "Level_3_T3"
-			},
-			{
-				"items": [
-					"background",
-					"babi",
-					"instruksi",
-					"kadal",
-					"kelinci",
-					"kucing",
-					"kurakura",
-					"monyet",
-					"numaT2",
-					"numiT2",
-					"pause",
-					"referensi2",
-					"BabiB2",
-					"anjingLaut",
-					"flaminggo",
-					"Kurakurab2",
-					"jerapah",
-					"unta",
-					"teksKakiPanjang",
-					"TeksKakiPendek",
-					"Instruksi2",
-					"referensi3",
-					"singa",
-					"SosisKecil",
-					"SosisSedang",
-					"SosisBesar",
-					"Instruksi3",
-					"check",
-					"check2",
-					"check3",
-					"wrong",
-					"wrong2",
-					"wrong3",
-					"heart",
-					"heartCount"
-				],
-				"subfolders": [],
-				"name": "Level_3_T2"
-			},
-			{
-				"items": [
-					"bg_level2_t1",
-					"full_level2_t1",
-					"judul_level2_t1"
-				],
+				"items": [],
 				"subfolders": [
 					{
 						"items": [
-							"gagal_level2_t1",
-							"info_level2_t1",
-							"berhasil_level2_t1"
+							"Group",
+							"Drop",
+							"Drag",
+							"Banner",
+							"Tema_KamarTidurLV1TKB"
 						],
 						"subfolders": [],
-						"name": "Notifications"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"kotak_lingkaran_t1",
-									"kotak_persegi_t1",
-									"kotak_segitiga_t1"
-								],
-								"subfolders": [],
-								"name": "Group_1"
-							},
-							{
-								"items": [
-									"belah_ketupat_t1",
-									"persegi_panjang_t1",
-									"trapesium_t1"
-								],
-								"subfolders": [],
-								"name": "Group_2"
-							},
-							{
-								"items": [
-									"jajar_t1",
-									"layang_t1",
-									"segilima_t1"
-								],
-								"subfolders": [],
-								"name": "Group_3"
-							}
-						],
-						"name": "Hamper"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"ling_bola_level2_t1",
-									"ling_cermin_level2_t1",
-									"ling_jam_level2_t1",
-									"persegi_buku_level2_t1",
-									"persegi_jendela_level2_t1",
-									"persegi_whiteboard_level2_t1",
-									"segitiga_level2_t1",
-									"segitiga_penggariskuning_level2_t1",
-									"segitiga_penggarispink_level2_t1"
-								],
-								"subfolders": [],
-								"name": "Group_1"
-							},
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "Group_2"
-							},
-							{
-								"items": [],
-								"subfolders": [],
-								"name": "Group_3"
-							}
-						],
-						"name": "Items"
+						"name": "Level_1_T1"
 					},
 					{
 						"items": [
-							"waktu_level2",
-							"tempat_waktu_level2",
-							"waktu_text_level2"
+							"Bg_Level2_T2",
+							"Drag_Angka2"
 						],
 						"subfolders": [],
-						"name": "Time"
+						"name": "T2"
 					}
 				],
-				"name": "Level_2_T1"
-			},
-			{
-				"items": [
-					"hasil_akhir_t5"
-				],
-				"subfolders": [
-					{
-						"items": [
-							"bg_level2_t5",
-							"bg_item_level_t5",
-							"bg_target_level2_t5"
-						],
-						"subfolders": [],
-						"name": "Background"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"item_1_level2_t5",
-									"item_2_level2_t5",
-									"item_3_level2_t5"
-								],
-								"subfolders": [],
-								"name": "Belah_Ketupat"
-							}
-						],
-						"name": "Items"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"soal_level2_t5"
-								],
-								"subfolders": [],
-								"name": "Belah_Ketupat"
-							}
-						],
-						"name": "Soal"
-					},
-					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"target_1_level2_t5",
-									"target_2_level2_t5",
-									"target_3_level2_t5"
-								],
-								"subfolders": [],
-								"name": "Belah_Ketupat"
-							}
-						],
-						"name": "Target"
-					},
-					{
-						"items": [
-							"tempat_waktu_level2_t5",
-							"timetxt_lvl_2_t5"
-						],
-						"subfolders": [],
-						"name": "Time"
-					},
-					{
-						"items": [
-							"finish",
-							"jikasalah",
-							"petunjuk",
-							"motivasi"
-						],
-						"subfolders": [],
-						"name": "Notifications"
-					}
-				],
-				"name": "Level_2_T5"
+				"name": "Level_1"
 			},
 			{
 				"items": [],
 				"subfolders": [
 					{
 						"items": [
-							"dialog_level_2_t4"
+							"bg_level2_t1",
+							"full_level2_t1",
+							"judul_level2_t1"
 						],
-						"subfolders": [],
-						"name": "Dialog"
+						"subfolders": [
+							{
+								"items": [
+									"gagal_level2_t1",
+									"info_level2_t1",
+									"berhasil_level2_t1"
+								],
+								"subfolders": [],
+								"name": "Notifications"
+							},
+							{
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"kotak_lingkaran_t1",
+											"kotak_persegi_t1",
+											"kotak_segitiga_t1"
+										],
+										"subfolders": [],
+										"name": "Group_1"
+									},
+									{
+										"items": [
+											"belah_ketupat_t1",
+											"persegi_panjang_t1",
+											"trapesium_t1"
+										],
+										"subfolders": [],
+										"name": "Group_2"
+									},
+									{
+										"items": [
+											"jajar_t1",
+											"layang_t1",
+											"segilima_t1"
+										],
+										"subfolders": [],
+										"name": "Group_3"
+									}
+								],
+								"name": "Hamper"
+							},
+							{
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"ling_bola_level2_t1",
+											"ling_cermin_level2_t1",
+											"ling_jam_level2_t1",
+											"persegi_buku_level2_t1",
+											"persegi_jendela_level2_t1",
+											"persegi_whiteboard_level2_t1",
+											"segitiga_level2_t1",
+											"segitiga_penggariskuning_level2_t1",
+											"segitiga_penggarispink_level2_t1"
+										],
+										"subfolders": [],
+										"name": "Group_1"
+									},
+									{
+										"items": [],
+										"subfolders": [],
+										"name": "Group_2"
+									},
+									{
+										"items": [],
+										"subfolders": [],
+										"name": "Group_3"
+									}
+								],
+								"name": "Items"
+							},
+							{
+								"items": [
+									"tempat_waktu_level2"
+								],
+								"subfolders": [],
+								"name": "Time"
+							}
+						],
+						"name": "Level_2_T1"
 					},
 					{
 						"items": [
-							"finish_level_2_t4",
-							"motivasi_level_2_t4",
-							"jikaBenar_level_2_t4",
-							"jikaSalah_level_2_t4"
+							"bg_level_2_t2"
 						],
-						"subfolders": [],
-						"name": "Notifications"
+						"subfolders": [
+							{
+								"items": [
+									"jikaBenar_level_2_t2",
+									"jikaWaktuHabis_level_2_t2",
+									"jikaSalahpilih_level_2_t2",
+									"finish_level_2_t2",
+									"motivasi_level_2_t2"
+								],
+								"subfolders": [],
+								"name": "Notifications"
+							},
+							{
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"bener_level_2_t2",
+											"salah2_level_2_t2",
+											"salah3_level_2_t2"
+										],
+										"subfolders": [],
+										"name": "Persegi"
+									}
+								],
+								"name": "Pilihan"
+							},
+							{
+								"items": [
+									"soal_persegi_level_2_t2"
+								],
+								"subfolders": [],
+								"name": "Soal"
+							},
+							{
+								"items": [
+									"dialog_level_2_t2_2",
+									"dialog_level_2_t2_1"
+								],
+								"subfolders": [],
+								"name": "Dialog"
+							},
+							{
+								"items": [
+									"PETUNJUKPERSEGI_level_2_t2"
+								],
+								"subfolders": [],
+								"name": "Petunjuk"
+							},
+							{
+								"items": [
+									"tempat_waktu_level3"
+								],
+								"subfolders": [],
+								"name": "Time"
+							}
+						],
+						"name": "Level_2_T2"
 					},
 					{
 						"items": [
-							"screenpage1_level_2_t4",
-							"screenpage2_level_2_t4",
-							"screenpage3_level_2_t4",
-							"screenpage4_level_2_t4",
-							"screenpage5_level_2_t4",
-							"screenpage6_level_2_t4",
-							"screenpage7_level_2_t4",
-							"screenpage8_level_2_t4"
+							"dialog_level_2_t3",
+							"rumahselesaidisusun_level_2_t3",
+							"bghitam_level_2_t3",
+							"bg_level_2_t3",
+							"judul_level_2_t3"
 						],
-						"subfolders": [],
-						"name": "Screen"
-					},
-					{
-						"items": [
-							"belakang_level_2_t4",
-							"depan_level_2_t4",
-							"kanan_level_2_t4",
-							"kiri_level_2_t4"
+						"subfolders": [
+							{
+								"items": [
+									"layang_level_2_t3",
+									"jendela_level_2_t3",
+									"pintu_level_2_t3",
+									"atas_stiga_level_2_t3",
+									"polygon_level_2_t3",
+									"atap_pg_level_2_t3",
+									"tangga_level_2_t3",
+									"kunci_level_2_t3",
+									"dinding_level_2_t3"
+								],
+								"subfolders": [],
+								"name": "Items"
+							},
+							{
+								"items": [
+									"tap2_sering_level_2_t3",
+									"berhasil_level_2_t3",
+									"benar_level_2_t3",
+									"cobalagi_level_2_t3"
+								],
+								"subfolders": [],
+								"name": "Notifications"
+							},
+							{
+								"items": [
+									"numa_level_2_t3",
+									"numi_level_2_t3"
+								],
+								"subfolders": [],
+								"name": "Maskot"
+							},
+							{
+								"items": [
+									"target_level_2_t3",
+									"target_level_2_t3_selesai"
+								],
+								"subfolders": [],
+								"name": "Target"
+							},
+							{
+								"items": [
+									"tempat_waktu_level2_t3"
+								],
+								"subfolders": [],
+								"name": "Time"
+							}
 						],
-						"subfolders": [],
-						"name": "Pola"
-					},
-					{
-						"items": [
-							"screenview",
-							"timetxt",
-							"tempat_waktu_level4"
-						],
-						"subfolders": [],
-						"name": "Side"
-					}
-				],
-				"name": "Level_2_T4"
-			},
-			{
-				"items": [
-					"dialog_level_2_t3",
-					"rumahselesaidisusun_level_2_t3",
-					"bghitam_level_2_t3",
-					"bg_level_2_t3",
-					"judul_level_2_t3"
-				],
-				"subfolders": [
-					{
-						"items": [
-							"layang_level_2_t3",
-							"jendela_level_2_t3",
-							"pintu_level_2_t3",
-							"atas_stiga_level_2_t3",
-							"polygon_level_2_t3",
-							"atap_pg_level_2_t3",
-							"tangga_level_2_t3",
-							"kunci_level_2_t3",
-							"dinding_level_2_t3"
-						],
-						"subfolders": [],
-						"name": "Items"
-					},
-					{
-						"items": [
-							"tap2_sering_level_2_t3",
-							"berhasil_level_2_t3",
-							"benar_level_2_t3",
-							"cobalagi_level_2_t3"
-						],
-						"subfolders": [],
-						"name": "Notifications"
-					},
-					{
-						"items": [
-							"numa_level_2_t3",
-							"numi_level_2_t3"
-						],
-						"subfolders": [],
-						"name": "Maskot"
-					},
-					{
-						"items": [
-							"target_level_2_t3",
-							"target_level_2_t3_selesai"
-						],
-						"subfolders": [],
-						"name": "Target"
-					},
-					{
-						"items": [
-							"tempat_waktu_level2_t3",
-							"timetxt_t3"
-						],
-						"subfolders": [],
-						"name": "Time"
-					}
-				],
-				"name": "Level_2_T3"
-			},
-			{
-				"items": [
-					"bg_level_2_t2"
-				],
-				"subfolders": [
-					{
-						"items": [
-							"jikaBenar_level_2_t2",
-							"jikaWaktuHabis_level_2_t2",
-							"jikaSalahpilih_level_2_t2",
-							"finish_level_2_t2",
-							"motivasi_level_2_t2"
-						],
-						"subfolders": [],
-						"name": "Notifications"
+						"name": "Level_2_T3"
 					},
 					{
 						"items": [],
 						"subfolders": [
 							{
 								"items": [
-									"bener_level_2_t2",
-									"salah2_level_2_t2",
-									"salah3_level_2_t2"
+									"dialog_level_2_t4"
 								],
 								"subfolders": [],
-								"name": "Persegi"
+								"name": "Dialog"
+							},
+							{
+								"items": [
+									"finish_level_2_t4",
+									"motivasi_level_2_t4",
+									"jikaBenar_level_2_t4",
+									"jikaSalah_level_2_t4"
+								],
+								"subfolders": [],
+								"name": "Notifications"
+							},
+							{
+								"items": [
+									"screenpage1_level_2_t4",
+									"screenpage2_level_2_t4",
+									"screenpage3_level_2_t4",
+									"screenpage4_level_2_t4",
+									"screenpage5_level_2_t4",
+									"screenpage6_level_2_t4",
+									"screenpage7_level_2_t4",
+									"screenpage8_level_2_t4"
+								],
+								"subfolders": [],
+								"name": "Screen"
+							},
+							{
+								"items": [
+									"belakang_level_2_t4",
+									"depan_level_2_t4",
+									"kanan_level_2_t4",
+									"kiri_level_2_t4"
+								],
+								"subfolders": [],
+								"name": "Pola"
+							},
+							{
+								"items": [
+									"screenview",
+									"tempat_waktu_level4"
+								],
+								"subfolders": [],
+								"name": "Side"
 							}
 						],
-						"name": "Pilihan"
+						"name": "Level_2_T4"
 					},
 					{
 						"items": [
-							"soal_persegi_level_2_t2"
+							"hasil_akhir_t5"
 						],
-						"subfolders": [],
-						"name": "Soal"
-					},
-					{
-						"items": [
-							"dialog_level_2_t2_2",
-							"dialog_level_2_t2_1"
+						"subfolders": [
+							{
+								"items": [
+									"bg_level2_t5",
+									"bg_item_level_t5",
+									"bg_target_level2_t5"
+								],
+								"subfolders": [],
+								"name": "Background"
+							},
+							{
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"item_1_level2_t5",
+											"item_2_level2_t5",
+											"item_3_level2_t5"
+										],
+										"subfolders": [],
+										"name": "Belah_Ketupat"
+									}
+								],
+								"name": "Items"
+							},
+							{
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"soal_level2_t5"
+										],
+										"subfolders": [],
+										"name": "Belah_Ketupat"
+									}
+								],
+								"name": "Soal"
+							},
+							{
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"target_1_level2_t5",
+											"target_2_level2_t5",
+											"target_3_level2_t5"
+										],
+										"subfolders": [],
+										"name": "Belah_Ketupat"
+									}
+								],
+								"name": "Target"
+							},
+							{
+								"items": [
+									"tempat_waktu_level2_t5"
+								],
+								"subfolders": [],
+								"name": "Time"
+							},
+							{
+								"items": [
+									"finish",
+									"jikasalah",
+									"petunjuk",
+									"motivasi"
+								],
+								"subfolders": [],
+								"name": "Notifications"
+							}
 						],
-						"subfolders": [],
-						"name": "Dialog"
-					},
-					{
-						"items": [
-							"PETUNJUKPERSEGI_level_2_t2"
-						],
-						"subfolders": [],
-						"name": "Petunjuk"
-					},
-					{
-						"items": [
-							"text_time_lvl2_t2",
-							"tempat_waktu_level3"
-						],
-						"subfolders": [],
-						"name": "Time"
+						"name": "Level_2_T5"
 					}
 				],
-				"name": "Level_2_T2"
+				"name": "Level_2"
 			},
 			{
-				"items": [
-					"Audio",
-					"Txt_L1_Timer"
-				],
+				"items": [],
 				"subfolders": [
 					{
 						"items": [
-							"BG_T1",
-							"Tingkat1_Intro",
-							"waktu"
+							"bg_level3_t1",
+							"Frame_Gajah",
+							"Frame_capybara",
+							"Frame_rabbit",
+							"Plate",
+							"Rabbit",
+							"Capybara",
+							"Gajah",
+							"Notif1"
 						],
-						"subfolders": [
-							{
-								"items": [
-									"Example_Number",
-									"PuzzlePiece1",
-									"Instruction",
-									"Puzzle_Box1"
-								],
-								"subfolders": [],
-								"name": "angka1"
-							},
-							{
-								"items": [
-									"PuzzlePiece2",
-									"Instruction2",
-									"Puzzle_Box2",
-									"Example_Number2"
-								],
-								"subfolders": [],
-								"name": "angka2"
-							},
-							{
-								"items": [
-									"Example_Number3",
-									"Instruction3",
-									"Puzzle_Box3",
-									"PuzzlePiece3"
-								],
-								"subfolders": [],
-								"name": "angka3"
-							},
-							{
-								"items": [
-									"Example_Number4",
-									"Instruction4",
-									"Puzzle_Box4",
-									"PuzzlePiece4"
-								],
-								"subfolders": [],
-								"name": "angka4"
-							},
-							{
-								"items": [
-									"Example_Number5",
-									"Instruction5",
-									"Puzzle_Box5",
-									"PuzzlePiece5"
-								],
-								"subfolders": [],
-								"name": "angka5"
-							},
-							{
-								"items": [
-									"Home_Button_T1",
-									"Next_Button_T1",
-									"Star",
-									"Success_Text"
-								],
-								"subfolders": [],
-								"name": "success"
-							}
-						],
-						"name": "T1"
+						"subfolders": [],
+						"name": "Level_3_T1"
 					},
 					{
 						"items": [
-							"Tingkat2_Intro",
-							"BG_T2_1",
-							"Next_Button_Success"
+							"background",
+							"babi",
+							"instruksi",
+							"kadal",
+							"kelinci",
+							"kucing",
+							"kurakura",
+							"monyet",
+							"numaT2",
+							"numiT2",
+							"pause",
+							"referensi2",
+							"BabiB2",
+							"anjingLaut",
+							"flaminggo",
+							"Kurakurab2",
+							"jerapah",
+							"unta",
+							"teksKakiPanjang",
+							"TeksKakiPendek",
+							"Instruksi2",
+							"referensi3",
+							"singa",
+							"SosisKecil",
+							"SosisSedang",
+							"SosisBesar",
+							"Instruksi3",
+							"check",
+							"check2",
+							"check3",
+							"wrong",
+							"wrong2",
+							"wrong3",
+							"heart",
+							"heartCount"
 						],
-						"subfolders": [
-							{
-								"items": [
-									"Number_Box1",
-									"NumberBlock1"
-								],
-								"subfolders": [],
-								"name": "1"
-							},
-							{
-								"items": [
-									"angka1",
-									"angka2",
-									"angka3",
-									"angka4",
-									"angka5",
-									"angka6",
-									"angka7",
-									"angka8",
-									"angka9",
-									"angka10"
-								],
-								"subfolders": [],
-								"name": "angkaFull"
-							},
-							{
-								"items": [
-									"Home_Button_T2",
-									"Next_Button_T2"
-								],
-								"subfolders": [],
-								"name": "success"
-							}
+						"subfolders": [],
+						"name": "Level_3_T2"
+					},
+					{
+						"items": [
+							"backgroundT3",
+							"referensitT31",
+							"JerapahBesar",
+							"JerapahKecil",
+							"instruksiT31"
 						],
-						"name": "T2"
+						"subfolders": [],
+						"name": "Level_3_T3"
 					}
 				],
-				"name": "Level_1"
+				"name": "Level_3"
+			},
+			{
+				"items": [
+					"TransparantOverlay",
+					"WinNotif",
+					"Wipe1",
+					"Wipe2",
+					"Ready",
+					"Retry",
+					"PuzzleHolder",
+					"BannerTimer",
+					"Go",
+					"home",
+					"LoseNotif",
+					"TImer",
+					"next"
+				],
+				"subfolders": [],
+				"name": "ShareAsset"
 			}
 		]
 	},
@@ -730,31 +640,22 @@
 				"subfolders": [
 					{
 						"items": [
-							"Intro_T1",
-							"Level1_T1_1",
-							"Level1_T1_2",
-							"Level1_T1_3",
-							"Level1_T1_4",
-							"Level1_T1_5",
-							"Level1_T1_Success"
+							"basic 1-1",
+							"basic 1-2",
+							"basic 1-3",
+							"basic 1-4",
+							"basic 1-5"
 						],
 						"subfolders": [],
 						"name": "T1"
 					},
 					{
-						"items": [
-							"Intro_T2",
-							"Level1_T2_1",
-							"Level1_T2_FullNumber",
-							"Level1_T2_Success"
-						],
+						"items": [],
 						"subfolders": [],
 						"name": "T2"
 					},
 					{
-						"items": [
-							"Intro_T3"
-						],
+						"items": [],
 						"subfolders": [],
 						"name": "T3"
 					}
@@ -786,40 +687,33 @@
 	"eventSheets": {
 		"items": [
 			"ES_RoadMap",
-			"ES_Global",
-			"ES_MainMenu"
+			"ES_MainMenu",
+			"ES_Global"
 		],
 		"subfolders": [
 			{
-				"items": [
-					"ES_Level1_Global"
-				],
+				"items": [],
 				"subfolders": [
 					{
-						"items": [
-							"ES_Level1_T1",
-							"ES_L1_T1_Success",
-							"ES_Intro_T1"
-						],
-						"subfolders": [],
-						"name": "T1"
-					},
-					{
-						"items": [
-							"ES_L1_T3_Intro"
-						],
+						"items": [],
 						"subfolders": [],
 						"name": "T3"
 					},
 					{
-						"items": [
-							"ES_Level1_T2",
-							"ES_Level1_T2_FullNumber",
-							"ES_L1_T2_Success",
-							"ES_Intro_T2"
-						],
+						"items": [],
 						"subfolders": [],
 						"name": "T2"
+					},
+					{
+						"items": [
+							"ES_Level1_T1-1",
+							"ES_Level1_T1-2",
+							"ES_Level1_T1-3",
+							"ES_Level1_T1-4",
+							"ES_Level1_T1-5"
+						],
+						"subfolders": [],
+						"name": "T1"
 					}
 				],
 				"name": "ES_Level1"
@@ -857,6 +751,22 @@
 					"name": "MainTheme.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 194585541451060,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "go.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 290134138538550,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ready.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 257057198552987,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -983,25 +893,9 @@
 				{
 					"items": [
 						{
-							"name": "Success.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 706534857943805,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
 							"name": "jawaban benar.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 582715293704821,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "jawaban salah-variasi-2.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 290287851636122,
 							"file-info": {
 								"purpose": "none"
 							}
@@ -1031,25 +925,9 @@
 							}
 						},
 						{
-							"name": "berhasil & muncul bintang.webm",
+							"name": "menang.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 329227322251608,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "latar kebun binatang.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 932846139659784,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "musik1.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 321336582395404,
 							"file-info": {
 								"purpose": "none"
 							}
@@ -1063,33 +941,17 @@
 							}
 						},
 						{
-							"name": "musik2.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 810509934595367,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "musik3.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 321545202158993,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
-							"name": "cursor.webm",
-							"type": "audio/webm; codecs=opus",
-							"sid": 403471223790777,
-							"file-info": {
-								"purpose": "none"
-							}
-						},
-						{
 							"name": "dikamar tidur.webm",
 							"type": "audio/webm; codecs=opus",
 							"sid": 888832293408123,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "puzzle salah.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 927330224047062,
 							"file-info": {
 								"purpose": "none"
 							}

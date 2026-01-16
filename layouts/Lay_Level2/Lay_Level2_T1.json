@@ -294,6 +294,158 @@
 			"global": false
 		},
 		{
+			"name": "Hamper",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "kotak_segitiga_t1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 247,
+					"sid": 624752468118852,
+					"tags": "",
+					"instanceVariables": {
+						"bentukYangDiterima": "segitiga"
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 624752468118852,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 354,
+						"y": 579,
+						"width": 227,
+						"height": 197,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "kotak_persegi_t1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 248,
+					"sid": 252061254146638,
+					"tags": "",
+					"instanceVariables": {
+						"bentukYangDiterima": "persegi"
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 252061254146638,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 870,
+						"y": 585,
+						"width": 227,
+						"height": 197,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.273673256902751,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "kotak_lingkaran_t1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 249,
+					"sid": 278291635878566,
+					"tags": "",
+					"instanceVariables": {
+						"bentukYangDiterima": "lingkaran"
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 278291635878566,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 609,
+						"y": 582,
+						"width": 227,
+						"height": 197,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 188881147056834,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Items_Group_1",
 			"overriden": 0,
 			"subLayers": [],
@@ -806,158 +958,6 @@
 			"global": false
 		},
 		{
-			"name": "Hamper",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
-				{
-					"type": "kotak_segitiga_t1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 247,
-					"sid": 624752468118852,
-					"tags": "",
-					"instanceVariables": {
-						"bentukYangDiterima": "segitiga"
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 624752468118852,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 354,
-						"y": 579,
-						"width": 227,
-						"height": 197,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "kotak_persegi_t1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 248,
-					"sid": 252061254146638,
-					"tags": "",
-					"instanceVariables": {
-						"bentukYangDiterima": "persegi"
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 252061254146638,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 870,
-						"y": 585,
-						"width": 227,
-						"height": 197,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.273673256902751,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "kotak_lingkaran_t1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 249,
-					"sid": 278291635878566,
-					"tags": "",
-					"instanceVariables": {
-						"bentukYangDiterima": "lingkaran"
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 278291635878566,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 609,
-						"y": 582,
-						"width": 227,
-						"height": 197,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 188881147056834,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"isHTMLElementsLayer": false,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "Time",
 			"overriden": 0,
 			"subLayers": [],
@@ -987,43 +987,6 @@
 						"y": 69,
 						"width": 250,
 						"height": 100,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "waktu_level2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 251,
-					"sid": 645614004695306,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 645614004695306,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1380,
-						"y": 91,
-						"width": 100,
-						"height": 50,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1259,14 +1222,14 @@
 					}
 				},
 				{
-					"type": "waktu_text_level2",
+					"type": "TImer",
 					"properties": {
-						"text": "02:00",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 30,
-						"line-height": -1,
-						"bold": false,
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
 						"italic": false,
 						"color": [
 							0,
@@ -1283,22 +1246,22 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 258,
-					"sid": 268936520364160,
+					"uid": 340,
+					"sid": 374196761118852,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 268936520364160,
+						"sid": 374196761118852,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 148,
-						"y": 56,
-						"width": 111,
-						"height": 49,
+						"x": 153,
+						"y": 64,
+						"width": 75,
+						"height": 30,
 						"originX": 0,
 						"originY": 0,
 						"color": [
